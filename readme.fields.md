@@ -6,12 +6,19 @@
 
 This documentation catalogs all fields in the Home Events base, their purposes, formulas, and automation dependencies. Use this as a reference before making schema changes.
 
-**Tables in Base**: 2 main tables (Home Events, Schema Changes)  
+**Tables in Base**: 32 tables total  
+**Primary Focus**: Home Events table (119 fields) - most documented table  
 **Home Events Fields**: 119 fields  
-**Formula Fields**: 40+ fields  
-**Linked Record Fields**: 15+ fields  
+**Schema Changes Fields**: 7 fields  
+**Formula Fields**: 40+ fields (in Home Events)  
+**Linked Record Fields**: 15+ fields (in Home Events)  
 **Last Updated**: December 13, 2025  
 **Last Schema Extract**: December 13, 2025
+
+### All Tables in Base
+Core: Home Events, Schema Changes | Research: Research, Research Persons, Research Subjects, Research Works | Media: Tracked Shows, TV Shows, Check Movies, Directors | Documentation: Automations Documentation, Navigation Directory, Article Classifications, Article Tags | Health: Health, Health Care Providers | People: People | Financial: Schwab Checking | Home: Groceries, Home Storage, Albert Court Receipts, Plymouth Tower Issues List | Resources: Resources, Learning Experience | Work: Job Listings, Job URLs To Search | Special: Holiday Gifts, 8A Issues Log, GCal | Analysis: Field Analysis Results, Category Analysis, Home Events copy
+
+**Documentation Scope**: This document focuses primarily on the **Home Events** table (the main table with 40+ automations) and **Schema Changes** table. Other tables can be documented as needed. See `schema/fields-from-schema.md` for complete field details of all 32 tables.
 
 ---
 
@@ -869,14 +876,22 @@ Changes affect 0-1 automations:
 
 ## Statistics
 
-- **Home Events Fields**: 119
-- **Schema Changes Fields**: 7
-- **Total Fields**: 126 across base
+**Base Overview**:
+- **Total Tables**: 32
+- **Primary Documentation Focus**: Home Events table (main operational table)
+- **Complete Schema**: See `schema/fields-from-schema.md` for all tables
+
+**Home Events Table**:
+- **Total Fields**: 119
 - **Formula Fields**: 40+
 - **Link Fields**: 10+
 - **Deprecated Fields**: 4 (Parent Record, Sub Record, Parent Record ID, Sub Record ID)
-- **High-Impact Fields**: 6
+- **High-Impact Fields**: 6 (affect 5+ automations)
 - **Script-Managed Fields**: 2 (Children (do not edit), Prev Parent (new))
+
+**Schema Changes Table**:
+- **Total Fields**: 7
+- **Purpose**: Tracks schema modifications
 
 **Last Schema Extract**: December 13, 2025 at 12:10:22  
 **Last Documentation Update**: December 13, 2025  
