@@ -325,7 +325,7 @@ For detailed field information on the following tables, see `schema/fields-from-
 - **Directors** - Film directors
 
 **Documentation**:
-- **Automations Documentation** - Meta-documentation of automations
+- **Automations Documentation** - Meta-documentation of automations being phased out for this document. Will delete this table.)
 - **Navigation Directory** - Base navigation structure
 - **Article Classifications** & **Article Tags** - Content organization
 
