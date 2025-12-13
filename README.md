@@ -9,6 +9,36 @@
 - **[Views](readme.views.md)** - View configurations and automation dependencies
 - **[Fields](readme.fields.md)** - Field definitions, types, and usage patterns
 - **[Changelog](changelog.md)** - Version history and migration tracking
+- **[Schema Tools](tools/README.md)** - Automated schema extraction and documentation
+
+## Repository Structure
+
+```
+home-event-airtable/
+├── README.md                    # This file - overview and index
+├── readme.automations.md        # Automation documentation
+├── readme.tables.md             # Table schemas and relationships
+├── readme.views.md              # View configurations
+├── readme.fields.md             # Field definitions (updated from schema/)
+├── changelog.md                 # Version history
+│
+├── tools/                       # Schema extraction tools
+│   ├── airtable_schema_extractor.py
+│   ├── extract_schema.sh        # Quick run: ./tools/extract_schema.sh
+│   ├── requirements.txt
+│   └── README.md                # Tool documentation
+│
+├── schema/                      # Generated schema (auto-updated)
+│   ├── schema.json              # Raw JSON schema
+│   ├── schema.md                # Human-readable schema
+│   └── fields-from-schema.md    # Field reference (source of truth)
+│
+├── .github/workflows/
+│   └── update-schema.yml        # Weekly schema auto-update
+│
+├── .gitignore
+└── .env.example
+```
 
 ## Quick Start
 
@@ -68,6 +98,24 @@ See [Changelog](changelog.md) for detailed migration history.
 - ✅ Documented all automation field dependencies
 
 ## Maintenance
+
+### Keeping Documentation in Sync
+
+**Update schema from Airtable:**
+```bash
+# Run the schema extractor
+./tools/extract_schema.sh
+
+# Review the generated schema
+cat schema/fields-from-schema.md
+
+# Update readme.fields.md with any corrections
+# Commit changes
+git add schema/ readme.fields.md
+git commit -m "Update schema and field documentation"
+```
+
+The schema extractor runs automatically via GitHub Actions every Monday at 9 AM UTC.
 
 ### Before Making Changes
 
