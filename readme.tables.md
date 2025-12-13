@@ -4,7 +4,78 @@
 
 ## Overview
 
-This base contains multiple interconnected tables managing personal events, learning systems, and content organization. The primary table (Home Events) handles the majority of workflows with 40+ automations.
+This base contains **32 interconnected tables** managing personal events, learning systems, content organization, health tracking, financial records, and more. The primary table (Home Events) handles the majority of workflows with 40+ automations.
+
+**Total Tables**: 32  
+**Documented in Detail**: 5 primary operational tables (below)  
+**Complete Schema**: All 32 tables detailed in `schema/fields-from-schema.md`  
+**Last Updated**: December 13, 2025
+
+---
+
+## All Tables in Base (32)
+
+### Core Operations (2)
+- **Home Events** - Primary event/task management (119 fields, 40+ automations)
+- **Schema Changes** - Tracks schema modifications (7 fields)
+
+### Research & Content (4)
+- **Research** - Research item tracking
+- **Research Persons** - People in research
+- **Research Subjects** - Research topics
+- **Research Works** - Research materials
+
+### Media & Entertainment (4)
+- **Tracked Shows** - TV show tracking
+- **TV Shows** - TV show database
+- **Check Movies** - Movie watchlist
+- **Directors** - Film directors database
+
+### Documentation & Navigation (4)
+- **Automations Documentation** - Automation tracking
+- **Navigation Directory** - Navigation structure
+- **Article Classifications** - Article categories
+- **Article Tags** - Article tagging system
+
+### Health & Wellness (2)
+- **Health** - Health records
+- **Health Care Providers** - Medical providers
+
+### People (1)
+- **People** - Contacts database
+
+### Financial (1)
+- **Schwab Checking** - Bank account tracking
+
+### Home & Living (4)
+- **Groceries** - Grocery lists
+- **Home Storage** - Storage inventory
+- **Albert Court Receipts** - Property receipts
+- **Plymouth Tower Issues List** - Property issues
+
+### Resources & Learning (2)
+- **Resources** - General resources
+- **Learning Experience** - Learning tracking
+
+### Work & Jobs (2)
+- **Job Listings** - Job opportunities
+- **Job URLs To Search** - Job search tracking
+
+### Special Purpose (3)
+- **Holiday Gifts** - Gift planning
+- **8A Issues Log** - Issue tracking
+- **GCal** - Google Calendar integration
+
+### Analysis & Technical (3)
+- **Field Analysis Results** - Schema analysis
+- **Category Analysis** - Category analysis
+- **Home Events copy** - Backup/testing table
+
+---
+
+## Detailed Table Documentation
+
+The following sections provide detailed documentation for the primary operational tables. For complete field details on all 32 tables, see `schema/fields-from-schema.md`.
 
 ---
 
@@ -12,77 +83,116 @@ This base contains multiple interconnected tables managing personal events, lear
 
 **Purpose**: Core event and task management with Google Calendar integration, recurring event support, and automated alerting.
 
+**Fields**: 119  
+**Automations**: 40+  
 **Record Count**: 1000s (includes historical, active, and recurring events)
 
 ### Key Field Groups
 
 #### Identity & Classification
-- **Name** (Single line text) - Event title/description
-- **Title** (Formula) - Computed display name
-- **Appt Type** (Single select) - Event category
+- **Name** (Formula) - Concatenated identifier: `Title-Date-Autonumber`
+- **Title** (Single line text) - User-entered event title
+- **Appt Type** (Single select - 41 options) - Event category
   - Annual, Monthly (recurring types)
   - Words To Learn, From Research, Work Timer (special types)
-  - DRS Appt, Cut Grass (specific event types)
-- **Sub Type** (Single select) - Secondary classification
+  - DRS Appt, Cut Grass, Health, Financial, etc.
+  - See [Fields Documentation](readme.fields.md) for complete list
+- **Sub Type** (Multiple select - 160 options) - Secondary classification
   - ⚠️ Under reorganization - most automations safe for changes
-- **Research Type** (Link to Research table)
+- **Research Type** (Multiple select - 298 options) - Research categorization
+  - TV Show, AI, Health, History, etc.
+  - Links to Research table
 
 #### Timing
-- **Start Time** (Date/time)
-- **End Time** (Date/time)
-- **All Day Event?** (Checkbox)
-- **Seconds After** (Formula) - Time since event ended
+- **Start Time** (Datetime) - Event start (timezone: America/New_York)
+- **End Time** (Datetime) - Event end (timezone: America/New_York)
+- **All Day Event?** (Checkbox) - Full day event flag
+- **Days Until** (Formula) - Days until event starts
+- **Hours Until** (Formula) - Hours until event starts
+- **Effort (minutes)** (Formula) - Event duration in minutes
 - **Date Check** (Formula) - Event timing validation
-- **Since Updated** (Formula) - Time since last modification
+- **Current Time** (Formula) - Current timestamp formatted
 
 #### Status & Workflow
-- **Status** (Single select)
-  - Scheduled, Pending, Completed, Cancelled, Archived
-- **Alerts** (Single select)
-  - Pending, Sent, None
+- **Status** (Single select - 5 options)
+  - Pending, Scheduled, Completed, Cancelled, Archived
+- **Alerts** (Formula) - Generated alert text based on time until event
 - **Alerts Trigger** (Checkbox) - Enable/disable alerts for event
 - **Update GCal?** (Single select) - Flags record for Google Calendar sync
   - Yes, No
 
 #### Google Calendar Integration
 - **Add to Google** (Checkbox) - Include in GCal sync
-- **G Cal Event ID** (Single line text) - Google Calendar event identifier
-- **Start Updates Check** (Formula) - Detects field changes for sync trigger
+- **G Cal Event ID** (Multiline text) - Google Calendar event identifier
+- **G Cal Event URL** (Multiline text) - Direct link to GCal event
+- **From GCal** (Checkbox) - Event imported from Google Calendar
 
 #### Recurring Event Management
 - **Year Add** (Checkbox) - Create next year's annual event
 - **Month Add** (Checkbox) - Create next month's monthly event
-- **New Event in X Days** (Formula) - Days until child event should be created
+- **Anniversary Next Year** (Formula) - Calculates next year's date
+- **Anniversary Next Month** (Formula) - Calculates next month's date
+- **New Event in Days** (Number) - Days before creating child event
+- **New Date** (Formula) - Calculated future date for child event
 
 #### Parent-Child Relationships
 - **Parent** (Link to Home Events) - ✅ **CANONICAL** parent reference
 - **Children (do not edit)** (Link to Home Events) - Auto-maintained by script
 - **Prev Parent (new)** (Link to Home Events) - Previous parent tracking
-- ~~**Parent Record**~~ (Deprecated - being phased out)
-- ~~**Sub Record**~~ (Deprecated - being phased out)
+- **From field: Parent (Canonical)** - Inverse relationship
+- **From field: Children (new)** - Inverse relationship
+- **From field: Prev Parent (new)** - Inverse relationship
+- ~~**Parent Record (old)**~~ (Deprecated - being phased out)
+- ~~**Sub Record (old)**~~ (Deprecated - being phased out)
 - ~~**Parent Record ID**~~ (Deprecated)
 - ~~**Sub Record ID**~~ (Deprecated)
 
 #### Event Details
 - **Location** (Single line text)
-- **Description** (Long text)
-- **Notes** (Long text)
-- **Attachments** (Attachments)
-- **Participants** (Long text)
-- **Phone** (Phone number)
+- **Description** (Rich text)
+- **Notes** (Rich text)
+- **Long Text** (Rich text) - Extended content
+- **Attachments** (Multiple attachments)
+- **Participants** (Multiple select - 51 options) - Event attendees
+- **AI Prompt** (Multiline text)
 
-#### Metadata
+#### Linked Tables
+- **Health Care Provider** (Link to Health Care Providers)
+- **Link to Research** (Link to Research)
+- **Learning Experience** (Link to Learning Experience)
+
+#### Metadata & Tracking
 - **Created (At)** (Created time)
-- **Last Modified** (Last modified time)
+- **Last Updated by** (Last modified by)
+- **Autonumber** (Autonumber) - Sequential ID
+- **Record ID** (Formula) - Airtable record ID
+- **Record_URL** (Formula) - Direct URL to record
+
+#### Special Purpose
+- **Stop Timer** (Checkbox)
+- **Current Working** (Checkbox)
+- **Email Update** (Checkbox)
+- **Force Into Random Report** (Checkbox)
+- **Month Delay** (Checkbox)
+- **Last day selected** (Date) - For Words to Learn
+
+#### URL Fields
+- **ChatGPT URL** (URL)
+- **Claude.AI URL** (URL)
+- **Google Gemini URL** (URL)
+- **GitHub URL** (URL)
 
 ### Relationships
 
 **Self-referencing (Parent-Child)**:
 - Parent events create child instances (recurring events)
 - Maintained via Parent field + "Sync Children from Parent" automation script
+- Script automatically updates Children and Prev Parent fields
 
 **External Links**:
-- **Research Type** → Research table
+- **Health Care Provider** → Health Care Providers table
+- **Link to Research** → Research table
+- **Learning Experience** → Learning Experience table
 - Links to Google Calendar via G Cal Event ID
 
 ### Views (Automation Dependencies)
@@ -99,38 +209,31 @@ See [Views Documentation](readme.views.md) for complete list.
 
 ---
 
-## Words to Learn
+## Schema Changes
 
-**Purpose**: Vocabulary learning system with spaced repetition and automated word selection.
+**Purpose**: Tracks schema modifications (field updates, table changes, etc.)
+
+**Fields**: 7  
+**Record Count**: Historical log of all schema changes
 
 ### Key Fields
-- **Name** (Single line text) - Word or phrase
-- **Description** (Long text) - Definition
-- **LongText** (Long text) - Extended notes
-- **Status** (Single select) - Learning progress
-- **Appt Type** (Single select) - Must be "Words To Learn"
-- **Research Type** (Link to Research)
-- **SelectionCount** (Number) - Times word has been selected
-- **Last day selected** (Date) - Most recent selection
-- **CurDate** (Date) - Current date tracking
-- **Force** (Checkbox) - Force word to be selected
-- **Word Blackout** (Single select) - Temporary exclusion
-  - Yes, No
-- **Month Delay** (Checkbox) - Delay selection
-- **Created (At)** (Created time)
+- **Collaborator** (Multiple collaborators) - Who made the change
+- **Created** (Created time) - When change occurred
+- **Description** (Rich text) - Change details
+- **Entity** (Single select - 2 options)
+  - field, table
+- **Event ID** (Single line text) - Unique change identifier
+- **Event Type** (Single select - 8 options)
+  - field-updated, field-deleted, field-created, field-renamed
+  - table-renamed, table-created, table-deleted, table-updated
+- **Table ID** (Single line text) - Affected table identifier
 
-### Automations
-- **Words To Learn** (Hourly) - Random selection with smart deduplication
-- **Words to Learn (incoming)** - Auto-categorization of new words
-- **Word Selected** - Notification sending
-- **Word Month Delay** - Delay management
-
-### Selection Logic
-The hourly automation uses a custom script that:
-1. Filters available words (not in blackout, delay cleared, created in specific months)
-2. Prioritizes words with low SelectionCount
-3. Avoids recently selected words (Last day selected > 0)
-4. Sends Slack notifications with word details
+### Purpose
+Maintains audit trail of all structural changes to the base for:
+- Change tracking
+- Rollback reference
+- Documentation updates
+- Automation impact analysis
 
 ---
 
@@ -138,20 +241,24 @@ The hourly automation uses a custom script that:
 
 **Purpose**: Content classification, organization, and tracking for research materials.
 
+**Record Count**: 100s of research items
+
 ### Key Fields
 - **Name** (Single line text) - Research item title
-- **Research Type** (Single select)
-  - TV Show, Cancel, Completed, Archived
-- **Status** (Single select)
-- **Classification** (Single select)
-- **Content Type** (Single select)
-- **Source** (Single line text)
-- **Notes** (Long text)
-- **Attachments** (Attachments)
+- **Research Type** (Multiple select - 298 options)
+  - TV Show, AI, Health, History, and 294+ other options
+  - See [Fields Documentation](readme.fields.md) for complete list
+- **Status** (Single select) - Research progress
+- **Classification** (Single select) - Content classification
+- **Content Type** (Single select) - Material type
+- **Source** (Single line text) - Research source
+- **Notes** (Long text) - Research notes
+- **Attachments** (Attachments) - Supporting files
 
 ### Relationships
-- Linked from Home Events table via Research Type field
+- Linked from Home Events table via Research Type field (multiple select)
 - Used to categorize events (especially TV shows)
+- Links to Research Persons, Research Subjects, Research Works
 
 ### Automations
 5 automations handle classification, organization, and status updates.
@@ -163,56 +270,95 @@ The hourly automation uses a custom script that:
 
 ---
 
-## Media Hard Drives
+## Health Care Providers
 
-**Purpose**: Physical storage device tracking, maintenance alerts, and aging warnings.
+**Purpose**: Medical provider database linked from health appointments
 
 ### Key Fields
-- **Name** (Single line text) - Drive name/identifier
-- **Serial Number** (Single line text)
-- **Capacity** (Number)
-- **Purchase Date** (Date)
-- **Age in Years** (Formula)
-- **Status** (Single select)
-  - Active, Retired, Failed
-- **Location** (Single line text)
-- **Contents** (Long text)
-- **Last Checked** (Date)
-- **Notes** (Long text)
+- **Name** (Single line text) - Provider name
+- **Address** (Single line text) - Office location
+- **Map** (Lookup) - Map/location lookup
+- Other provider details
 
-### Automations
-- **Aging Hard Drive** - Alerts when drives exceed age thresholds
-- **Drive Check Reminder** - Periodic maintenance reminders
-- **Failed Drive** - Notification when drive marked as failed
+### Relationships
+- **Linked from**: Home Events (DRS Appt events)
+- **Inverse field**: Links to appointments
 
-### Aging Thresholds
-- Warning at 5+ years
-- Critical at 7+ years
-- Automatic email notifications to darrenchilton@gmail.com
+### Usage
+When creating health appointments (Appt Type = "DRS Appt"), link to provider for:
+- Address lookup
+- Contact information
+- Appointment history
 
 ---
 
-## Timers
+## Learning Experience
 
-**Purpose**: Countdown and reminder systems for time-based tasks.
+**Purpose**: Learning tracking and educational progress
 
-### Key Fields
-- **Name** (Single line text) - Timer name
-- **Duration** (Number) - Minutes
-- **Start Time** (Date/time)
-- **End Time** (Formula) - Calculated from Start + Duration
-- **Status** (Single select)
-  - Active, Paused, Completed
-- **Alerts** (Checkbox)
-- **Notes** (Long text)
+### Relationships
+- **Linked from**: Home Events table
+- Tracks learning-related events and progress
 
-### Automations
-- **Timer Started** - Initialization
-- **Timer Alert** - Notification when time expires
-- **Timer Completed** - Cleanup and status update
+---
 
-### Integration
-Timers can create events in Home Events table (Appt Type = "Work Timer")
+## GCal
+
+**Purpose**: Google Calendar integration and sync management
+
+### Usage
+Manages the bidirectional sync between Airtable and Google Calendar:
+- Event creation in both directions
+- Update propagation
+- Conflict resolution
+
+---
+
+## Additional Tables (Summary)
+
+For detailed field information on the following tables, see `schema/fields-from-schema.md`:
+
+**Media & Entertainment**:
+- **Tracked Shows** - TV show progress tracking
+- **TV Shows** - TV show database
+- **Check Movies** - Movie watchlist
+- **Directors** - Film directors
+
+**Documentation**:
+- **Automations Documentation** - Meta-documentation of automations
+- **Navigation Directory** - Base navigation structure
+- **Article Classifications** & **Article Tags** - Content organization
+
+**Health**:
+- **Health** - Health records and tracking
+
+**People**:
+- **People** - Contacts and relationships
+
+**Financial**:
+- **Schwab Checking** - Bank transactions
+
+**Home & Living**:
+- **Groceries** - Shopping lists
+- **Home Storage** - Inventory management
+- **Albert Court Receipts** - Property receipts
+- **Plymouth Tower Issues List** - Property maintenance
+
+**Resources**:
+- **Resources** - General resources
+
+**Work**:
+- **Job Listings** - Job opportunities
+- **Job URLs To Search** - Job search management
+
+**Special**:
+- **Holiday Gifts** - Gift planning
+- **8A Issues Log** - Issue tracking
+
+**Analysis**:
+- **Field Analysis Results** - Schema analysis
+- **Category Analysis** - Category statistics
+- **Home Events copy** - Backup table
 
 ---
 
@@ -241,35 +387,59 @@ Timers can create events in Home Events table (Appt Type = "Work Timer")
 ┌─────────────────┐
 │  Home Events    │◄──┐
 │  (Primary)      │   │ Self-referencing
-│                 │   │ (Parent-Child)
-│  • Events       │───┘
-│  • Alerts       │
-│  • Recurring    │
+│  119 fields     │   │ (Parent-Child)
+│  40+ automations│───┘
 └────────┬────────┘
          │
-         │ Links to
+         │ Links to Multiple Tables
          │
-    ┌────┴────────────────────┬──────────────┬──────────────┐
-    │                         │              │              │
-┌───▼────────┐    ┌──────────▼───┐  ┌───────▼──────┐  ┌───▼─────┐
-│ Research   │    │ Words to     │  │ Media Hard   │  │ Timers  │
-│            │    │ Learn        │  │ Drives       │  │         │
-│ • TV Shows │    │              │  │              │  │         │
-│ • Content  │    │ • Vocabulary │  │ • Storage    │  │ • Tasks │
-└────────────┘    └──────────────┘  └──────────────┘  └─────────┘
+    ┌────┴─────┬──────────┬────────────┬──────────────┬────────────┐
+    │          │          │            │              │            │
+┌───▼────┐ ┌──▼──────┐ ┌─▼─────┐ ┌───▼──────────┐ ┌─▼──────────┐ │
+│Research│ │ Health  │ │Learning│ │ GCal         │ │ People     │ │
+│        │ │ Care    │ │ Exp.   │ │              │ │            │ │
+│ 298    │ │Providers│ │        │ │              │ │            │ │
+│ types  │ │         │ │        │ │              │ │            │ │
+└────────┘ └─────────┘ └────────┘ └──────────────┘ └────────────┘ │
+                                                                    │
+┌──────────────────────────────────────────────────────────────────┘
+│
+│  Supporting Tables (26 additional)
+│  
+├─ Media: Tracked Shows, TV Shows, Check Movies, Directors
+├─ Documentation: Automations, Navigation, Article Classifications/Tags
+├─ Financial: Schwab Checking
+├─ Home: Groceries, Home Storage, Albert Court, Plymouth Tower
+├─ Work: Job Listings, Job URLs
+├─ Special: Holiday Gifts, 8A Issues
+├─ Research: Research Persons, Subjects, Works
+└─ Analysis: Field Analysis, Category Analysis, Home Events copy
 ```
 
 ---
 
 ## Statistics
 
-- **Total Tables**: 5
-- **Primary Table**: Home Events (40+ automations)
-- **Total Automations**: 45+
-- **Self-Referencing Links**: Home Events (Parent-Child)
-- **External Links**: Research, Words to Learn
+**Base Structure**:
+- **Total Tables**: 32
+- **Primary Operational Table**: Home Events (119 fields, 40+ automations)
+- **Schema Tracking**: Schema Changes table (7 fields)
+- **Supporting Tables**: 30 additional tables for various functions
 
-**Last Updated**: December 13, 2025
+**Home Events Table**:
+- **Fields**: 119
+- **Automations**: 40+
+- **Record Count**: 1000s
+- **Self-Referencing Links**: Parent-Child relationships
+- **External Links**: 4+ tables (Research, Health Care Providers, Learning Experience, GCal)
+
+**Relationships**:
+- **Self-Referencing**: Home Events (Parent-Child for recurring events)
+- **External Links**: Home Events links to 4+ other tables
+- **Research Network**: Research connects to Research Persons, Subjects, Works
+
+**Last Schema Extract**: December 13, 2025  
+**Last Documentation Update**: December 13, 2025
 
 ---
 
@@ -280,18 +450,48 @@ Timers can create events in Home Events table (Appt Type = "Work Timer")
 - Use Parent field (not old Parent Record fields) for relationships
 - Enable "Add to Google" for calendar sync
 - Set "Alerts Trigger" for time-based notifications
+- Link to Health Care Provider for medical appointments
 
 ### Maintenance
 - Archive completed events quarterly
-- Monitor aging hard drives monthly
-- Review Words to Learn selection patterns
-- Audit parent-child relationships for orphaned records
+- Review parent-child relationships for orphaned records
+- Monitor Schema Changes table for unexpected modifications
+- Keep research categorization consistent
 
 ### Schema Changes
 - Never delete fields without checking automation dependencies
 - Test view filters after field type changes
 - Update documentation immediately
 - Use field hiding instead of deletion when migrating
+- Check Schema Changes table for audit trail
+
+### Table Management
+- Focus documentation efforts on heavily-used tables (Home Events)
+- Use `schema/fields-from-schema.md` for complete schema reference
+- Document specialized tables as usage increases
+- Keep table relationships clear and well-documented
+
+---
+
+## Documentation Coverage
+
+### Fully Documented
+- ✅ **Home Events** (Primary table) - Complete documentation
+- ✅ **Schema Changes** - Complete documentation
+- ✅ **Research** - Detailed documentation
+- ✅ **Health Care Providers** - Basic documentation
+- ✅ **Learning Experience** - Basic documentation
+- ✅ **GCal** - Basic documentation
+
+### Schema Available
+All 32 tables have complete field schemas in `schema/fields-from-schema.md`
+
+### To Be Documented
+Additional tables can be documented as needed based on:
+- Usage frequency
+- Automation complexity
+- Team collaboration needs
+- Complexity of relationships
 
 ---
 
@@ -299,5 +499,6 @@ Timers can create events in Home Events table (Appt Type = "Work Timer")
 
 - [Automations](readme.automations.md) - Automation field dependencies
 - [Views](readme.views.md) - View configurations
-- [Fields](readme.fields.md) - Field definitions and formulas
+- [Fields](readme.fields.md) - Detailed field definitions and formulas
 - [Changelog](changelog.md) - Migration history
+- [Schema Files](schema/) - Auto-generated complete schema for all 32 tables
