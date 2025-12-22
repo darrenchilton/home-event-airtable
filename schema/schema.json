@@ -163,6 +163,22 @@
           "name": "Start Time"
         },
         {
+          "type": "dateTime",
+          "options": {
+            "dateFormat": {
+              "name": "us",
+              "format": "M/D/YYYY"
+            },
+            "timeFormat": {
+              "name": "24hour",
+              "format": "HH:mm"
+            },
+            "timeZone": "America/New_York"
+          },
+          "id": "flduWwxeEP5fKzSKZ",
+          "name": "End Time"
+        },
+        {
           "type": "formula",
           "options": {
             "isValid": true,
@@ -179,22 +195,6 @@
           },
           "id": "fld7bMiLrkWGdp6UF",
           "name": "Days Until"
-        },
-        {
-          "type": "dateTime",
-          "options": {
-            "dateFormat": {
-              "name": "us",
-              "format": "M/D/YYYY"
-            },
-            "timeFormat": {
-              "name": "24hour",
-              "format": "HH:mm"
-            },
-            "timeZone": "America/New_York"
-          },
-          "id": "flduWwxeEP5fKzSKZ",
-          "name": "End Time"
         },
         {
           "type": "singleSelect",
@@ -1903,6 +1903,11 @@
                 "id": "selc0WM7Vy0PxtNft",
                 "name": "gifts",
                 "color": "grayBright"
+              },
+              {
+                "id": "selW4mhBP8hjaQi4F",
+                "name": "SN",
+                "color": "blueLight2"
               }
             ]
           },
@@ -2712,6 +2717,11 @@
                 "id": "sel1ffwj9FU3CmW4X",
                 "name": "oliver sacks",
                 "color": "orangeLight2"
+              },
+              {
+                "id": "seldLblBvJ3mOa5UH",
+                "name": "grateful dead",
+                "color": "grayBright"
               }
             ]
           },
@@ -4456,6 +4466,11 @@
           },
           "id": "fldAYWL9OPgMSNBpt",
           "name": "In Active Window"
+        },
+        {
+          "type": "url",
+          "id": "fldv5ilTEX23VQg6s",
+          "name": "Airtable URL"
         }
       ],
       "views": [
@@ -4642,6 +4657,11 @@
         {
           "id": "viwXNlXIEjr279dXB",
           "name": "Alerts (Not RType=TV)",
+          "type": "grid"
+        },
+        {
+          "id": "viwb29RrS4iPnOAch",
+          "name": "Alerts (Appt Annual/Monthly)",
           "type": "grid"
         },
         {

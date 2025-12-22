@@ -1,6 +1,6 @@
 # Fields Reference (Auto-Generated)
 
-> Generated from Airtable schema on 2025-12-15 09:36:55
+> Generated from Airtable schema on 2025-12-22 09:33:05
 
 This document contains the actual schema from your Airtable base. Use this as the source of truth for updating your fields documentation.
 
@@ -76,7 +76,7 @@ This document contains the actual schema from your Airtable base. Use this as th
 
 ## Home Events
 
-**Total Fields**: 123
+**Total Fields**: 124
 
 ### 14 Days Since Creation
 
@@ -100,6 +100,11 @@ This document contains the actual schema from your Airtable base. Use this as th
 
 - **Field ID**: `fldjCqCoNct9VKEhG`
 - **Type**: Multiplelookupvalues
+
+### Airtable URL
+
+- **Field ID**: `fldv5ilTEX23VQg6s`
+- **Type**: Url
 
 ### Alert w Day
 
@@ -725,7 +730,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 ### Research Type
 
 - **Field ID**: `fldTOSyaubEtYdqwk`
-- **Type**: Multiple Select (298 options)
+- **Type**: Multiple Select (299 options)
 - **Options**:
   - 8a (cyanLight1)
   - actors (cyanBright)
@@ -1025,6 +1030,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - tolls (blueDark1)
   - trends (redDark1)
   - gifts (grayBright)
+  - SN (blueLight2)
 
 ### Reset Start URL
 
@@ -1163,7 +1169,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 ### Sub Type
 
 - **Field ID**: `fldVp0MgHf11YNjud`
-- **Type**: Multiple Select (160 options)
+- **Type**: Multiple Select (161 options)
 - **Options**:
   - 2024 Election (cyanLight2)
   - Academic debate (redLight1)
@@ -1325,6 +1331,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Michel Houellebecq (pinkBright)
   - silicon valley (greenBright)
   - oliver sacks (orangeLight2)
+  - grateful dead (grayBright)
 
 ### Sync lock
 
@@ -1605,12 +1612,13 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Appt Type
   - Status
   - Work Timer Type
-- **url**: 5 fields
+- **url**: 6 fields
   - Claude.AI URL
   - Google Gemini URL
   - Perplexity URL
   - GitHub URL
   - ChatGPT URL
+  - Airtable URL
 
 ---
 
