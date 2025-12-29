@@ -179,24 +179,6 @@
           "name": "End Time"
         },
         {
-          "type": "formula",
-          "options": {
-            "isValid": true,
-            "formula": "DATETIME_DIFF({fld43BW7fjYMrLjs9},NOW(),'days')",
-            "referencedFieldIds": [
-              "fld43BW7fjYMrLjs9"
-            ],
-            "result": {
-              "type": "number",
-              "options": {
-                "precision": 0
-              }
-            }
-          },
-          "id": "fld7bMiLrkWGdp6UF",
-          "name": "Days Until"
-        },
-        {
           "type": "singleSelect",
           "options": {
             "choices": [
@@ -409,6 +391,24 @@
           },
           "id": "fldhK5IfHRAso54iK",
           "name": "Appt Type"
+        },
+        {
+          "type": "formula",
+          "options": {
+            "isValid": true,
+            "formula": "DATETIME_DIFF({fld43BW7fjYMrLjs9},NOW(),'days')",
+            "referencedFieldIds": [
+              "fld43BW7fjYMrLjs9"
+            ],
+            "result": {
+              "type": "number",
+              "options": {
+                "precision": 0
+              }
+            }
+          },
+          "id": "fld7bMiLrkWGdp6UF",
+          "name": "Days Until"
         },
         {
           "type": "multipleSelects",
@@ -1908,6 +1908,11 @@
                 "id": "selW4mhBP8hjaQi4F",
                 "name": "SN",
                 "color": "blueLight2"
+              },
+              {
+                "id": "seli4Iwk3YJpOtHPA",
+                "name": "aging",
+                "color": "cyanBright"
               }
             ]
           },
@@ -2722,6 +2727,11 @@
                 "id": "seldLblBvJ3mOa5UH",
                 "name": "grateful dead",
                 "color": "grayBright"
+              },
+              {
+                "id": "seleAFilpRK31vzh9",
+                "name": "holiday",
+                "color": "greenLight2"
               }
             ]
           },

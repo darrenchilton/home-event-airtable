@@ -1,7 +1,7 @@
 # Airtable Base Schema
 
 > Auto-generated schema documentation
-> Generated: 2025-12-22 09:33:05
+> Generated: 2025-12-29 09:35:43
 
 ---
 
@@ -74,10 +74,10 @@
 | Name | Formula | Concatenates Title and formatted Start Time unless Appt Type is 'From Research'. |
 | Start Time | Datetime |  |
 | End Time | Datetime |  |
-| Days Until | Formula |  |
 | Appt Type | Single Select (41 options) |  |
-| Research Type | Multiple Select (299 options) |  |
-| Sub Type | Multiple Select (161 options) |  |
+| Days Until | Formula |  |
+| Research Type | Multiple Select (300 options) |  |
+| Sub Type | Multiple Select (162 options) |  |
 | New Event in Days | Number |  |
 | Since Updated (seconds) | Formula |  |
 | Description | Richtext |  |
