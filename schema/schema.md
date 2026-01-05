@@ -1,7 +1,7 @@
 # Airtable Base Schema
 
 > Auto-generated schema documentation
-> Generated: 2025-12-29 09:35:43
+> Generated: 2026-01-05 09:37:13
 
 ---
 
@@ -75,12 +75,23 @@
 | Start Time | Datetime |  |
 | End Time | Datetime |  |
 | Appt Type | Single Select (41 options) |  |
+| Research Type | Multiple Select (303 options) |  |
+| Sub Type | Multiple Select (163 options) |  |
+| Description | Richtext |  |
+| Notes | Richtext |  |
+| Long Text | Richtext |  |
+| Claude.AI URL | Url |  |
+| Record_URL | Formula | Generates a URL to the current record |
+| G Cal Event URL | Multilinetext |  |
+| Google Gemini URL | Url |  |
+| Perplexity URL | Url |  |
+| GitHub URL | Url |  |
+| ChatGPT URL | Url |  |
+| Parent | Link to Unknown |  |
+| Children (do not edit) | Link to Unknown |  |
 | Days Until | Formula |  |
-| Research Type | Multiple Select (300 options) |  |
-| Sub Type | Multiple Select (162 options) |  |
 | New Event in Days | Number |  |
 | Since Updated (seconds) | Formula |  |
-| Description | Richtext |  |
 | Hours Until | Formula |  |
 | Date for Alerts | Formula | Formats the Start Time to 'YYYY-MM-DD HH:mm' for 24-hour time display. |
 | Alerts | Formula | Generates alerts based on the number of days, hours, or seconds until an event. |
@@ -106,7 +117,6 @@
 | Website (from Health Care Provider) | Multiplelookupvalues |  |
 | Attachments | Multipleattachments |  |
 | Household Tasks | Singlelinetext |  |
-| Notes | Richtext |  |
 | Force Update | Singlelinetext |  |
 | New Date | Formula |  |
 | Anniversary Next Year | Formula |  |
@@ -118,7 +128,6 @@
 | Parent Record ID | Singlelinetext |  |
 | Sub Record (old) | Link to Unknown |  |
 | Created Month/Year | Formula |  |
-| Long Text | Richtext |  |
 | Company | Singlelinetext |  |
 | Job Title | Singlelinetext |  |
 | NYS Jobs Daily Link | Formula |  |
@@ -138,12 +147,9 @@
 | Current Date | Formula | Formats the current date and time to 'YYYY-MM-DD HH:MM' |
 | Seconds After | Formula |  |
 | Fam Reminders Form | Formula |  |
-| Claude.AI URL | Url |  |
 | pronunciation | Singlelinetext |  |
 | Attachment Image | Formula |  |
 | Set To Midnight | Formula | Sets the Start Time to midnight of the same day. |
-| Record_URL | Formula | Generates a URL to the current record |
-| G Cal Event URL | Multilinetext |  |
 | Base64 Encoded ID | Singlelinetext | Extracts the event ID from the G Cal Event URL field and encodes it in base64. |
 | Update GCal? | Singlelinetext | Used to check if the record Google calendar fields were updated. If not the automation sets it to no so the update to google calendar does not run.  |
 | Email Update | Checkbox |  |
@@ -165,26 +171,20 @@
 | Current Time | Formula | Formats the current date and time to 'YYYY-MM-DD HH:MM' |
 | Word Blackout | Formula | Determines if the current time is between 11pm and 5am, returning 'Yes' or 'No'. |
 | Current Hour | Formula |  |
-| Google Gemini URL | Url |  |
 | Autonumber | Autonumber |  |
 | Convert Created Date | Formula |  |
 | Last day selected | Date |  |
-| Perplexity URL | Url |  |
 | Years Since | Formula | Calculates the number of years since the year in parentheses in the Name field.  |
 | 14 Days Since Creation | Formula | Calculates the date that is 14 days after the Created (At) timestamp. |
 | Reset Start URL | Formula |  |
 | Temp Field | Singlelinetext |  |
 | mnemonic prompt | Formula |  |
-| GitHub URL | Url |  |
 | Interface Record Detail | Multilinetext |  |
-| ChatGPT URL | Url |  |
 | Current Working | Checkbox |  |
 | Temp | Checkbox |  |
 | From GCal | Checkbox |  |
 | Interface Record Detail URL | Button | Outputs the URL from the Interface Record Detail field for use in a button. |
-| Parent | Link to Unknown |  |
 | From field: Parent (Canonical) | Link to Unknown |  |
-| Children (do not edit) | Link to Unknown |  |
 | From field: Children (new) | Link to Unknown |  |
 | Sync lock | Checkbox |  |
 | Old Parent (snapshot) | Singlelinetext |  |

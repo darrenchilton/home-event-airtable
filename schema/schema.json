@@ -393,24 +393,6 @@
           "name": "Appt Type"
         },
         {
-          "type": "formula",
-          "options": {
-            "isValid": true,
-            "formula": "DATETIME_DIFF({fld43BW7fjYMrLjs9},NOW(),'days')",
-            "referencedFieldIds": [
-              "fld43BW7fjYMrLjs9"
-            ],
-            "result": {
-              "type": "number",
-              "options": {
-                "precision": 0
-              }
-            }
-          },
-          "id": "fld7bMiLrkWGdp6UF",
-          "name": "Days Until"
-        },
-        {
           "type": "multipleSelects",
           "options": {
             "choices": [
@@ -1913,6 +1895,21 @@
                 "id": "seli4Iwk3YJpOtHPA",
                 "name": "aging",
                 "color": "cyanBright"
+              },
+              {
+                "id": "selaAvlz1IL3nYYn1",
+                "name": "software",
+                "color": "orangeLight2"
+              },
+              {
+                "id": "sel7b0QsKnhyFyNEQ",
+                "name": "Job Offer",
+                "color": "blueLight1"
+              },
+              {
+                "id": "selwBzwQhNANHR91i",
+                "name": "router",
+                "color": "cyanDark1"
               }
             ]
           },
@@ -2732,11 +2729,115 @@
                 "id": "seleAFilpRK31vzh9",
                 "name": "holiday",
                 "color": "greenLight2"
+              },
+              {
+                "id": "sel018AGHnosqMj9C",
+                "name": "best of",
+                "color": "purpleDark1"
               }
             ]
           },
           "id": "fldVp0MgHf11YNjud",
           "name": "Sub Type"
+        },
+        {
+          "type": "richText",
+          "id": "fldfmgCh93wZoHRDa",
+          "name": "Description"
+        },
+        {
+          "type": "richText",
+          "id": "fldP9VO6dJu8EBCTp",
+          "name": "Notes"
+        },
+        {
+          "type": "richText",
+          "id": "fldstpV8FTtRIrssV",
+          "name": "Long Text"
+        },
+        {
+          "type": "url",
+          "id": "fld9heV9t05quo0do",
+          "name": "Claude.AI URL"
+        },
+        {
+          "type": "formula",
+          "options": {
+            "isValid": true,
+            "formula": "\"https://airtable.com/appSX4P3En4AWPyyG/tblYQbyKJJErXkZro/viwuQwJir4WERNrqE/\" & RECORD_ID()",
+            "referencedFieldIds": [],
+            "result": {
+              "type": "singleLineText"
+            }
+          },
+          "id": "fldoQo5GpI9RzyXHd",
+          "name": "Record_URL",
+          "description": "Generates a URL to the current record"
+        },
+        {
+          "type": "multilineText",
+          "id": "fldtIf7HsdUSygQZh",
+          "name": "G Cal Event URL"
+        },
+        {
+          "type": "url",
+          "id": "fld3TfaC4W2QZ17uv",
+          "name": "Google Gemini URL"
+        },
+        {
+          "type": "url",
+          "id": "fldXfkVYeO2Y2R7vH",
+          "name": "Perplexity URL"
+        },
+        {
+          "type": "url",
+          "id": "fldAGodAZ0WZP2B97",
+          "name": "GitHub URL"
+        },
+        {
+          "type": "url",
+          "id": "flduDb5xQaWDn7u4q",
+          "name": "ChatGPT URL"
+        },
+        {
+          "type": "multipleRecordLinks",
+          "options": {
+            "linkedTableId": "tblYQbyKJJErXkZro",
+            "isReversed": false,
+            "prefersSingleRecordLink": true,
+            "inverseLinkFieldId": "fldRtf2reDlEV8S9Z"
+          },
+          "id": "fldI8JWRgKY1348Up",
+          "name": "Parent"
+        },
+        {
+          "type": "multipleRecordLinks",
+          "options": {
+            "linkedTableId": "tblYQbyKJJErXkZro",
+            "isReversed": false,
+            "prefersSingleRecordLink": false,
+            "inverseLinkFieldId": "fldMUszPkgBCcA3tY"
+          },
+          "id": "fld3mWx9OZSwB7lpo",
+          "name": "Children (do not edit)"
+        },
+        {
+          "type": "formula",
+          "options": {
+            "isValid": true,
+            "formula": "DATETIME_DIFF({fld43BW7fjYMrLjs9},NOW(),'days')",
+            "referencedFieldIds": [
+              "fld43BW7fjYMrLjs9"
+            ],
+            "result": {
+              "type": "number",
+              "options": {
+                "precision": 0
+              }
+            }
+          },
+          "id": "fld7bMiLrkWGdp6UF",
+          "name": "Days Until"
         },
         {
           "type": "number",
@@ -2763,11 +2864,6 @@
           },
           "id": "fldbNjcl4Ig6Betmy",
           "name": "Since Updated (seconds)"
-        },
-        {
-          "type": "richText",
-          "id": "fldfmgCh93wZoHRDa",
-          "name": "Description"
         },
         {
           "type": "formula",
@@ -3403,11 +3499,6 @@
           "name": "Household Tasks"
         },
         {
-          "type": "richText",
-          "id": "fldP9VO6dJu8EBCTp",
-          "name": "Notes"
-        },
-        {
           "type": "singleLineText",
           "id": "fldkWWR56ChmXVObt",
           "name": "Force Update"
@@ -3551,11 +3642,6 @@
           },
           "id": "fldzJ4MxylfnXk4Xg",
           "name": "Created Month/Year"
-        },
-        {
-          "type": "richText",
-          "id": "fldstpV8FTtRIrssV",
-          "name": "Long Text"
         },
         {
           "type": "singleLineText",
@@ -3790,11 +3876,6 @@
           "name": "Fam Reminders Form"
         },
         {
-          "type": "url",
-          "id": "fld9heV9t05quo0do",
-          "name": "Claude.AI URL"
-        },
-        {
           "type": "singleLineText",
           "id": "fld96OBOX5LwVbnM8",
           "name": "pronunciation"
@@ -3840,25 +3921,6 @@
           "id": "fldjnOKpvnunZ5QNT",
           "name": "Set To Midnight",
           "description": "Sets the Start Time to midnight of the same day."
-        },
-        {
-          "type": "formula",
-          "options": {
-            "isValid": true,
-            "formula": "\"https://airtable.com/appSX4P3En4AWPyyG/tblYQbyKJJErXkZro/viwuQwJir4WERNrqE/\" & RECORD_ID()",
-            "referencedFieldIds": [],
-            "result": {
-              "type": "singleLineText"
-            }
-          },
-          "id": "fldoQo5GpI9RzyXHd",
-          "name": "Record_URL",
-          "description": "Generates a URL to the current record"
-        },
-        {
-          "type": "multilineText",
-          "id": "fldtIf7HsdUSygQZh",
-          "name": "G Cal Event URL"
         },
         {
           "type": "singleLineText",
@@ -4166,11 +4228,6 @@
           "name": "Current Hour"
         },
         {
-          "type": "url",
-          "id": "fld3TfaC4W2QZ17uv",
-          "name": "Google Gemini URL"
-        },
-        {
           "type": "autoNumber",
           "id": "fldCRJe4MuLCPAQzE",
           "name": "Autonumber"
@@ -4200,11 +4257,6 @@
           },
           "id": "fldJDf881waFTMSek",
           "name": "Last day selected"
-        },
-        {
-          "type": "url",
-          "id": "fldXfkVYeO2Y2R7vH",
-          "name": "Perplexity URL"
         },
         {
           "type": "formula",
@@ -4281,19 +4333,9 @@
           "name": "mnemonic prompt"
         },
         {
-          "type": "url",
-          "id": "fldAGodAZ0WZP2B97",
-          "name": "GitHub URL"
-        },
-        {
           "type": "multilineText",
           "id": "fldHCVP81XnyxIKcc",
           "name": "Interface Record Detail"
-        },
-        {
-          "type": "url",
-          "id": "flduDb5xQaWDn7u4q",
-          "name": "ChatGPT URL"
         },
         {
           "type": "checkbox",
@@ -4333,33 +4375,11 @@
           "options": {
             "linkedTableId": "tblYQbyKJJErXkZro",
             "isReversed": false,
-            "prefersSingleRecordLink": true,
-            "inverseLinkFieldId": "fldRtf2reDlEV8S9Z"
-          },
-          "id": "fldI8JWRgKY1348Up",
-          "name": "Parent"
-        },
-        {
-          "type": "multipleRecordLinks",
-          "options": {
-            "linkedTableId": "tblYQbyKJJErXkZro",
-            "isReversed": false,
             "prefersSingleRecordLink": false,
             "inverseLinkFieldId": "fldI8JWRgKY1348Up"
           },
           "id": "fldRtf2reDlEV8S9Z",
           "name": "From field: Parent (Canonical)"
-        },
-        {
-          "type": "multipleRecordLinks",
-          "options": {
-            "linkedTableId": "tblYQbyKJJErXkZro",
-            "isReversed": false,
-            "prefersSingleRecordLink": false,
-            "inverseLinkFieldId": "fldMUszPkgBCcA3tY"
-          },
-          "id": "fld3mWx9OZSwB7lpo",
-          "name": "Children (do not edit)"
         },
         {
           "type": "multipleRecordLinks",
