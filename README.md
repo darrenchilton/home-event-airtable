@@ -71,6 +71,15 @@ The Home Events base manages:
 - **Children (do not edit)**: Auto-maintained by "Sync Children from Parent" script
 - **Prev Parent (new)**: Auto-maintained for relationship tracking
 
+**Creating Child Records:**
+Interface buttons trigger automations that create child records with Parent field pre-populated. Users navigate to newly created children via the Children field on the parent record.
+
+**Workflow:**
+1. Click "Add Child record" button in parent record detail view
+2. Automation creates child record with Parent field linked to current record
+3. "Sync Children from Parent" script updates Children field on parent
+4. Navigate to child record via Children field to add details
+
 **Legacy fields being phased out:**
 - Parent Record, Sub Record, Parent Record ID, Sub Record ID
 
@@ -82,7 +91,7 @@ The Home Events base manages:
 **Migration Status**: In progress (Parent/Sub Record → Parent field)
 
 **Last Full Audit**: December 1, 2025  
-**Last Updated**: December 13, 2025
+**Last Updated**: January 4, 2026
 
 ## Recent Changes
 
