@@ -1,7 +1,7 @@
 # Airtable Base Schema
 
 > Auto-generated schema documentation
-> Generated: 2026-01-05 09:37:13
+> Generated: 2026-01-12 09:37:07
 
 ---
 
@@ -72,22 +72,18 @@
 | Field Name | Type | Description |
 |------------|------|-------------|
 | Name | Formula | Concatenates Title and formatted Start Time unless Appt Type is 'From Research'. |
+| Parent | Link to Unknown |  |
+| Created (At) | Createdtime |  |
 | Start Time | Datetime |  |
 | End Time | Datetime |  |
+| Set To Midnight | Formula | Sets the Start Time to midnight of the same day. |
+| Status | Single Select (5 options) |  |
+| Anniversary Next Year | Formula |  |
 | Appt Type | Single Select (41 options) |  |
 | Research Type | Multiple Select (303 options) |  |
-| Sub Type | Multiple Select (163 options) |  |
+| Sub Type | Multiple Select (166 options) |  |
 | Description | Richtext |  |
 | Notes | Richtext |  |
-| Long Text | Richtext |  |
-| Claude.AI URL | Url |  |
-| Record_URL | Formula | Generates a URL to the current record |
-| G Cal Event URL | Multilinetext |  |
-| Google Gemini URL | Url |  |
-| Perplexity URL | Url |  |
-| GitHub URL | Url |  |
-| ChatGPT URL | Url |  |
-| Parent | Link to Unknown |  |
 | Children (do not edit) | Link to Unknown |  |
 | Days Until | Formula |  |
 | New Event in Days | Number |  |
@@ -101,9 +97,7 @@
 | Location | Singlelinetext |  |
 | Phone | Phonenumber |  |
 | Participants | Multiple Select (52 options) |  |
-| Status | Single Select (5 options) |  |
 | Add to Google | Checkbox |  |
-| Created (At) | Createdtime |  |
 | Since Created (seconds) | Formula |  |
 | Updated | Lastmodifiedtime |  |
 | Date Check | Formula |  |
@@ -119,7 +113,6 @@
 | Household Tasks | Singlelinetext |  |
 | Force Update | Singlelinetext |  |
 | New Date | Formula |  |
-| Anniversary Next Year | Formula |  |
 | Anniversary Next Month | Formula |  |
 | Year Add | Checkbox |  |
 | Month Add | Checkbox |  |
@@ -128,6 +121,7 @@
 | Parent Record ID | Singlelinetext |  |
 | Sub Record (old) | Link to Unknown |  |
 | Created Month/Year | Formula |  |
+| Long Text | Richtext |  |
 | Company | Singlelinetext |  |
 | Job Title | Singlelinetext |  |
 | NYS Jobs Daily Link | Formula |  |
@@ -147,9 +141,11 @@
 | Current Date | Formula | Formats the current date and time to 'YYYY-MM-DD HH:MM' |
 | Seconds After | Formula |  |
 | Fam Reminders Form | Formula |  |
+| Claude.AI URL | Url |  |
 | pronunciation | Singlelinetext |  |
 | Attachment Image | Formula |  |
-| Set To Midnight | Formula | Sets the Start Time to midnight of the same day. |
+| Record_URL | Formula | Generates a URL to the current record |
+| G Cal Event URL | Multilinetext |  |
 | Base64 Encoded ID | Singlelinetext | Extracts the event ID from the G Cal Event URL field and encodes it in base64. |
 | Update GCal? | Singlelinetext | Used to check if the record Google calendar fields were updated. If not the automation sets it to no so the update to google calendar does not run.  |
 | Email Update | Checkbox |  |
@@ -171,15 +167,19 @@
 | Current Time | Formula | Formats the current date and time to 'YYYY-MM-DD HH:MM' |
 | Word Blackout | Formula | Determines if the current time is between 11pm and 5am, returning 'Yes' or 'No'. |
 | Current Hour | Formula |  |
+| Google Gemini URL | Url |  |
 | Autonumber | Autonumber |  |
 | Convert Created Date | Formula |  |
 | Last day selected | Date |  |
+| Perplexity URL | Url |  |
 | Years Since | Formula | Calculates the number of years since the year in parentheses in the Name field.  |
 | 14 Days Since Creation | Formula | Calculates the date that is 14 days after the Created (At) timestamp. |
 | Reset Start URL | Formula |  |
 | Temp Field | Singlelinetext |  |
 | mnemonic prompt | Formula |  |
+| GitHub URL | Url |  |
 | Interface Record Detail | Multilinetext |  |
+| ChatGPT URL | Url |  |
 | Current Working | Checkbox |  |
 | Temp | Checkbox |  |
 | From GCal | Checkbox |  |

@@ -1,6 +1,6 @@
 # Fields Reference (Auto-Generated)
 
-> Generated from Airtable schema on 2026-01-05 09:37:13
+> Generated from Airtable schema on 2026-01-12 09:37:07
 
 This document contains the actual schema from your Airtable base. Use this as the source of truth for updating your fields documentation.
 
@@ -142,8 +142,16 @@ This document contains the actual schema from your Airtable base. Use this as th
 
 - **Field ID**: `fldNXbcEesjOSbmi8`
 - **Type**: Formula
-- **Formula**: `DATEADD({fld43BW7fjYMrLjs9}, 1,'year')`
-- **Result Type**: date
+- **Formula**: `IF(
+  AND(
+    MONTH({fld43BW7fjYMrLjs9}) = 2,
+    DAY({fld43BW7fjYMrLjs9}) = 29
+  ),
+  DATEADD({fld43BW7fjYMrLjs9}, 1, 'year') - 1,
+  DATEADD({fld43BW7fjYMrLjs9}, 1, 'year')
+)
+`
+- **Result Type**: singleLineText
 
 ### Appt Type
 
@@ -1074,10 +1082,10 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 - **Description**: Sets the Start Time to midnight of the same day.
 - **Formula**: `DATEADD(
   DATETIME_PARSE(
-    DATETIME_FORMAT({fld43BW7fjYMrLjs9}, 'YYYY-MM-DD') & 'T00:00:00',
-    'YYYY-MM-DD\\THH:mm:ss'
+    DATETIME_FORMAT({fld43BW7fjYMrLjs9}, 'YYYY-MM-DD'),
+    'YYYY-MM-DD'
   ),
-  4,
+  5,
   'hours'
 )
 `
@@ -1173,7 +1181,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 ### Sub Type
 
 - **Field ID**: `fldVp0MgHf11YNjud`
-- **Type**: Multiple Select (163 options)
+- **Type**: Multiple Select (166 options)
 - **Options**:
   - 2024 Election (cyanLight2)
   - Academic debate (redLight1)
@@ -1338,6 +1346,9 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - grateful dead (grayBright)
   - holiday (greenLight2)
   - best of (purpleDark1)
+  - Béla Tarr (tealLight2)
+  - salman rushdie (tealLight1)
+  - free will (orangeLight1)
 
 ### Sync lock
 
@@ -1510,7 +1521,8 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - End Time
 - **formula**: 44 fields
   - Name
-  - Record_URL
+  - Set To Midnight
+  - Anniversary Next Year
   - Days Until
   - Since Updated (seconds)
   - Hours Until
@@ -1519,7 +1531,6 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Since Created (seconds)
   - Date Check
   - New Date
-  - Anniversary Next Year
   - Anniversary Next Month
   - Seconds Until
   - Created Month/Year
@@ -1535,7 +1546,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Seconds After
   - Fam Reminders Form
   - Attachment Image
-  - Set To Midnight
+  - Record_URL
   - Move Car End Date (formula)
   - Difference from Midnight
   - Timer End Time
@@ -1558,9 +1569,9 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 - **lastModifiedTime**: 1 fields
   - Updated
 - **multilineText**: 4 fields
-  - G Cal Event URL
   - G Cal Event ID
   - AI Prompt
+  - G Cal Event URL
   - Interface Record Detail
 - **multipleAttachments**: 1 fields
   - Attachments
@@ -1615,8 +1626,8 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Temp Field
   - Old Parent (snapshot)
 - **singleSelect**: 3 fields
-  - Appt Type
   - Status
+  - Appt Type
   - Work Timer Type
 - **url**: 6 fields
   - Claude.AI URL

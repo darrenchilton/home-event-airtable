@@ -147,6 +147,38 @@
           "description": "Concatenates Title and formatted Start Time unless Appt Type is 'From Research'."
         },
         {
+          "type": "multipleRecordLinks",
+          "options": {
+            "linkedTableId": "tblYQbyKJJErXkZro",
+            "isReversed": false,
+            "prefersSingleRecordLink": true,
+            "inverseLinkFieldId": "fldRtf2reDlEV8S9Z"
+          },
+          "id": "fldI8JWRgKY1348Up",
+          "name": "Parent"
+        },
+        {
+          "type": "createdTime",
+          "options": {
+            "result": {
+              "type": "dateTime",
+              "options": {
+                "dateFormat": {
+                  "name": "local",
+                  "format": "l"
+                },
+                "timeFormat": {
+                  "name": "12hour",
+                  "format": "h:mma"
+                },
+                "timeZone": "client"
+              }
+            }
+          },
+          "id": "fldphRwWJsdA4Gj5N",
+          "name": "Created (At)"
+        },
+        {
           "type": "dateTime",
           "options": {
             "dateFormat": {
@@ -177,6 +209,82 @@
           },
           "id": "flduWwxeEP5fKzSKZ",
           "name": "End Time"
+        },
+        {
+          "type": "formula",
+          "options": {
+            "isValid": true,
+            "formula": "DATEADD(\n  DATETIME_PARSE(\n    DATETIME_FORMAT({fld43BW7fjYMrLjs9}, 'YYYY-MM-DD'),\n    'YYYY-MM-DD'\n  ),\n  5,\n  'hours'\n)\n",
+            "referencedFieldIds": [
+              "fld43BW7fjYMrLjs9"
+            ],
+            "result": {
+              "type": "dateTime",
+              "options": {
+                "dateFormat": {
+                  "name": "local",
+                  "format": "l"
+                },
+                "timeFormat": {
+                  "name": "12hour",
+                  "format": "h:mma"
+                },
+                "timeZone": "client"
+              }
+            }
+          },
+          "id": "fldjnOKpvnunZ5QNT",
+          "name": "Set To Midnight",
+          "description": "Sets the Start Time to midnight of the same day."
+        },
+        {
+          "type": "singleSelect",
+          "options": {
+            "choices": [
+              {
+                "id": "selqqlv5pdp7IP9O0",
+                "name": "Pending",
+                "color": "blueLight2"
+              },
+              {
+                "id": "selW36eArnjBmPaN3",
+                "name": "Scheduled",
+                "color": "greenLight2"
+              },
+              {
+                "id": "seloYxEvsKZeQH6tE",
+                "name": "Completed",
+                "color": "orangeLight2"
+              },
+              {
+                "id": "selD6QmE74Z8gh1sJ",
+                "name": "Archived",
+                "color": "cyanLight2"
+              },
+              {
+                "id": "selQ1mHq7WDCOVtIq",
+                "name": "Cancelled",
+                "color": "tealLight2"
+              }
+            ]
+          },
+          "id": "fldvXRj5JUVh7NG9S",
+          "name": "Status"
+        },
+        {
+          "type": "formula",
+          "options": {
+            "isValid": true,
+            "formula": "IF(\n  AND(\n    MONTH({fld43BW7fjYMrLjs9}) = 2,\n    DAY({fld43BW7fjYMrLjs9}) = 29\n  ),\n  DATEADD({fld43BW7fjYMrLjs9}, 1, 'year') - 1,\n  DATEADD({fld43BW7fjYMrLjs9}, 1, 'year')\n)\n",
+            "referencedFieldIds": [
+              "fld43BW7fjYMrLjs9"
+            ],
+            "result": {
+              "type": "singleLineText"
+            }
+          },
+          "id": "fldNXbcEesjOSbmi8",
+          "name": "Anniversary Next Year"
         },
         {
           "type": "singleSelect",
@@ -2734,6 +2842,21 @@
                 "id": "sel018AGHnosqMj9C",
                 "name": "best of",
                 "color": "purpleDark1"
+              },
+              {
+                "id": "sel1J0LauTPNZLQMP",
+                "name": "B\u00e9la Tarr",
+                "color": "tealLight2"
+              },
+              {
+                "id": "selem9pt8stfYxuI9",
+                "name": "salman rushdie",
+                "color": "tealLight1"
+              },
+              {
+                "id": "selaQu2evTBetYOil",
+                "name": "free will",
+                "color": "orangeLight1"
               }
             ]
           },
@@ -2749,66 +2872,6 @@
           "type": "richText",
           "id": "fldP9VO6dJu8EBCTp",
           "name": "Notes"
-        },
-        {
-          "type": "richText",
-          "id": "fldstpV8FTtRIrssV",
-          "name": "Long Text"
-        },
-        {
-          "type": "url",
-          "id": "fld9heV9t05quo0do",
-          "name": "Claude.AI URL"
-        },
-        {
-          "type": "formula",
-          "options": {
-            "isValid": true,
-            "formula": "\"https://airtable.com/appSX4P3En4AWPyyG/tblYQbyKJJErXkZro/viwuQwJir4WERNrqE/\" & RECORD_ID()",
-            "referencedFieldIds": [],
-            "result": {
-              "type": "singleLineText"
-            }
-          },
-          "id": "fldoQo5GpI9RzyXHd",
-          "name": "Record_URL",
-          "description": "Generates a URL to the current record"
-        },
-        {
-          "type": "multilineText",
-          "id": "fldtIf7HsdUSygQZh",
-          "name": "G Cal Event URL"
-        },
-        {
-          "type": "url",
-          "id": "fld3TfaC4W2QZ17uv",
-          "name": "Google Gemini URL"
-        },
-        {
-          "type": "url",
-          "id": "fldXfkVYeO2Y2R7vH",
-          "name": "Perplexity URL"
-        },
-        {
-          "type": "url",
-          "id": "fldAGodAZ0WZP2B97",
-          "name": "GitHub URL"
-        },
-        {
-          "type": "url",
-          "id": "flduDb5xQaWDn7u4q",
-          "name": "ChatGPT URL"
-        },
-        {
-          "type": "multipleRecordLinks",
-          "options": {
-            "linkedTableId": "tblYQbyKJJErXkZro",
-            "isReversed": false,
-            "prefersSingleRecordLink": true,
-            "inverseLinkFieldId": "fldRtf2reDlEV8S9Z"
-          },
-          "id": "fldI8JWRgKY1348Up",
-          "name": "Parent"
         },
         {
           "type": "multipleRecordLinks",
@@ -3219,40 +3282,6 @@
           "name": "Participants"
         },
         {
-          "type": "singleSelect",
-          "options": {
-            "choices": [
-              {
-                "id": "selqqlv5pdp7IP9O0",
-                "name": "Pending",
-                "color": "blueLight2"
-              },
-              {
-                "id": "selW36eArnjBmPaN3",
-                "name": "Scheduled",
-                "color": "greenLight2"
-              },
-              {
-                "id": "seloYxEvsKZeQH6tE",
-                "name": "Completed",
-                "color": "orangeLight2"
-              },
-              {
-                "id": "selD6QmE74Z8gh1sJ",
-                "name": "Archived",
-                "color": "cyanLight2"
-              },
-              {
-                "id": "selQ1mHq7WDCOVtIq",
-                "name": "Cancelled",
-                "color": "tealLight2"
-              }
-            ]
-          },
-          "id": "fldvXRj5JUVh7NG9S",
-          "name": "Status"
-        },
-        {
           "type": "checkbox",
           "options": {
             "icon": "check",
@@ -3260,27 +3289,6 @@
           },
           "id": "fldP9b4dWif5GMHK0",
           "name": "Add to Google"
-        },
-        {
-          "type": "createdTime",
-          "options": {
-            "result": {
-              "type": "dateTime",
-              "options": {
-                "dateFormat": {
-                  "name": "local",
-                  "format": "l"
-                },
-                "timeFormat": {
-                  "name": "12hour",
-                  "format": "h:mma"
-                },
-                "timeZone": "client"
-              }
-            }
-          },
-          "id": "fldphRwWJsdA4Gj5N",
-          "name": "Created (At)"
         },
         {
           "type": "formula",
@@ -3529,27 +3537,6 @@
           "type": "formula",
           "options": {
             "isValid": true,
-            "formula": "DATEADD({fld43BW7fjYMrLjs9}, 1,'year')",
-            "referencedFieldIds": [
-              "fld43BW7fjYMrLjs9"
-            ],
-            "result": {
-              "type": "date",
-              "options": {
-                "dateFormat": {
-                  "name": "us",
-                  "format": "M/D/YYYY"
-                }
-              }
-            }
-          },
-          "id": "fldNXbcEesjOSbmi8",
-          "name": "Anniversary Next Year"
-        },
-        {
-          "type": "formula",
-          "options": {
-            "isValid": true,
             "formula": "DATEADD({fld43BW7fjYMrLjs9}, 1,'month')",
             "referencedFieldIds": [
               "fld43BW7fjYMrLjs9"
@@ -3642,6 +3629,11 @@
           },
           "id": "fldzJ4MxylfnXk4Xg",
           "name": "Created Month/Year"
+        },
+        {
+          "type": "richText",
+          "id": "fldstpV8FTtRIrssV",
+          "name": "Long Text"
         },
         {
           "type": "singleLineText",
@@ -3876,6 +3868,11 @@
           "name": "Fam Reminders Form"
         },
         {
+          "type": "url",
+          "id": "fld9heV9t05quo0do",
+          "name": "Claude.AI URL"
+        },
+        {
           "type": "singleLineText",
           "id": "fld96OBOX5LwVbnM8",
           "name": "pronunciation"
@@ -3899,28 +3896,20 @@
           "type": "formula",
           "options": {
             "isValid": true,
-            "formula": "DATEADD(\n  DATETIME_PARSE(\n    DATETIME_FORMAT({fld43BW7fjYMrLjs9}, 'YYYY-MM-DD') & 'T00:00:00',\n    'YYYY-MM-DD\\\\THH:mm:ss'\n  ),\n  4,\n  'hours'\n)\n",
-            "referencedFieldIds": [
-              "fld43BW7fjYMrLjs9"
-            ],
+            "formula": "\"https://airtable.com/appSX4P3En4AWPyyG/tblYQbyKJJErXkZro/viwuQwJir4WERNrqE/\" & RECORD_ID()",
+            "referencedFieldIds": [],
             "result": {
-              "type": "dateTime",
-              "options": {
-                "dateFormat": {
-                  "name": "local",
-                  "format": "l"
-                },
-                "timeFormat": {
-                  "name": "12hour",
-                  "format": "h:mma"
-                },
-                "timeZone": "America/New_York"
-              }
+              "type": "singleLineText"
             }
           },
-          "id": "fldjnOKpvnunZ5QNT",
-          "name": "Set To Midnight",
-          "description": "Sets the Start Time to midnight of the same day."
+          "id": "fldoQo5GpI9RzyXHd",
+          "name": "Record_URL",
+          "description": "Generates a URL to the current record"
+        },
+        {
+          "type": "multilineText",
+          "id": "fldtIf7HsdUSygQZh",
+          "name": "G Cal Event URL"
         },
         {
           "type": "singleLineText",
@@ -4228,6 +4217,11 @@
           "name": "Current Hour"
         },
         {
+          "type": "url",
+          "id": "fld3TfaC4W2QZ17uv",
+          "name": "Google Gemini URL"
+        },
+        {
           "type": "autoNumber",
           "id": "fldCRJe4MuLCPAQzE",
           "name": "Autonumber"
@@ -4257,6 +4251,11 @@
           },
           "id": "fldJDf881waFTMSek",
           "name": "Last day selected"
+        },
+        {
+          "type": "url",
+          "id": "fldXfkVYeO2Y2R7vH",
+          "name": "Perplexity URL"
         },
         {
           "type": "formula",
@@ -4333,9 +4332,19 @@
           "name": "mnemonic prompt"
         },
         {
+          "type": "url",
+          "id": "fldAGodAZ0WZP2B97",
+          "name": "GitHub URL"
+        },
+        {
           "type": "multilineText",
           "id": "fldHCVP81XnyxIKcc",
           "name": "Interface Record Detail"
+        },
+        {
+          "type": "url",
+          "id": "flduDb5xQaWDn7u4q",
+          "name": "ChatGPT URL"
         },
         {
           "type": "checkbox",
