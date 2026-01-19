@@ -1,6 +1,6 @@
 # Fields Reference (Auto-Generated)
 
-> Generated from Airtable schema on 2026-01-12 09:37:07
+> Generated from Airtable schema on 2026-01-19 09:39:11
 
 This document contains the actual schema from your Airtable base. Use this as the source of truth for updating your fields documentation.
 
@@ -1181,7 +1181,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 ### Sub Type
 
 - **Field ID**: `fldVp0MgHf11YNjud`
-- **Type**: Multiple Select (166 options)
+- **Type**: Multiple Select (167 options)
 - **Options**:
   - 2024 Election (cyanLight2)
   - Academic debate (redLight1)
@@ -1349,6 +1349,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Béla Tarr (tealLight2)
   - salman rushdie (tealLight1)
   - free will (orangeLight1)
+  - susan glasser (greenBright)
 
 ### Sync lock
 

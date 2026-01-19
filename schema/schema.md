@@ -1,7 +1,7 @@
 # Airtable Base Schema
 
 > Auto-generated schema documentation
-> Generated: 2026-01-12 09:37:07
+> Generated: 2026-01-19 09:39:11
 
 ---
 
@@ -81,7 +81,7 @@
 | Anniversary Next Year | Formula |  |
 | Appt Type | Single Select (41 options) |  |
 | Research Type | Multiple Select (303 options) |  |
-| Sub Type | Multiple Select (166 options) |  |
+| Sub Type | Multiple Select (167 options) |  |
 | Description | Richtext |  |
 | Notes | Richtext |  |
 | Children (do not edit) | Link to Unknown |  |
