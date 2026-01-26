@@ -1,6 +1,6 @@
 # Fields Reference (Auto-Generated)
 
-> Generated from Airtable schema on 2026-01-19 09:39:11
+> Generated from Airtable schema on 2026-01-26 09:39:10
 
 This document contains the actual schema from your Airtable base. Use this as the source of truth for updating your fields documentation.
 
@@ -738,7 +738,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 ### Research Type
 
 - **Field ID**: `fldTOSyaubEtYdqwk`
-- **Type**: Multiple Select (303 options)
+- **Type**: Multiple Select (304 options)
 - **Options**:
   - 8a (cyanLight1)
   - actors (cyanBright)
@@ -1043,6 +1043,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - software (orangeLight2)
   - Job Offer (blueLight1)
   - router (cyanDark1)
+  - VIP Work (tealDark1)
 
 ### Reset Start URL
 
@@ -1523,8 +1524,8 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 - **formula**: 44 fields
   - Name
   - Set To Midnight
-  - Anniversary Next Year
   - Days Until
+  - Anniversary Next Year
   - Since Updated (seconds)
   - Hours Until
   - Date for Alerts
@@ -1587,29 +1588,29 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Words Window Start (from Words Settings)
 - **multipleRecordLinks**: 12 fields
   - Parent
-  - Children (do not edit)
   - Health Care Provider
   - Parent Record (old)
   - Sub Record (old)
   - Link to Research
   - Learning Experience
   - From field: Parent (Canonical)
+  - Children (do not edit)
   - From field: Children (new)
   - Prev Parent (new)
   - From field: Prev Parent (new)
   - Words Settings
 - **multipleSelects**: 3 fields
   - Research Type
-  - Sub Type
   - Participants
+  - Sub Type
 - **number**: 2 fields
   - New Event in Days
   - SelectionCount
 - **phoneNumber**: 1 fields
   - Phone
 - **richText**: 3 fields
-  - Description
   - Notes
+  - Description
   - Long Text
 - **singleLineText**: 14 fields
   - Title

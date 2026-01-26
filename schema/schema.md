@@ -1,7 +1,7 @@
 # Airtable Base Schema
 
 > Auto-generated schema documentation
-> Generated: 2026-01-19 09:39:11
+> Generated: 2026-01-26 09:39:10
 
 ---
 
@@ -72,36 +72,35 @@
 | Field Name | Type | Description |
 |------------|------|-------------|
 | Name | Formula | Concatenates Title and formatted Start Time unless Appt Type is 'From Research'. |
+| Status | Single Select (5 options) |  |
+| Title | Singlelinetext |  |
+| Notes | Richtext |  |
 | Parent | Link to Unknown |  |
-| Created (At) | Createdtime |  |
 | Start Time | Datetime |  |
 | End Time | Datetime |  |
 | Set To Midnight | Formula | Sets the Start Time to midnight of the same day. |
-| Status | Single Select (5 options) |  |
-| Anniversary Next Year | Formula |  |
 | Appt Type | Single Select (41 options) |  |
-| Research Type | Multiple Select (303 options) |  |
-| Sub Type | Multiple Select (167 options) |  |
+| Research Type | Multiple Select (304 options) |  |
 | Description | Richtext |  |
-| Notes | Richtext |  |
-| Children (do not edit) | Link to Unknown |  |
+| Alerts Trigger | Checkbox |  |
+| All Day Event? | Checkbox |  |
+| Participants | Multiple Select (52 options) |  |
+| Add to Google | Checkbox |  |
+| G Cal Event ID | Multilinetext |  |
+| Created (At) | Createdtime |  |
 | Days Until | Formula |  |
+| Anniversary Next Year | Formula |  |
+| Sub Type | Multiple Select (167 options) |  |
 | New Event in Days | Number |  |
 | Since Updated (seconds) | Formula |  |
 | Hours Until | Formula |  |
 | Date for Alerts | Formula | Formats the Start Time to 'YYYY-MM-DD HH:mm' for 24-hour time display. |
 | Alerts | Formula | Generates alerts based on the number of days, hours, or seconds until an event. |
-| Alerts Trigger | Checkbox |  |
-| All Day Event? | Checkbox |  |
-| Title | Singlelinetext |  |
 | Location | Singlelinetext |  |
 | Phone | Phonenumber |  |
-| Participants | Multiple Select (52 options) |  |
-| Add to Google | Checkbox |  |
 | Since Created (seconds) | Formula |  |
 | Updated | Lastmodifiedtime |  |
 | Date Check | Formula |  |
-| G Cal Event ID | Multilinetext |  |
 | Health Care Provider | Link to Unknown |  |
 | Provider Name (from Health Care Provider) | Multiplelookupvalues |  |
 | Specialty (from Health Care Provider) | Multiplelookupvalues |  |
@@ -185,6 +184,7 @@
 | From GCal | Checkbox |  |
 | Interface Record Detail URL | Button | Outputs the URL from the Interface Record Detail field for use in a button. |
 | From field: Parent (Canonical) | Link to Unknown |  |
+| Children (do not edit) | Link to Unknown |  |
 | From field: Children (new) | Link to Unknown |  |
 | Sync lock | Checkbox |  |
 | Old Parent (snapshot) | Singlelinetext |  |
