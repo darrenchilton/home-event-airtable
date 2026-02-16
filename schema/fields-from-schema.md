@@ -1,6 +1,6 @@
 # Fields Reference (Auto-Generated)
 
-> Generated from Airtable schema on 2026-02-09 10:06:41
+> Generated from Airtable schema on 2026-02-16 09:59:28
 
 This document contains the actual schema from your Airtable base. Use this as the source of truth for updating your fields documentation.
 
@@ -738,7 +738,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 ### Research Type
 
 - **Field ID**: `fldTOSyaubEtYdqwk`
-- **Type**: Multiple Select (304 options)
+- **Type**: Multiple Select (307 options)
 - **Options**:
   - 8a (cyanLight1)
   - actors (cyanBright)
@@ -1044,6 +1044,9 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Job Offer (blueLight1)
   - router (cyanDark1)
   - VIP Work (tealDark1)
+  - Work Technical (yellowBright)
+  - DMV (greenLight1)
+  - epstein (blueBright)
 
 ### Reset Start URL
 
