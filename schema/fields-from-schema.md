@@ -1,6 +1,6 @@
 # Fields Reference (Auto-Generated)
 
-> Generated from Airtable schema on 2026-02-16 09:59:28
+> Generated from Airtable schema on 2026-02-23 09:59:50
 
 This document contains the actual schema from your Airtable base. Use this as the source of truth for updating your fields documentation.
 
@@ -2218,15 +2218,16 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 ### Status
 
 - **Field ID**: `fldru8MksWIg5OmEQ`
-- **Type**: Single Select (2 options)
+- **Type**: Single Select (3 options)
 - **Options**:
   - Pending (blueLight2)
   - Posted (cyanLight2)
+  - Status (blueLight2)
 
 ### Type
 
 - **Field ID**: `fldlphI5cyVKfiFhM`
-- **Type**: Single Select (11 options)
+- **Type**: Single Select (12 options)
 - **Options**:
   -  (blueLight2)
   - TRANSFER (cyanLight2)
@@ -2239,6 +2240,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - CHECK (purpleLight2)
   - CREDIT (grayLight2)
   - RETURNITEM (blueLight1)
+  - Type (blueLight2)
 
 ### Withdrawal
 

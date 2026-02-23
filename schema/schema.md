@@ -1,7 +1,7 @@
 # Airtable Base Schema
 
 > Auto-generated schema documentation
-> Generated: 2026-02-16 09:59:28
+> Generated: 2026-02-23 09:59:50
 
 ---
 
@@ -321,8 +321,8 @@
 | Field Name | Type | Description |
 |------------|------|-------------|
 | Date | Date |  |
-| Status | Single Select (2 options) |  |
-| Type | Single Select (11 options) |  |
+| Status | Single Select (3 options) |  |
+| Type | Single Select (12 options) |  |
 | Withdrawal | Currency |  |
 | Deposit | Currency |  |
 | Description | Singlelinetext |  |

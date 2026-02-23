@@ -5741,6 +5741,11 @@
                 "id": "selFMDcMdFbXXhIZT",
                 "name": "Posted",
                 "color": "cyanLight2"
+              },
+              {
+                "id": "selNhztR5qZk2UfrQ",
+                "name": "Status",
+                "color": "blueLight2"
               }
             ]
           },
@@ -5805,6 +5810,11 @@
                 "id": "selukRsLiX15D3Kpd",
                 "name": "RETURNITEM",
                 "color": "blueLight1"
+              },
+              {
+                "id": "selLa7F2BXaNHjQZv",
+                "name": "Type",
+                "color": "blueLight2"
               }
             ]
           },
@@ -6010,7 +6020,7 @@
         },
         {
           "id": "viw2fCuYeRcaAIc6G",
-          "name": "TEMP For AI",
+          "name": "TEMP For SN",
           "type": "grid"
         },
         {
