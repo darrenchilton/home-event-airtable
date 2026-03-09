@@ -1,6 +1,6 @@
 # Fields Reference (Auto-Generated)
 
-> Generated from Airtable schema on 2026-03-02 09:55:40
+> Generated from Airtable schema on 2026-03-09 09:56:58
 
 This document contains the actual schema from your Airtable base. Use this as the source of truth for updating your fields documentation.
 
@@ -156,7 +156,7 @@ This document contains the actual schema from your Airtable base. Use this as th
 ### Appt Type
 
 - **Field ID**: `fldhK5IfHRAso54iK`
-- **Type**: Single Select (41 options)
+- **Type**: Single Select (42 options)
 - **Options**:
   - Add to Plex (redBright)
   - AI (yellowDark1)
@@ -164,6 +164,7 @@ This document contains the actual schema from your Airtable base. Use this as th
   - Automotive (yellowBright)
   - Consulting (pinkDark1)
   - Cut Grass (cyanBright)
+  - DMV (pinkBright)
   - DRS Appt (orangeDark1)
   - Entertainment (purpleDark1)
   - Equipment/Services (greenLight1)
@@ -608,7 +609,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 ### Participants
 
 - **Field ID**: `fldv3PBQ3OI8QEkpQ`
-- **Type**: Multiple Select (52 options)
+- **Type**: Multiple Select (54 options)
 - **Options**:
   - darrenchilton@gmail.com (cyanLight2)
   - slavicany@gmail.com (blueLight2)
@@ -662,6 +663,8 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - farley13@gmail.com (blueLight2)
   - michele.chenette@dmv.ny.gov (blueLight2)
   - M.Hauber67@gmail.com  (blueDark1)
+  - carriesvips@gmail.com (blueLight2)
+  - lillie@petpocketbook.com (cyanLight2)
 
 ### Perplexity URL
 

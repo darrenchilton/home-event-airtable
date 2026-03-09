@@ -1,7 +1,7 @@
 # Airtable Base Schema
 
 > Auto-generated schema documentation
-> Generated: 2026-03-02 09:55:40
+> Generated: 2026-03-09 09:56:58
 
 ---
 
@@ -79,12 +79,12 @@
 | Start Time | Datetime |  |
 | End Time | Datetime |  |
 | Set To Midnight | Formula | Sets the Start Time to midnight of the same day. |
-| Appt Type | Single Select (41 options) |  |
+| Appt Type | Single Select (42 options) |  |
 | Research Type | Multiple Select (307 options) |  |
 | Description | Richtext |  |
 | Alerts Trigger | Checkbox |  |
 | All Day Event? | Checkbox |  |
-| Participants | Multiple Select (52 options) |  |
+| Participants | Multiple Select (54 options) |  |
 | Add to Google | Checkbox |  |
 | G Cal Event ID | Multilinetext |  |
 | Created (At) | Createdtime |  |
