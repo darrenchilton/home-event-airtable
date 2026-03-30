@@ -1,7 +1,7 @@
 # Airtable Base Schema
 
 > Auto-generated schema documentation
-> Generated: 2026-03-23 10:06:19
+> Generated: 2026-03-30 10:20:19
 
 ---
 

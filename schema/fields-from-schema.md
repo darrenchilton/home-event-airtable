@@ -1,6 +1,6 @@
 # Fields Reference (Auto-Generated)
 
-> Generated from Airtable schema on 2026-03-23 10:06:19
+> Generated from Airtable schema on 2026-03-30 10:20:19
 
 This document contains the actual schema from your Airtable base. Use this as the source of truth for updating your fields documentation.
 
