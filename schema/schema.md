@@ -1,7 +1,7 @@
 # Airtable Base Schema
 
 > Auto-generated schema documentation
-> Generated: 2026-04-06 10:13:12
+> Generated: 2026-04-13 10:49:16
 
 ---
 
@@ -80,7 +80,7 @@
 | End Time | Datetime |  |
 | Set To Midnight | Formula | Sets the Start Time to midnight of the same day. |
 | Appt Type | Single Select (42 options) |  |
-| Research Type | Multiple Select (310 options) |  |
+| Research Type | Multiple Select (311 options) |  |
 | Description | Richtext |  |
 | Alerts Trigger | Checkbox |  |
 | All Day Event? | Checkbox |  |
