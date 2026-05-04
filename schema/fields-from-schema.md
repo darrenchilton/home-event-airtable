@@ -1,6 +1,6 @@
 # Fields Reference (Auto-Generated)
 
-> Generated from Airtable schema on 2026-04-27 11:07:42
+> Generated from Airtable schema on 2026-05-04 11:07:36
 
 This document contains the actual schema from your Airtable base. Use this as the source of truth for updating your fields documentation.
 
@@ -1645,10 +1645,10 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Work Timer Type
 - **url**: 6 fields
   - Claude.AI URL
+  - ChatGPT URL
   - Google Gemini URL
   - Perplexity URL
   - GitHub URL
-  - ChatGPT URL
   - Airtable URL
 
 ---
@@ -4676,7 +4676,7 @@ CONCATENATE({fldYky9JmPsXETPag},"-",{fldXwQfYYM3dTQGVT},"-",{fldPnKZ2IYt0mDEpq})
 
 - **Field ID**: `fld97HyY3HnnZSQD9`
 - **Type**: Rollup
-- **Rollup Field**: `fldEVqyty5wYXRkLT`
+- **Rollup Field**: `fldSBxahTfGgcUT4y`
 - **Function**: []
 
 ### Record ID

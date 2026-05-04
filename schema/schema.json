@@ -2360,6 +2360,16 @@
           "name": "G Cal Event ID"
         },
         {
+          "type": "url",
+          "id": "fld9heV9t05quo0do",
+          "name": "Claude.AI URL"
+        },
+        {
+          "type": "url",
+          "id": "flduDb5xQaWDn7u4q",
+          "name": "ChatGPT URL"
+        },
+        {
           "type": "createdTime",
           "options": {
             "result": {
@@ -3927,11 +3937,6 @@
           "name": "Fam Reminders Form"
         },
         {
-          "type": "url",
-          "id": "fld9heV9t05quo0do",
-          "name": "Claude.AI URL"
-        },
-        {
           "type": "singleLineText",
           "id": "fld96OBOX5LwVbnM8",
           "name": "pronunciation"
@@ -4399,11 +4404,6 @@
           "type": "multilineText",
           "id": "fldHCVP81XnyxIKcc",
           "name": "Interface Record Detail"
-        },
-        {
-          "type": "url",
-          "id": "flduDb5xQaWDn7u4q",
-          "name": "ChatGPT URL"
         },
         {
           "type": "checkbox",
@@ -10660,7 +10660,7 @@
           "options": {
             "isValid": true,
             "recordLinkFieldId": "fldVkBLYHuMjkTo2t",
-            "fieldIdInLinkedTable": "fldEVqyty5wYXRkLT",
+            "fieldIdInLinkedTable": "fldSBxahTfGgcUT4y",
             "referencedFieldIds": [],
             "result": {
               "type": "number",

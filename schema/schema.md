@@ -1,7 +1,7 @@
 # Airtable Base Schema
 
 > Auto-generated schema documentation
-> Generated: 2026-04-27 11:07:42
+> Generated: 2026-05-04 11:07:36
 
 ---
 
@@ -87,6 +87,8 @@
 | Participants | Multiple Select (54 options) |  |
 | Add to Google | Checkbox |  |
 | G Cal Event ID | Multilinetext |  |
+| Claude.AI URL | Url |  |
+| ChatGPT URL | Url |  |
 | Created (At) | Createdtime |  |
 | Days Until | Formula |  |
 | Anniversary Next Year | Formula |  |
@@ -140,7 +142,6 @@
 | Current Date | Formula | Formats the current date and time to 'YYYY-MM-DD HH:MM' |
 | Seconds After | Formula |  |
 | Fam Reminders Form | Formula |  |
-| Claude.AI URL | Url |  |
 | pronunciation | Singlelinetext |  |
 | Attachment Image | Formula |  |
 | Record_URL | Formula | Generates a URL to the current record |
@@ -178,7 +179,6 @@
 | mnemonic prompt | Formula |  |
 | GitHub URL | Url |  |
 | Interface Record Detail | Multilinetext |  |
-| ChatGPT URL | Url |  |
 | Current Working | Checkbox |  |
 | Temp | Checkbox |  |
 | From GCal | Checkbox |  |
