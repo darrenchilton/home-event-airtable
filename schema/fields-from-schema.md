@@ -1,6 +1,6 @@
 # Fields Reference (Auto-Generated)
 
-> Generated from Airtable schema on 2026-05-11 12:13:40
+> Generated from Airtable schema on 2026-05-18 12:36:11
 
 This document contains the actual schema from your Airtable base. Use this as the source of truth for updating your fields documentation.
 
@@ -1396,7 +1396,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 - **Field ID**: `fldcmN8NuF6B54Htq`
 - **Type**: Formula
 - **Description**: Truncates the Title field to a maximum of 1000 characters
-- **Formula**: `MID({fldfmgCh93wZoHRDa}, 1, 2300)`
+- **Formula**: `MID({fldfmgCh93wZoHRDa}, 1, 2200)`
 - **Result Type**: singleLineText
 
 ### Truncated Title
@@ -1535,6 +1535,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - End Time
 - **formula**: 44 fields
   - Name
+  - Truncated Description
   - Set To Midnight
   - Days Until
   - Anniversary Next Year
@@ -1567,7 +1568,6 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Effort (minutes)
   - Check Delay
   - Truncated Title
-  - Truncated Description
   - Since Updated (days)
   - Current Time
   - Word Blackout
@@ -1613,16 +1613,16 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Words Settings
 - **multipleSelects**: 3 fields
   - Research Type
-  - Participants
   - Sub Type
+  - Participants
 - **number**: 2 fields
   - New Event in Days
   - SelectionCount
 - **phoneNumber**: 1 fields
   - Phone
 - **richText**: 3 fields
-  - Notes
   - Description
+  - Notes
   - Long Text
 - **singleLineText**: 14 fields
   - Title
@@ -1645,10 +1645,10 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Work Timer Type
 - **url**: 6 fields
   - Claude.AI URL
-  - ChatGPT URL
   - Google Gemini URL
   - Perplexity URL
   - GitHub URL
+  - ChatGPT URL
   - Airtable URL
 
 ---

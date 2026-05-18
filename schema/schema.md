@@ -1,7 +1,7 @@
 # Airtable Base Schema
 
 > Auto-generated schema documentation
-> Generated: 2026-05-11 12:13:40
+> Generated: 2026-05-18 12:36:11
 
 ---
 
@@ -72,37 +72,36 @@
 | Field Name | Type | Description |
 |------------|------|-------------|
 | Name | Formula | Concatenates Title and formatted Start Time unless Appt Type is 'From Research'. |
+| Description | Richtext |  |
+| Truncated Description | Formula | Truncates the Title field to a maximum of 1000 characters |
 | Status | Single Select (5 options) |  |
 | Title | Singlelinetext |  |
 | Notes | Richtext |  |
 | Parent | Link to Unknown |  |
+| Created (At) | Createdtime |  |
 | Start Time | Datetime |  |
 | End Time | Datetime |  |
 | Set To Midnight | Formula | Sets the Start Time to midnight of the same day. |
-| Appt Type | Single Select (42 options) |  |
-| Research Type | Multiple Select (311 options) |  |
-| Description | Richtext |  |
-| Alerts Trigger | Checkbox |  |
-| All Day Event? | Checkbox |  |
-| Participants | Multiple Select (54 options) |  |
-| Add to Google | Checkbox |  |
-| G Cal Event ID | Multilinetext |  |
-| Claude.AI URL | Url |  |
-| ChatGPT URL | Url |  |
-| Created (At) | Createdtime |  |
 | Days Until | Formula |  |
 | Anniversary Next Year | Formula |  |
+| Appt Type | Single Select (42 options) |  |
+| Research Type | Multiple Select (311 options) |  |
 | Sub Type | Multiple Select (169 options) |  |
 | New Event in Days | Number |  |
 | Since Updated (seconds) | Formula |  |
 | Hours Until | Formula |  |
 | Date for Alerts | Formula | Formats the Start Time to 'YYYY-MM-DD HH:mm' for 24-hour time display. |
 | Alerts | Formula | Generates alerts based on the number of days, hours, or seconds until an event. |
+| Alerts Trigger | Checkbox |  |
+| All Day Event? | Checkbox |  |
 | Location | Singlelinetext |  |
 | Phone | Phonenumber |  |
+| Participants | Multiple Select (54 options) |  |
+| Add to Google | Checkbox |  |
 | Since Created (seconds) | Formula |  |
 | Updated | Lastmodifiedtime |  |
 | Date Check | Formula |  |
+| G Cal Event ID | Multilinetext |  |
 | Health Care Provider | Link to Unknown |  |
 | Provider Name (from Health Care Provider) | Multiplelookupvalues |  |
 | Specialty (from Health Care Provider) | Multiplelookupvalues |  |
@@ -142,6 +141,7 @@
 | Current Date | Formula | Formats the current date and time to 'YYYY-MM-DD HH:MM' |
 | Seconds After | Formula |  |
 | Fam Reminders Form | Formula |  |
+| Claude.AI URL | Url |  |
 | pronunciation | Singlelinetext |  |
 | Attachment Image | Formula |  |
 | Record_URL | Formula | Generates a URL to the current record |
@@ -161,7 +161,6 @@
 | Month Delay | Checkbox |  |
 | Check Delay | Formula | Indicates whether the 'Month Delay' field is checked and it has been at least 30 days since the last update of the record. |
 | Truncated Title | Formula | Truncates the Title field to a maximum of 1000 characters |
-| Truncated Description | Formula | Truncates the Title field to a maximum of 1000 characters |
 | Since Updated (days) | Formula |  |
 | Learning Experience | Link to Unknown |  |
 | Current Time | Formula | Formats the current date and time to 'YYYY-MM-DD HH:MM' |
@@ -179,6 +178,7 @@
 | mnemonic prompt | Formula |  |
 | GitHub URL | Url |  |
 | Interface Record Detail | Multilinetext |  |
+| ChatGPT URL | Url |  |
 | Current Working | Checkbox |  |
 | Temp | Checkbox |  |
 | From GCal | Checkbox |  |
