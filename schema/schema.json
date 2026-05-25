@@ -147,6 +147,1575 @@
           "description": "Concatenates Title and formatted Start Time unless Appt Type is 'From Research'."
         },
         {
+          "type": "multipleSelects",
+          "options": {
+            "choices": [
+              {
+                "id": "seleB3ofABdiZGsfp",
+                "name": "8a",
+                "color": "cyanLight1"
+              },
+              {
+                "id": "sel6oSADbVkYg3aCk",
+                "name": "actors",
+                "color": "cyanBright"
+              },
+              {
+                "id": "seli4Iwk3YJpOtHPA",
+                "name": "aging",
+                "color": "cyanBright"
+              },
+              {
+                "id": "selMAJI4WWo9ikqZP",
+                "name": "AI",
+                "color": "grayDark1"
+              },
+              {
+                "id": "sel4cB96eV8KEqpoo",
+                "name": "ai business",
+                "color": "blueDark1"
+              },
+              {
+                "id": "selyTBqZcaf0iB2IG",
+                "name": "ai capability",
+                "color": "blueDark1"
+              },
+              {
+                "id": "selRkvDu3EuJoMXbh",
+                "name": "ai coding",
+                "color": "redBright"
+              },
+              {
+                "id": "selGLOPKIHDHj57fy",
+                "name": "ai commentary",
+                "color": "orangeLight1"
+              },
+              {
+                "id": "selTqTVcvaxG4dhDB",
+                "name": "ai psychosis",
+                "color": "redLight2"
+              },
+              {
+                "id": "selBAT161E2wAttS5",
+                "name": "ai resistence",
+                "color": "purpleLight2"
+              },
+              {
+                "id": "selGwmF3MF4EpmXzk",
+                "name": "ai safety",
+                "color": "grayDark1"
+              },
+              {
+                "id": "selr75IqcAZMs3eQJ",
+                "name": "AI Tools",
+                "color": "redBright"
+              },
+              {
+                "id": "sel0P4cXVGWaPnNSI",
+                "name": "ai training",
+                "color": "purpleLight2"
+              },
+              {
+                "id": "selrU3CmOSbVOdpdc",
+                "name": "Airtable",
+                "color": "orangeLight1"
+              },
+              {
+                "id": "selmGYmghflYwaLeL",
+                "name": "albany",
+                "color": "blueLight2"
+              },
+              {
+                "id": "selNAyOw4Rw7SsHBn",
+                "name": "Albert Court",
+                "color": "greenBright"
+              },
+              {
+                "id": "selxQ4rinCREwkenC",
+                "name": "alcohol",
+                "color": "orangeLight2"
+              },
+              {
+                "id": "selcllbjUTOHUtXRE",
+                "name": "aliens",
+                "color": "yellowLight1"
+              },
+              {
+                "id": "selC0CKqezVOa9Dzt",
+                "name": "American Dream",
+                "color": "tealBright"
+              },
+              {
+                "id": "selYk5euSMdOnRcfp",
+                "name": "Anniversary",
+                "color": "cyanBright"
+              },
+              {
+                "id": "selyaMpMsaXzX5THf",
+                "name": "Anthropology",
+                "color": "grayDark1"
+              },
+              {
+                "id": "selJpIAEkLZ2Q7pgL",
+                "name": "Anti-Corruption Protests",
+                "color": "orangeBright"
+              },
+              {
+                "id": "selGb3KFi9a0Zw3Lw",
+                "name": "anti-trump",
+                "color": "pinkLight1"
+              },
+              {
+                "id": "sel6RGC1k7iiWple8",
+                "name": "apple",
+                "color": "grayDark1"
+              },
+              {
+                "id": "sel08zh3VDKKjXDf9",
+                "name": "appliance",
+                "color": "grayLight2"
+              },
+              {
+                "id": "sel6SCHeqLE4DOA2m",
+                "name": "Architecture",
+                "color": "purpleLight1"
+              },
+              {
+                "id": "seliVihbq93MOuJGI",
+                "name": "Archive",
+                "color": "tealLight2"
+              },
+              {
+                "id": "sel0YsjFyYKFRe4s8",
+                "name": "Art",
+                "color": "cyanLight1"
+              },
+              {
+                "id": "selPDcKnIBh57c4kr",
+                "name": "Astronomy",
+                "color": "purpleLight1"
+              },
+              {
+                "id": "selMkzSzhmcdT2N47",
+                "name": "audiobooks",
+                "color": "blueLight1"
+              },
+              {
+                "id": "seluHo9Q8DyonBQkp",
+                "name": "audit trails",
+                "color": "grayLight1"
+              },
+              {
+                "id": "selEt6rU6AVUxUb9W",
+                "name": "Authoritarianism",
+                "color": "purpleBright"
+              },
+              {
+                "id": "selGrN8QfThS06JSe",
+                "name": "automations",
+                "color": "blueBright"
+              },
+              {
+                "id": "selbyulkUeEycQaos",
+                "name": "Automotive",
+                "color": "orangeLight2"
+              },
+              {
+                "id": "sel64kNUl203hy6OU",
+                "name": "Balkan Politics",
+                "color": "purpleLight2"
+              },
+              {
+                "id": "sel8q7Wx3eYTfpXPO",
+                "name": "beats",
+                "color": "redBright"
+              },
+              {
+                "id": "sel4c2eouTDfXbwTp",
+                "name": "Behavioral Economic",
+                "color": "redLight1"
+              },
+              {
+                "id": "selzCe5VGw1gkbY5P",
+                "name": "bikes",
+                "color": "purpleLight1"
+              },
+              {
+                "id": "sel6PnJ1D4mbRL7E6",
+                "name": "Biogrpahy",
+                "color": "grayDark1"
+              },
+              {
+                "id": "selOTYn2EGlfLXsLu",
+                "name": "Birthday",
+                "color": "tealLight1"
+              },
+              {
+                "id": "selzmHPoQqrZQM2Qp",
+                "name": "Black Lotus",
+                "color": "orangeBright"
+              },
+              {
+                "id": "sellMzEvbvmgJkQSG",
+                "name": "Book Review/Literary Criticism",
+                "color": "pinkDark1"
+              },
+              {
+                "id": "selbtsFC8nSQjmYhV",
+                "name": "Bullshit",
+                "color": "orangeLight2"
+              },
+              {
+                "id": "selLcqAHARWvKLg8R",
+                "name": "Business Ideas",
+                "color": "redBright"
+              },
+              {
+                "id": "selGT3L5EtavGn3Jl",
+                "name": "Business Read",
+                "color": "cyanLight2"
+              },
+              {
+                "id": "selCfieuEyF3aDuza",
+                "name": "calendar",
+                "color": "tealLight2"
+              },
+              {
+                "id": "selWwDkFH7V3rL1ED",
+                "name": "Cancel",
+                "color": "redLight2"
+              },
+              {
+                "id": "selVEX8h2JXwNUyeq",
+                "name": "capitulation",
+                "color": "cyanLight2"
+              },
+              {
+                "id": "seleIU5WgRJSqmKtf",
+                "name": "Career & Professional",
+                "color": "pinkBright"
+              },
+              {
+                "id": "selpjLHjPtdWxrUma",
+                "name": "charlie",
+                "color": "greenLight2"
+              },
+              {
+                "id": "selSIfwC8U3icLiIh",
+                "name": "Cholesterol",
+                "color": "orangeLight1"
+              },
+              {
+                "id": "sel6Z1wAUAzKbkQqS",
+                "name": "christianity",
+                "color": "grayLight2"
+              },
+              {
+                "id": "seloGphHy27xY4Iwl",
+                "name": "christmas",
+                "color": "pinkBright"
+              },
+              {
+                "id": "selQt8t68hkz2S8Hn",
+                "name": "Cinema",
+                "color": "cyanDark1"
+              },
+              {
+                "id": "selXzbIvQHRLbSwnz",
+                "name": "classic",
+                "color": "orangeDark1"
+              },
+              {
+                "id": "selXDLVdayFsdmGWO",
+                "name": "cleaning",
+                "color": "purpleBright"
+              },
+              {
+                "id": "selNvrbymPIQbjtWz",
+                "name": "Climate",
+                "color": "yellowLight1"
+              },
+              {
+                "id": "selXeMNRHJv5j6TAQ",
+                "name": "Clothes",
+                "color": "greenBright"
+              },
+              {
+                "id": "selVmFJrSoVtyVMTj",
+                "name": "coding",
+                "color": "blueDark1"
+              },
+              {
+                "id": "seloiBqT4oLp4qdkg",
+                "name": "collective memory",
+                "color": "grayBright"
+              },
+              {
+                "id": "seleSiaFTgXtdqDmN",
+                "name": "commentators",
+                "color": "pinkDark1"
+              },
+              {
+                "id": "selnUzUSdKuulAYlc",
+                "name": "communication",
+                "color": "orangeLight2"
+              },
+              {
+                "id": "sel6uLjVV1OQ043JQ",
+                "name": "Computer History",
+                "color": "greenDark1"
+              },
+              {
+                "id": "sel2e4ltb8DNRFgeU",
+                "name": "Concept",
+                "color": "grayLight1"
+              },
+              {
+                "id": "sel34uO6Bcuw8z8mQ",
+                "name": "Conservatism",
+                "color": "blueBright"
+              },
+              {
+                "id": "selJGAEUiC2YuCM3n",
+                "name": "consider",
+                "color": "orangeDark1"
+              },
+              {
+                "id": "selEneXmIcJc0il7Y",
+                "name": "conspiracy",
+                "color": "tealLight1"
+              },
+              {
+                "id": "selLpEIKoRdVutyv7",
+                "name": "Consulting",
+                "color": "yellowLight2"
+              },
+              {
+                "id": "selVJHCBx68YHGetc",
+                "name": "Cooking",
+                "color": "purpleBright"
+              },
+              {
+                "id": "selW4CaqjCnqcWOAN",
+                "name": "CoreWorkstream",
+                "color": "orangeBright"
+              },
+              {
+                "id": "selK8BtcS1aWI2len",
+                "name": "Course",
+                "color": "redDark1"
+              },
+              {
+                "id": "selxYeygx5xq4sc1G",
+                "name": "covid",
+                "color": "tealLight1"
+              },
+              {
+                "id": "sel8Nk8dDI98aKqBd",
+                "name": "Creativity",
+                "color": "tealBright"
+              },
+              {
+                "id": "selRmjY9y2wtqhxya",
+                "name": "Crime",
+                "color": "orangeBright"
+              },
+              {
+                "id": "selWmdgvqBXwVwl5B",
+                "name": "Cross-Cultural Solidarity",
+                "color": "grayLight2"
+              },
+              {
+                "id": "selFE7FddipUB1LFy",
+                "name": "crypto crime",
+                "color": "blueLight1"
+              },
+              {
+                "id": "selKlE7sM1J8DFeDW",
+                "name": "ct scans",
+                "color": "yellowBright"
+              },
+              {
+                "id": "selHGr2G56ANOOjO8",
+                "name": "cults",
+                "color": "yellowBright"
+              },
+              {
+                "id": "selcaudfcZeajR69r",
+                "name": "culture",
+                "color": "greenLight1"
+              },
+              {
+                "id": "selXYtCrbQ46R1How",
+                "name": "Current",
+                "color": "cyanLight2"
+              },
+              {
+                "id": "selE3yoaWX7uS1yck",
+                "name": "customer support",
+                "color": "tealDark1"
+              },
+              {
+                "id": "sel2xW2jFVMJh02PM",
+                "name": "data",
+                "color": "blueLight2"
+              },
+              {
+                "id": "selNOc1KgX2F3Wbxm",
+                "name": "dc lungs",
+                "color": "cyanDark1"
+              },
+              {
+                "id": "selpZgsDjnwKJVaIk",
+                "name": "DC Vaccine",
+                "color": "greenBright"
+              },
+              {
+                "id": "sellit48XxZmXv9ni",
+                "name": "dcmacbookpro",
+                "color": "yellowLight1"
+              },
+              {
+                "id": "selMhPkPGEF9TxGAK",
+                "name": "death",
+                "color": "greenLight1"
+              },
+              {
+                "id": "selMsBM9VuvUp8Zvs",
+                "name": "deck",
+                "color": "pinkBright"
+              },
+              {
+                "id": "selyPr4ivwhsyNMV1",
+                "name": "Dementia",
+                "color": "blueDark1"
+              },
+              {
+                "id": "selai0SS2Rp9izvVz",
+                "name": "Democratic Resistance",
+                "color": "cyanBright"
+              },
+              {
+                "id": "selGiFvn8U4aNAxld",
+                "name": "Dental",
+                "color": "greenBright"
+              },
+              {
+                "id": "sellz1KjumphJYUFS",
+                "name": "deviance",
+                "color": "greenDark1"
+              },
+              {
+                "id": "selrwoLuRyewZIZbA",
+                "name": "disputes",
+                "color": "orangeBright"
+              },
+              {
+                "id": "selvNgcRpnt8sxUsM",
+                "name": "DMV",
+                "color": "greenLight1"
+              },
+              {
+                "id": "selxWMEHFtXrcPSff",
+                "name": "Documentaries",
+                "color": "yellowLight2"
+              },
+              {
+                "id": "selyfoMvpOzjYcPHC",
+                "name": "Dog Stuff",
+                "color": "grayLight2"
+              },
+              {
+                "id": "sel70HAxu0Ri3LSD2",
+                "name": "dogs",
+                "color": "pinkLight2"
+              },
+              {
+                "id": "sel12behBQGdvU6Hp",
+                "name": "Dreams",
+                "color": "redDark1"
+              },
+              {
+                "id": "selvPhnYVMNNwRbz4",
+                "name": "DRIVES",
+                "color": "yellowLight2"
+              },
+              {
+                "id": "sel7h8seZpBekyHTe",
+                "name": "Economics",
+                "color": "pinkLight1"
+              },
+              {
+                "id": "selTNLSE3GJaEFQn5",
+                "name": "eddington",
+                "color": "grayLight1"
+              },
+              {
+                "id": "selpLLDiwUhujlU4f",
+                "name": "emoticon",
+                "color": "orangeDark1"
+              },
+              {
+                "id": "selRupvDjDU6P64AU",
+                "name": "emotional intelligence",
+                "color": "tealBright"
+              },
+              {
+                "id": "selCHAn48D3CAgwuR",
+                "name": "engineering",
+                "color": "tealLight1"
+              },
+              {
+                "id": "selEEAL3xF3R1tUyh",
+                "name": "enshittification",
+                "color": "pinkLight1"
+              },
+              {
+                "id": "sel6nvWnO9iX9DRTk",
+                "name": "Entertainment",
+                "color": "blueLight2"
+              },
+              {
+                "id": "selGvKqEMR6vebPpp",
+                "name": "Environment",
+                "color": "purpleDark1"
+              },
+              {
+                "id": "sel85mWUoMMIgqNlA",
+                "name": "epidemiology\\",
+                "color": "greenDark1"
+              },
+              {
+                "id": "selq9eyZsW5arOtx3",
+                "name": "epstein",
+                "color": "blueBright"
+              },
+              {
+                "id": "sel0v0PFv2uvLEUpO",
+                "name": "Equipment",
+                "color": "pinkBright"
+              },
+              {
+                "id": "seltrux5Fd0gukFOT",
+                "name": "evolution",
+                "color": "tealLight2"
+              },
+              {
+                "id": "selZxZSvYvUMUICoL",
+                "name": "Exercise",
+                "color": "tealLight1"
+              },
+              {
+                "id": "selCc2t2Zr7kJHDal",
+                "name": "eyes",
+                "color": "yellowLight2"
+              },
+              {
+                "id": "selgOQVo58fAsBbbO",
+                "name": "Family",
+                "color": "greenLight2"
+              },
+              {
+                "id": "selYwhqTXLbzRGrmd",
+                "name": "feature",
+                "color": "orangeLight1"
+              },
+              {
+                "id": "selZGiuP2S0Gmz1fP",
+                "name": "firewood",
+                "color": "purpleDark1"
+              },
+              {
+                "id": "seltESKedbHvCWDet",
+                "name": "forms",
+                "color": "pinkBright"
+              },
+              {
+                "id": "selXxp52d6F5sbCTt",
+                "name": "Franchising",
+                "color": "grayLight2"
+              },
+              {
+                "id": "sel5s91EgdM7FCCFo",
+                "name": "front end",
+                "color": "redLight1"
+              },
+              {
+                "id": "selvyQjT9Yd3pPqGE",
+                "name": "garage",
+                "color": "orangeLight2"
+              },
+              {
+                "id": "selSkVRY4HnkZp4o4",
+                "name": "Garden",
+                "color": "grayBright"
+              },
+              {
+                "id": "selc0WM7Vy0PxtNft",
+                "name": "gifts",
+                "color": "grayBright"
+              },
+              {
+                "id": "selviJrhyR0jMxWJR",
+                "name": "gore vidal",
+                "color": "grayBright"
+              },
+              {
+                "id": "selYd5uraiHMQIEjM",
+                "name": "Grateful Dead",
+                "color": "grayBright"
+              },
+              {
+                "id": "selZrW8LdBr2oOfcV",
+                "name": "Grief",
+                "color": "cyanDark1"
+              },
+              {
+                "id": "selSB80ZW9LbMP1KM",
+                "name": "Guides",
+                "color": "redLight1"
+              },
+              {
+                "id": "selRSTCbxm7qoqJRC",
+                "name": "Halloween",
+                "color": "redDark1"
+              },
+              {
+                "id": "selBZXaZIXTQKUZLZ",
+                "name": "head",
+                "color": "blueDark1"
+              },
+              {
+                "id": "selnZI3gZh8ijBcX1",
+                "name": "headhunter",
+                "color": "greenLight2"
+              },
+              {
+                "id": "sel8zyrli2zeP9xlz",
+                "name": "Health",
+                "color": "purpleLight2"
+              },
+              {
+                "id": "selahEgveOhAhx7YF",
+                "name": "heating",
+                "color": "tealBright"
+              },
+              {
+                "id": "selcFZP5LAIlgk4cU",
+                "name": "History",
+                "color": "greenBright"
+              },
+              {
+                "id": "selga21sdgNLrSJ6p",
+                "name": "holiday",
+                "color": "yellowDark1"
+              },
+              {
+                "id": "selCK81LPIVdxbnVG",
+                "name": "home equipment",
+                "color": "grayLight1"
+              },
+              {
+                "id": "selfijPVOcgjjvk21",
+                "name": "Home Finance",
+                "color": "tealLight1"
+              },
+              {
+                "id": "selpCzbAiHTlAtDG0",
+                "name": "Home Furniture",
+                "color": "yellowBright"
+              },
+              {
+                "id": "selMiET21sLZN5ip1",
+                "name": "Home Maint",
+                "color": "yellowLight1"
+              },
+              {
+                "id": "selsiAvOhkhJPfG3A",
+                "name": "Home Misc",
+                "color": "cyanDark1"
+              },
+              {
+                "id": "selnxEZXbuarjm71B",
+                "name": "Home Programming",
+                "color": "yellowDark1"
+              },
+              {
+                "id": "selSsVzIXpppRkjqm",
+                "name": "Home Tech",
+                "color": "blueDark1"
+              },
+              {
+                "id": "selgdLLPIqp2S2dCE",
+                "name": "Horror",
+                "color": "yellowBright"
+              },
+              {
+                "id": "selp2jZSslHSkOn03",
+                "name": "humor",
+                "color": "redDark1"
+              },
+              {
+                "id": "selZRiCp0SdAXLC6Y",
+                "name": "ideology",
+                "color": "orangeLight1"
+              },
+              {
+                "id": "selVxlxv8KjSY7tPZ",
+                "name": "IIJ",
+                "color": "redLight2"
+              },
+              {
+                "id": "selit3vAlWGvVOqwV",
+                "name": "Immigration",
+                "color": "pinkLight2"
+              },
+              {
+                "id": "selL9Fg0ltXtvnt1y",
+                "name": "Important Docs",
+                "color": "greenLight2"
+              },
+              {
+                "id": "sel6YSTo6n1iKa2BO",
+                "name": "important phone",
+                "color": "pinkDark1"
+              },
+              {
+                "id": "sel8m1gdtH0FmYFXS",
+                "name": "In Paprika",
+                "color": "pinkDark1"
+              },
+              {
+                "id": "selwIaP0CQ9rLYWgU",
+                "name": "inflammation",
+                "color": "redBright"
+              },
+              {
+                "id": "selkuJqBLPKid4nnJ",
+                "name": "Inspiration",
+                "color": "greenDark1"
+              },
+              {
+                "id": "selFYuRH2eBaPDC8E",
+                "name": "instant pot",
+                "color": "purpleDark1"
+              },
+              {
+                "id": "selzLVQaW7l3qqQq9",
+                "name": "Insurance",
+                "color": "redLight1"
+              },
+              {
+                "id": "selfSi7MFzSb5c02x",
+                "name": "Integration",
+                "color": "blueBright"
+              },
+              {
+                "id": "selEZaCtcND9yO0Cj",
+                "name": "Intellectuals",
+                "color": "cyanLight2"
+              },
+              {
+                "id": "selTjvBbtQL6zmh7J",
+                "name": "interesting",
+                "color": "tealDark1"
+              },
+              {
+                "id": "sel9EMeqlJh3PAn04",
+                "name": "internet",
+                "color": "greenBright"
+              },
+              {
+                "id": "selGTg1mSYPMdahgG",
+                "name": "interviews",
+                "color": "orangeDark1"
+              },
+              {
+                "id": "selQSysDVKLG5Rc4N",
+                "name": "Investing",
+                "color": "yellowDark1"
+              },
+              {
+                "id": "selwWG64nilxWnuoD",
+                "name": "IPhone",
+                "color": "tealBright"
+              },
+              {
+                "id": "selR0VC6xYNSDKAQt",
+                "name": "JavaScript",
+                "color": "orangeLight2"
+              },
+              {
+                "id": "sel7wqgTNkIWSnocq",
+                "name": "Job Applied",
+                "color": "pinkLight2"
+              },
+              {
+                "id": "selqwa0W4fwWtXIfG",
+                "name": "Job Interview",
+                "color": "pinkLight2"
+              },
+              {
+                "id": "sel7b0QsKnhyFyNEQ",
+                "name": "Job Offer",
+                "color": "blueLight1"
+              },
+              {
+                "id": "selOvTcSk4lr5n5RU",
+                "name": "Job Search",
+                "color": "pinkLight1"
+              },
+              {
+                "id": "selI4s9IZN1InZ1WK",
+                "name": "Journalism",
+                "color": "purpleLight2"
+              },
+              {
+                "id": "selNzJcpemdgETC27",
+                "name": "Joyful Ops",
+                "color": "greenLight1"
+              },
+              {
+                "id": "selELFtuQKhaR3PWV",
+                "name": "kierkegaard",
+                "color": "tealDark1"
+              },
+              {
+                "id": "selimBo5KCQMlrhWn",
+                "name": "kimmel",
+                "color": "redLight2"
+              },
+              {
+                "id": "sel4n15ieJ1ssceGE",
+                "name": "Kindness",
+                "color": "yellowDark1"
+              },
+              {
+                "id": "selo4dlWIGE4kKAcT",
+                "name": "kitchen",
+                "color": "greenBright"
+              },
+              {
+                "id": "sel3K5lJrnf7pj9r5",
+                "name": "kubrick",
+                "color": "redLight2"
+              },
+              {
+                "id": "selmHypbP9iMihE4z",
+                "name": "last will and testiment",
+                "color": "tealLight2"
+              },
+              {
+                "id": "selOM2dTwyDIysTVU",
+                "name": "Law",
+                "color": "greenLight1"
+              },
+              {
+                "id": "selMOrVo3rAC8akaT",
+                "name": "lawn",
+                "color": "cyanBright"
+              },
+              {
+                "id": "selRu4xo8xindQ3r0",
+                "name": "Leadership",
+                "color": "purpleDark1"
+              },
+              {
+                "id": "seltMV9NsF6q4Ej1f",
+                "name": "Learning",
+                "color": "purpleBright"
+              },
+              {
+                "id": "selgx0jPNzb7YBsSY",
+                "name": "Leisure",
+                "color": "pinkLight1"
+              },
+              {
+                "id": "selXxcZWais6AmiE2",
+                "name": "Leverage Research",
+                "color": "blueBright"
+              },
+              {
+                "id": "sely3ZubAL91a2Pxe",
+                "name": "linguistics",
+                "color": "redDark1"
+              },
+              {
+                "id": "selGNF3tSO1HR04gu",
+                "name": "LinkedIn Events",
+                "color": "purpleDark1"
+              },
+              {
+                "id": "selD9pnuFwNFwSydg",
+                "name": "LinkedIn Post",
+                "color": "pinkDark1"
+              },
+              {
+                "id": "selhBVENY7PiIvIpw",
+                "name": "linkletter",
+                "color": "tealBright"
+              },
+              {
+                "id": "selTEkmtHzu7hug7h",
+                "name": "MAGA",
+                "color": "yellowLight2"
+              },
+              {
+                "id": "selTGprrQ31BoPSeP",
+                "name": "MANC",
+                "color": "purpleLight2"
+              },
+              {
+                "id": "seliLVuZpzMaSX4Fd",
+                "name": "manifesting",
+                "color": "redLight1"
+              },
+              {
+                "id": "selOjcTJCz3JJCFjT",
+                "name": "manuals",
+                "color": "purpleLight1"
+              },
+              {
+                "id": "selhQYNLfSL61faOc",
+                "name": "marina",
+                "color": "yellowBright"
+              },
+              {
+                "id": "selMExHEmVrdiHI1M",
+                "name": "Marriage",
+                "color": "orangeLight1"
+              },
+              {
+                "id": "selFFkBPbX6iE2f5D",
+                "name": "Math",
+                "color": "orangeBright"
+              },
+              {
+                "id": "seli80LdLUxWgP8Ui",
+                "name": "Media Server",
+                "color": "cyanBright"
+              },
+              {
+                "id": "selF9H8Tj5Nsb8imT",
+                "name": "Media Studies",
+                "color": "yellowBright"
+              },
+              {
+                "id": "selO7PiDBDdmmHV05",
+                "name": "meditation",
+                "color": "orangeLight1"
+              },
+              {
+                "id": "selNrGTfejdSdV0PF",
+                "name": "memories",
+                "color": "cyanDark1"
+              },
+              {
+                "id": "selFxYYunUJE2AO4t",
+                "name": "mental training",
+                "color": "cyanBright"
+              },
+              {
+                "id": "sel1ZxapybxfTGmLM",
+                "name": "messaging",
+                "color": "yellowLight1"
+              },
+              {
+                "id": "selUyMDokWegd6LeY",
+                "name": "Music",
+                "color": "grayBright"
+              },
+              {
+                "id": "selxZmtDXhUBbbO3u",
+                "name": "neocon",
+                "color": "cyanLight1"
+              },
+              {
+                "id": "selRVCkG6wTTfFnwy",
+                "name": "Networking",
+                "color": "tealLight1"
+              },
+              {
+                "id": "seloCMAQqOf2lJFZs",
+                "name": "Non-Violent Civil Disobedience",
+                "color": "cyanLight1"
+              },
+              {
+                "id": "sel5DCjghJQFldiiM",
+                "name": "north carolina",
+                "color": "pinkLight1"
+              },
+              {
+                "id": "sel7otbPgXE3wLrJo",
+                "name": "NYC",
+                "color": "blueLight1"
+              },
+              {
+                "id": "selaflfyKhkf1zaJR",
+                "name": "online interaction",
+                "color": "cyanLight1"
+              },
+              {
+                "id": "seldddBxmC7EFVCPa",
+                "name": "organizing",
+                "color": "purpleBright"
+              },
+              {
+                "id": "selGDvWaZyRhYfAV0",
+                "name": "Ozempic",
+                "color": "greenLight2"
+              },
+              {
+                "id": "selfRoz34Goe0iVVR",
+                "name": "paint",
+                "color": "cyanLight2"
+              },
+              {
+                "id": "selFzv1jKsQ1jiGwk",
+                "name": "penal",
+                "color": "pinkLight2"
+              },
+              {
+                "id": "sel2TQutD7NNj5gft",
+                "name": "Personal History",
+                "color": "greenBright"
+              },
+              {
+                "id": "selP92ni8r1p789SA",
+                "name": "pets",
+                "color": "cyanDark1"
+              },
+              {
+                "id": "sel9oV8fNqc60HbSj",
+                "name": "petzold",
+                "color": "blueLight1"
+              },
+              {
+                "id": "selkNZcWVaBk9rxvV",
+                "name": "Philosophy",
+                "color": "greenLight1"
+              },
+              {
+                "id": "selhcZgZ6J10vG278",
+                "name": "Physics",
+                "color": "orangeDark1"
+              },
+              {
+                "id": "selnQSLSBdFFwL6qo",
+                "name": "pivot tables",
+                "color": "yellowLight2"
+              },
+              {
+                "id": "selonMO6jmz3zPyTj",
+                "name": "Plex",
+                "color": "pinkBright"
+              },
+              {
+                "id": "selTnpgkseBKoI9gL",
+                "name": "plumbing",
+                "color": "blueLight1"
+              },
+              {
+                "id": "selR2xFtVoM6FKc9I",
+                "name": "plymouth tower",
+                "color": "tealDark1"
+              },
+              {
+                "id": "selDbrwtRodZT44Nb",
+                "name": "polanski",
+                "color": "grayBright"
+              },
+              {
+                "id": "seljhvZkbFAeGS2d4",
+                "name": "political violence",
+                "color": "purpleBright"
+              },
+              {
+                "id": "selSoueyfXup9lZVy",
+                "name": "Politics",
+                "color": "redBright"
+              },
+              {
+                "id": "sel6pRMfULUA1n9gV",
+                "name": "Population",
+                "color": "yellowLight1"
+              },
+              {
+                "id": "sel6TwrAbDrIk3Qo9",
+                "name": "potential cars",
+                "color": "purpleLight2"
+              },
+              {
+                "id": "selfOgnlIU0pVo1Vx",
+                "name": "Primary",
+                "color": "cyanBright"
+              },
+              {
+                "id": "selgJRRHmKj8x0kIe",
+                "name": "probability",
+                "color": "blueBright"
+              },
+              {
+                "id": "sel3SEMk4rSwxP5Ld",
+                "name": "Prompts",
+                "color": "yellowLight1"
+              },
+              {
+                "id": "seldPgmrECuesoMmg",
+                "name": "Psychology",
+                "color": "pinkDark1"
+              },
+              {
+                "id": "selSWvPaI9iMEUEbC",
+                "name": "public speaking",
+                "color": "greenLight2"
+              },
+              {
+                "id": "selLPP9sXopuUrrck",
+                "name": "Python Scripts",
+                "color": "blueLight2"
+              },
+              {
+                "id": "selmPn1c54SDc1PSv",
+                "name": "racism",
+                "color": "purpleDark1"
+              },
+              {
+                "id": "seloD0P5dEd8fXob7",
+                "name": "Radiology",
+                "color": "yellowBright"
+              },
+              {
+                "id": "selktE2z8GdLmlMa5",
+                "name": "rates",
+                "color": "blueLight1"
+              },
+              {
+                "id": "selUQpXEBfbOBcuhg",
+                "name": "rational thought",
+                "color": "grayLight2"
+              },
+              {
+                "id": "sely28qYwY6sDLh6I",
+                "name": "rationalist",
+                "color": "tealLight2"
+              },
+              {
+                "id": "sel4PpR4bHAaTiI5M",
+                "name": "Reading",
+                "color": "blueBright"
+              },
+              {
+                "id": "selVb5hWRB3IAnSkd",
+                "name": "receipts",
+                "color": "pinkLight2"
+              },
+              {
+                "id": "selV5kwEAiJv7cbxK",
+                "name": "Recipes",
+                "color": "blueLight2"
+              },
+              {
+                "id": "selqJybUg6ySwG4RQ",
+                "name": "reference",
+                "color": "redBright"
+              },
+              {
+                "id": "selJC4Q5hZ1uTpQO9",
+                "name": "Regular Bills",
+                "color": "pinkLight2"
+              },
+              {
+                "id": "selLUw8YWM2WUw19T",
+                "name": "RemindMe",
+                "color": "grayLight1"
+              },
+              {
+                "id": "selUKWjOZtqw4NJJq",
+                "name": "Repairs",
+                "color": "orangeDark1"
+              },
+              {
+                "id": "selxpo3oZgMcbPBuH",
+                "name": "Research",
+                "color": "grayLight1"
+              },
+              {
+                "id": "selJIoQyqwvdtumIr",
+                "name": "Restaurants",
+                "color": "purpleLight1"
+              },
+              {
+                "id": "selenoQJS4dxmIlEb",
+                "name": "resume updates",
+                "color": "redLight2"
+              },
+              {
+                "id": "sel6U8Q3ucBinYeZu",
+                "name": "Retirment",
+                "color": "tealLight2"
+              },
+              {
+                "id": "seltbav0R4wImMYoa",
+                "name": "RIP",
+                "color": "grayLight2"
+              },
+              {
+                "id": "selwBzwQhNANHR91i",
+                "name": "router",
+                "color": "cyanDark1"
+              },
+              {
+                "id": "selhrRgMM4O1RiUhl",
+                "name": "Sapians",
+                "color": "tealBright"
+              },
+              {
+                "id": "selHn9tMVwSaKCqvW",
+                "name": "scaffold",
+                "color": "tealBright"
+              },
+              {
+                "id": "selxyQ6tNQYbisfZf",
+                "name": "scams",
+                "color": "orangeBright"
+              },
+              {
+                "id": "selsc7dZ2qycQ3krN",
+                "name": "School",
+                "color": "pinkBright"
+              },
+              {
+                "id": "selaVo8sxfzkh0LVD",
+                "name": "Science",
+                "color": "purpleLight1"
+              },
+              {
+                "id": "selBUz4gxZhXWxrIX",
+                "name": "SCORE",
+                "color": "pinkLight1"
+              },
+              {
+                "id": "sel7gyEpQVspqW1wo",
+                "name": "scripting",
+                "color": "greenDark1"
+              },
+              {
+                "id": "selFJAUGcFyjw2m9v",
+                "name": "Security",
+                "color": "tealDark1"
+              },
+              {
+                "id": "selLE4lbDytlBwLq8",
+                "name": "self-help",
+                "color": "pinkBright"
+              },
+              {
+                "id": "seleXVMDA45xuIYZv",
+                "name": "services",
+                "color": "cyanDark1"
+              },
+              {
+                "id": "selA6M981JC1sc47i",
+                "name": "sms",
+                "color": "purpleBright"
+              },
+              {
+                "id": "selW4mhBP8hjaQi4F",
+                "name": "SN",
+                "color": "blueLight2"
+              },
+              {
+                "id": "selml5MI4Nij4c1vG",
+                "name": "sn imac",
+                "color": "grayLight1"
+              },
+              {
+                "id": "sel27cJ6Qgv7IFit2",
+                "name": "SN Job Search",
+                "color": "grayLight2"
+              },
+              {
+                "id": "selyfOAfwh4lQ2z4C",
+                "name": "Social Media",
+                "color": "grayDark1"
+              },
+              {
+                "id": "selppV4IkmhL2xuML",
+                "name": "Social Science",
+                "color": "blueDark1"
+              },
+              {
+                "id": "sel8KGl6tI0jewC2m",
+                "name": "Softr",
+                "color": "purpleLight1"
+              },
+              {
+                "id": "selaAvlz1IL3nYYn1",
+                "name": "software",
+                "color": "orangeLight2"
+              },
+              {
+                "id": "selK5u4CfhpWf9fbg",
+                "name": "Soppliments",
+                "color": "grayDark1"
+              },
+              {
+                "id": "selkEQjQ1mIj7wvTe",
+                "name": "Sports",
+                "color": "greenLight2"
+              },
+              {
+                "id": "seljtvZLpOU46Wf0O",
+                "name": "Statistics",
+                "color": "orangeBright"
+              },
+              {
+                "id": "selfHPA9bIs9AoH5N",
+                "name": "stephen king",
+                "color": "blueBright"
+              },
+              {
+                "id": "selPRVwjEqj7XAX97",
+                "name": "Student Activism",
+                "color": "tealDark1"
+              },
+              {
+                "id": "selgDxsveC5QEoPkO",
+                "name": "Subscriptions",
+                "color": "tealDark1"
+              },
+              {
+                "id": "sel71Oc9StIil3mMn",
+                "name": "Substack Post",
+                "color": "blueLight2"
+              },
+              {
+                "id": "sel2UuEl8z8NOaVBu",
+                "name": "Surgury",
+                "color": "redLight1"
+              },
+              {
+                "id": "selDS6ezs3HB2Pcxc",
+                "name": "symptoms",
+                "color": "yellowLight1"
+              },
+              {
+                "id": "sel9NoPAPJq8WmGcW",
+                "name": "syria",
+                "color": "orangeLight1"
+              },
+              {
+                "id": "selw446yc7QkacSdN",
+                "name": "System Prompt",
+                "color": "orangeDark1"
+              },
+              {
+                "id": "sel0vVFTWHXxHXW8U",
+                "name": "systemic failure",
+                "color": "greenDark1"
+              },
+              {
+                "id": "sel2h8K4kCcWygq5m",
+                "name": "Taxes",
+                "color": "redLight2"
+              },
+              {
+                "id": "selE09YIVkOLAMoLg",
+                "name": "Technology",
+                "color": "cyanLight2"
+              },
+              {
+                "id": "sel8GHXCJWGBVNA6n",
+                "name": "Technology Business Analysis",
+                "color": "grayLight1"
+              },
+              {
+                "id": "selQOku9B73hAzxC4",
+                "name": "Television",
+                "color": "orangeLight2"
+              },
+              {
+                "id": "selj8HBVMrs8JYWoO",
+                "name": "The Con",
+                "color": "redBright"
+              },
+              {
+                "id": "selNZ1u4R9Bq40Xgo",
+                "name": "thecarriemethod",
+                "color": "tealLight1"
+              },
+              {
+                "id": "sel1Tu4TdcJRyoavV",
+                "name": "Ticks",
+                "color": "cyanLight2"
+              },
+              {
+                "id": "selHr75QZ5Ccj0Lwh",
+                "name": "time",
+                "color": "pinkDark1"
+              },
+              {
+                "id": "selYRI4akdzk1I06j",
+                "name": "Tips and Tricks",
+                "color": "cyanLight2"
+              },
+              {
+                "id": "seladm3f7vnEB2iQa",
+                "name": "to visit",
+                "color": "grayBright"
+              },
+              {
+                "id": "selnt1iMK03mbb314",
+                "name": "tolls",
+                "color": "blueDark1"
+              },
+              {
+                "id": "selq0YyQX3rnMs7nO",
+                "name": "tom hardy",
+                "color": "yellowLight2"
+              },
+              {
+                "id": "selFK1msxOAyyy9mW",
+                "name": "Townhouse",
+                "color": "redLight2"
+              },
+              {
+                "id": "seleWt5KCU1r7RQIw",
+                "name": "toyota",
+                "color": "redLight1"
+              },
+              {
+                "id": "sell2Nu0Qp74M4fFX",
+                "name": "Transcripts",
+                "color": "cyanLight1"
+              },
+              {
+                "id": "selXNy3ZWwJpE29L0",
+                "name": "Travel",
+                "color": "purpleDark1"
+              },
+              {
+                "id": "seli1Vkozh8xuBstj",
+                "name": "trends",
+                "color": "redDark1"
+              },
+              {
+                "id": "selPy3ikiBoSNNBfQ",
+                "name": "Trump Corruption",
+                "color": "pinkLight1"
+              },
+              {
+                "id": "selwxmAqfh8bdO41T",
+                "name": "TV Show",
+                "color": "blueLight1"
+              },
+              {
+                "id": "selE5Pf0ZbTzJiv6L",
+                "name": "ues",
+                "color": "yellowDark1"
+              },
+              {
+                "id": "seluJYANrt4DeLMfh",
+                "name": "Ukraine",
+                "color": "yellowDark1"
+              },
+              {
+                "id": "selwvsVGWrA2IyCgH",
+                "name": "UNC Basketball",
+                "color": "purpleBright"
+              },
+              {
+                "id": "selRRBt16dXO1lFuT",
+                "name": "Unconscious",
+                "color": "greenDark1"
+              },
+              {
+                "id": "selGAQ2xfyCNWRmhd",
+                "name": "Upstate",
+                "color": "purpleDark1"
+              },
+              {
+                "id": "selL0izpeGXmf2nkd",
+                "name": "vaccine",
+                "color": "greenLight1"
+              },
+              {
+                "id": "selKSYI0p7hRit8lq",
+                "name": "violence",
+                "color": "yellowLight2"
+              },
+              {
+                "id": "sel0lDQ6PKXckFRqt",
+                "name": "VIP",
+                "color": "greenLight2"
+              },
+              {
+                "id": "selpMNfzSODjfJv8U",
+                "name": "VIP Home",
+                "color": "yellowDark1"
+              },
+              {
+                "id": "selCgyVhzjRNfTFfK",
+                "name": "VIP Resources",
+                "color": "tealLight2"
+              },
+              {
+                "id": "selxCiukOnDJweQZD",
+                "name": "VIP Work",
+                "color": "tealDark1"
+              },
+              {
+                "id": "selp379QaaIuJ3rZu",
+                "name": "War",
+                "color": "orangeDark1"
+              },
+              {
+                "id": "seldMD2RlQ4rQoIRt",
+                "name": "water",
+                "color": "blueLight2"
+              },
+              {
+                "id": "selleQ5g3l2r8pNC2",
+                "name": "winterize",
+                "color": "tealLight2"
+              },
+              {
+                "id": "selLNAdRXpefcmnJM",
+                "name": "Work Technical",
+                "color": "yellowBright"
+              },
+              {
+                "id": "selVA59AvQWjfJsTg",
+                "name": "writers",
+                "color": "redDark1"
+              },
+              {
+                "id": "selzuNohCrqkq1uVa",
+                "name": "Writing",
+                "color": "cyanLight1"
+              },
+              {
+                "id": "sel4k0scqmfFcaxMi",
+                "name": "yudkowsky",
+                "color": "redDark1"
+              },
+              {
+                "id": "selGbMIc4s6b8eHUz",
+                "name": "zerowater",
+                "color": "purpleLight1"
+              },
+              {
+                "id": "selQ9ZRwHdwZnOLC2",
+                "name": "Zizians",
+                "color": "greenLight1"
+              }
+            ]
+          },
+          "id": "fldTOSyaubEtYdqwk",
+          "name": "Research Type"
+        },
+        {
           "type": "richText",
           "id": "fldfmgCh93wZoHRDa",
           "name": "Description"
@@ -553,1570 +2122,6 @@
           },
           "id": "fldhK5IfHRAso54iK",
           "name": "Appt Type"
-        },
-        {
-          "type": "multipleSelects",
-          "options": {
-            "choices": [
-              {
-                "id": "seleB3ofABdiZGsfp",
-                "name": "8a",
-                "color": "cyanLight1"
-              },
-              {
-                "id": "sel6oSADbVkYg3aCk",
-                "name": "actors",
-                "color": "cyanBright"
-              },
-              {
-                "id": "selMAJI4WWo9ikqZP",
-                "name": "AI",
-                "color": "grayDark1"
-              },
-              {
-                "id": "sel4cB96eV8KEqpoo",
-                "name": "ai business",
-                "color": "blueDark1"
-              },
-              {
-                "id": "selyTBqZcaf0iB2IG",
-                "name": "ai capability",
-                "color": "blueDark1"
-              },
-              {
-                "id": "selRkvDu3EuJoMXbh",
-                "name": "ai coding",
-                "color": "redBright"
-              },
-              {
-                "id": "selTqTVcvaxG4dhDB",
-                "name": "ai psychosis",
-                "color": "redLight2"
-              },
-              {
-                "id": "selBAT161E2wAttS5",
-                "name": "ai resistence",
-                "color": "purpleLight2"
-              },
-              {
-                "id": "selGwmF3MF4EpmXzk",
-                "name": "ai safety",
-                "color": "grayDark1"
-              },
-              {
-                "id": "selr75IqcAZMs3eQJ",
-                "name": "AI Tools",
-                "color": "redBright"
-              },
-              {
-                "id": "sel0P4cXVGWaPnNSI",
-                "name": "ai training",
-                "color": "purpleLight2"
-              },
-              {
-                "id": "selrU3CmOSbVOdpdc",
-                "name": "Airtable",
-                "color": "orangeLight1"
-              },
-              {
-                "id": "selmGYmghflYwaLeL",
-                "name": "albany",
-                "color": "blueLight2"
-              },
-              {
-                "id": "selNAyOw4Rw7SsHBn",
-                "name": "Albert Court",
-                "color": "greenBright"
-              },
-              {
-                "id": "selxQ4rinCREwkenC",
-                "name": "alcohol",
-                "color": "orangeLight2"
-              },
-              {
-                "id": "selcllbjUTOHUtXRE",
-                "name": "aliens",
-                "color": "yellowLight1"
-              },
-              {
-                "id": "selC0CKqezVOa9Dzt",
-                "name": "American Dream",
-                "color": "tealBright"
-              },
-              {
-                "id": "selYk5euSMdOnRcfp",
-                "name": "Anniversary",
-                "color": "cyanBright"
-              },
-              {
-                "id": "selyaMpMsaXzX5THf",
-                "name": "Anthropology",
-                "color": "grayDark1"
-              },
-              {
-                "id": "selJpIAEkLZ2Q7pgL",
-                "name": "Anti-Corruption Protests",
-                "color": "orangeBright"
-              },
-              {
-                "id": "selGb3KFi9a0Zw3Lw",
-                "name": "anti-trump",
-                "color": "pinkLight1"
-              },
-              {
-                "id": "sel6RGC1k7iiWple8",
-                "name": "apple",
-                "color": "grayDark1"
-              },
-              {
-                "id": "sel08zh3VDKKjXDf9",
-                "name": "appliance",
-                "color": "grayLight2"
-              },
-              {
-                "id": "sel6SCHeqLE4DOA2m",
-                "name": "Architecture",
-                "color": "purpleLight1"
-              },
-              {
-                "id": "seliVihbq93MOuJGI",
-                "name": "Archive",
-                "color": "tealLight2"
-              },
-              {
-                "id": "sel0YsjFyYKFRe4s8",
-                "name": "Art",
-                "color": "cyanLight1"
-              },
-              {
-                "id": "selPDcKnIBh57c4kr",
-                "name": "Astronomy",
-                "color": "purpleLight1"
-              },
-              {
-                "id": "selMkzSzhmcdT2N47",
-                "name": "audiobooks",
-                "color": "blueLight1"
-              },
-              {
-                "id": "seluHo9Q8DyonBQkp",
-                "name": "audit trails",
-                "color": "grayLight1"
-              },
-              {
-                "id": "selEt6rU6AVUxUb9W",
-                "name": "Authoritarianism",
-                "color": "purpleBright"
-              },
-              {
-                "id": "selGrN8QfThS06JSe",
-                "name": "automations",
-                "color": "blueBright"
-              },
-              {
-                "id": "selbyulkUeEycQaos",
-                "name": "Automotive",
-                "color": "orangeLight2"
-              },
-              {
-                "id": "sel64kNUl203hy6OU",
-                "name": "Balkan Politics",
-                "color": "purpleLight2"
-              },
-              {
-                "id": "sel8q7Wx3eYTfpXPO",
-                "name": "beats",
-                "color": "redBright"
-              },
-              {
-                "id": "sel4c2eouTDfXbwTp",
-                "name": "Behavioral Economic",
-                "color": "redLight1"
-              },
-              {
-                "id": "selzCe5VGw1gkbY5P",
-                "name": "bikes",
-                "color": "purpleLight1"
-              },
-              {
-                "id": "sel6PnJ1D4mbRL7E6",
-                "name": "Biogrpahy",
-                "color": "grayDark1"
-              },
-              {
-                "id": "selOTYn2EGlfLXsLu",
-                "name": "Birthday",
-                "color": "tealLight1"
-              },
-              {
-                "id": "selzmHPoQqrZQM2Qp",
-                "name": "Black Lotus",
-                "color": "orangeBright"
-              },
-              {
-                "id": "sellMzEvbvmgJkQSG",
-                "name": "Book Review/Literary Criticism",
-                "color": "pinkDark1"
-              },
-              {
-                "id": "selbtsFC8nSQjmYhV",
-                "name": "Bullshit",
-                "color": "orangeLight2"
-              },
-              {
-                "id": "selLcqAHARWvKLg8R",
-                "name": "Business Ideas",
-                "color": "redBright"
-              },
-              {
-                "id": "selGT3L5EtavGn3Jl",
-                "name": "Business Read",
-                "color": "cyanLight2"
-              },
-              {
-                "id": "selCfieuEyF3aDuza",
-                "name": "calendar",
-                "color": "tealLight2"
-              },
-              {
-                "id": "selWwDkFH7V3rL1ED",
-                "name": "Cancel",
-                "color": "redLight2"
-              },
-              {
-                "id": "selVEX8h2JXwNUyeq",
-                "name": "capitulation",
-                "color": "cyanLight2"
-              },
-              {
-                "id": "seleIU5WgRJSqmKtf",
-                "name": "Career & Professional",
-                "color": "pinkBright"
-              },
-              {
-                "id": "selpjLHjPtdWxrUma",
-                "name": "charlie",
-                "color": "greenLight2"
-              },
-              {
-                "id": "selSIfwC8U3icLiIh",
-                "name": "Cholesterol",
-                "color": "orangeLight1"
-              },
-              {
-                "id": "sel6Z1wAUAzKbkQqS",
-                "name": "christianity",
-                "color": "grayLight2"
-              },
-              {
-                "id": "seloGphHy27xY4Iwl",
-                "name": "christmas",
-                "color": "pinkBright"
-              },
-              {
-                "id": "selQt8t68hkz2S8Hn",
-                "name": "Cinema",
-                "color": "cyanDark1"
-              },
-              {
-                "id": "selXzbIvQHRLbSwnz",
-                "name": "classic",
-                "color": "orangeDark1"
-              },
-              {
-                "id": "selNvrbymPIQbjtWz",
-                "name": "Climate",
-                "color": "yellowLight1"
-              },
-              {
-                "id": "selVmFJrSoVtyVMTj",
-                "name": "coding",
-                "color": "blueDark1"
-              },
-              {
-                "id": "seloiBqT4oLp4qdkg",
-                "name": "collective memory",
-                "color": "grayBright"
-              },
-              {
-                "id": "seleSiaFTgXtdqDmN",
-                "name": "commentators",
-                "color": "pinkDark1"
-              },
-              {
-                "id": "selnUzUSdKuulAYlc",
-                "name": "communication",
-                "color": "orangeLight2"
-              },
-              {
-                "id": "sel6uLjVV1OQ043JQ",
-                "name": "Computer History",
-                "color": "greenDark1"
-              },
-              {
-                "id": "sel2e4ltb8DNRFgeU",
-                "name": "Concept",
-                "color": "grayLight1"
-              },
-              {
-                "id": "sel34uO6Bcuw8z8mQ",
-                "name": "Conservatism",
-                "color": "blueBright"
-              },
-              {
-                "id": "selJGAEUiC2YuCM3n",
-                "name": "consider",
-                "color": "orangeDark1"
-              },
-              {
-                "id": "selEneXmIcJc0il7Y",
-                "name": "conspiracy",
-                "color": "tealLight1"
-              },
-              {
-                "id": "selLpEIKoRdVutyv7",
-                "name": "Consulting",
-                "color": "yellowLight2"
-              },
-              {
-                "id": "selVJHCBx68YHGetc",
-                "name": "Cooking",
-                "color": "purpleBright"
-              },
-              {
-                "id": "selK8BtcS1aWI2len",
-                "name": "Course",
-                "color": "redDark1"
-              },
-              {
-                "id": "selxYeygx5xq4sc1G",
-                "name": "covid",
-                "color": "tealLight1"
-              },
-              {
-                "id": "sel8Nk8dDI98aKqBd",
-                "name": "Creativity",
-                "color": "tealBright"
-              },
-              {
-                "id": "selRmjY9y2wtqhxya",
-                "name": "Crime",
-                "color": "orangeBright"
-              },
-              {
-                "id": "selWmdgvqBXwVwl5B",
-                "name": "Cross-Cultural Solidarity",
-                "color": "grayLight2"
-              },
-              {
-                "id": "selFE7FddipUB1LFy",
-                "name": "crypto crime",
-                "color": "blueLight1"
-              },
-              {
-                "id": "selKlE7sM1J8DFeDW",
-                "name": "ct scans",
-                "color": "yellowBright"
-              },
-              {
-                "id": "selHGr2G56ANOOjO8",
-                "name": "cults",
-                "color": "yellowBright"
-              },
-              {
-                "id": "selcaudfcZeajR69r",
-                "name": "culture",
-                "color": "greenLight1"
-              },
-              {
-                "id": "selXYtCrbQ46R1How",
-                "name": "Current",
-                "color": "cyanLight2"
-              },
-              {
-                "id": "selE3yoaWX7uS1yck",
-                "name": "customer support",
-                "color": "tealDark1"
-              },
-              {
-                "id": "sel2xW2jFVMJh02PM",
-                "name": "data",
-                "color": "blueLight2"
-              },
-              {
-                "id": "selNOc1KgX2F3Wbxm",
-                "name": "dc lungs",
-                "color": "cyanDark1"
-              },
-              {
-                "id": "selpZgsDjnwKJVaIk",
-                "name": "DC Vaccine",
-                "color": "greenBright"
-              },
-              {
-                "id": "selMhPkPGEF9TxGAK",
-                "name": "death",
-                "color": "greenLight1"
-              },
-              {
-                "id": "selyPr4ivwhsyNMV1",
-                "name": "Dementia",
-                "color": "blueDark1"
-              },
-              {
-                "id": "selai0SS2Rp9izvVz",
-                "name": "Democratic Resistance",
-                "color": "cyanBright"
-              },
-              {
-                "id": "selGiFvn8U4aNAxld",
-                "name": "Dental",
-                "color": "greenBright"
-              },
-              {
-                "id": "sellz1KjumphJYUFS",
-                "name": "deviance",
-                "color": "greenDark1"
-              },
-              {
-                "id": "selrwoLuRyewZIZbA",
-                "name": "disputes",
-                "color": "orangeBright"
-              },
-              {
-                "id": "selxWMEHFtXrcPSff",
-                "name": "Documentaries",
-                "color": "yellowLight2"
-              },
-              {
-                "id": "sel70HAxu0Ri3LSD2",
-                "name": "dogs",
-                "color": "pinkLight2"
-              },
-              {
-                "id": "sel12behBQGdvU6Hp",
-                "name": "Dreams",
-                "color": "redDark1"
-              },
-              {
-                "id": "sel7h8seZpBekyHTe",
-                "name": "Economics",
-                "color": "pinkLight1"
-              },
-              {
-                "id": "selTNLSE3GJaEFQn5",
-                "name": "eddington",
-                "color": "grayLight1"
-              },
-              {
-                "id": "selpLLDiwUhujlU4f",
-                "name": "emoticon",
-                "color": "orangeDark1"
-              },
-              {
-                "id": "selRupvDjDU6P64AU",
-                "name": "emotional intelligence",
-                "color": "tealBright"
-              },
-              {
-                "id": "selCHAn48D3CAgwuR",
-                "name": "engineering",
-                "color": "tealLight1"
-              },
-              {
-                "id": "selEEAL3xF3R1tUyh",
-                "name": "enshittification",
-                "color": "pinkLight1"
-              },
-              {
-                "id": "sel6nvWnO9iX9DRTk",
-                "name": "Entertainment",
-                "color": "blueLight2"
-              },
-              {
-                "id": "selGvKqEMR6vebPpp",
-                "name": "Environment",
-                "color": "purpleDark1"
-              },
-              {
-                "id": "sel85mWUoMMIgqNlA",
-                "name": "epidemiology\\",
-                "color": "greenDark1"
-              },
-              {
-                "id": "sel0v0PFv2uvLEUpO",
-                "name": "Equipment",
-                "color": "pinkBright"
-              },
-              {
-                "id": "selZxZSvYvUMUICoL",
-                "name": "Exercise",
-                "color": "tealLight1"
-              },
-              {
-                "id": "selCc2t2Zr7kJHDal",
-                "name": "eyes",
-                "color": "yellowLight2"
-              },
-              {
-                "id": "selgOQVo58fAsBbbO",
-                "name": "Family",
-                "color": "greenLight2"
-              },
-              {
-                "id": "selYwhqTXLbzRGrmd",
-                "name": "feature",
-                "color": "orangeLight1"
-              },
-              {
-                "id": "selZGiuP2S0Gmz1fP",
-                "name": "firewood",
-                "color": "purpleDark1"
-              },
-              {
-                "id": "seltESKedbHvCWDet",
-                "name": "forms",
-                "color": "pinkBright"
-              },
-              {
-                "id": "selXxp52d6F5sbCTt",
-                "name": "Franchising",
-                "color": "grayLight2"
-              },
-              {
-                "id": "sel5s91EgdM7FCCFo",
-                "name": "front end",
-                "color": "redLight1"
-              },
-              {
-                "id": "selvyQjT9Yd3pPqGE",
-                "name": "garage",
-                "color": "orangeLight2"
-              },
-              {
-                "id": "selSkVRY4HnkZp4o4",
-                "name": "Garden",
-                "color": "grayBright"
-              },
-              {
-                "id": "selviJrhyR0jMxWJR",
-                "name": "gore vidal",
-                "color": "grayBright"
-              },
-              {
-                "id": "selYd5uraiHMQIEjM",
-                "name": "Grateful Dead",
-                "color": "grayBright"
-              },
-              {
-                "id": "selZrW8LdBr2oOfcV",
-                "name": "Grief",
-                "color": "cyanDark1"
-              },
-              {
-                "id": "selSB80ZW9LbMP1KM",
-                "name": "Guides",
-                "color": "redLight1"
-              },
-              {
-                "id": "selRSTCbxm7qoqJRC",
-                "name": "Halloween",
-                "color": "redDark1"
-              },
-              {
-                "id": "selBZXaZIXTQKUZLZ",
-                "name": "head",
-                "color": "blueDark1"
-              },
-              {
-                "id": "selnZI3gZh8ijBcX1",
-                "name": "headhunter",
-                "color": "greenLight2"
-              },
-              {
-                "id": "sel8zyrli2zeP9xlz",
-                "name": "Health",
-                "color": "purpleLight2"
-              },
-              {
-                "id": "selahEgveOhAhx7YF",
-                "name": "heating",
-                "color": "tealBright"
-              },
-              {
-                "id": "selcFZP5LAIlgk4cU",
-                "name": "History",
-                "color": "greenBright"
-              },
-              {
-                "id": "selga21sdgNLrSJ6p",
-                "name": "holiday",
-                "color": "yellowDark1"
-              },
-              {
-                "id": "selCK81LPIVdxbnVG",
-                "name": "home equipment",
-                "color": "grayLight1"
-              },
-              {
-                "id": "selfijPVOcgjjvk21",
-                "name": "Home Finance",
-                "color": "tealLight1"
-              },
-              {
-                "id": "selpCzbAiHTlAtDG0",
-                "name": "Home Furniture",
-                "color": "yellowBright"
-              },
-              {
-                "id": "selMiET21sLZN5ip1",
-                "name": "Home Maint",
-                "color": "yellowLight1"
-              },
-              {
-                "id": "selsiAvOhkhJPfG3A",
-                "name": "Home Misc",
-                "color": "cyanDark1"
-              },
-              {
-                "id": "selnxEZXbuarjm71B",
-                "name": "Home Programming",
-                "color": "yellowDark1"
-              },
-              {
-                "id": "selSsVzIXpppRkjqm",
-                "name": "Home Tech",
-                "color": "blueDark1"
-              },
-              {
-                "id": "selgdLLPIqp2S2dCE",
-                "name": "Horror",
-                "color": "yellowBright"
-              },
-              {
-                "id": "selp2jZSslHSkOn03",
-                "name": "humor",
-                "color": "redDark1"
-              },
-              {
-                "id": "selZRiCp0SdAXLC6Y",
-                "name": "ideology",
-                "color": "orangeLight1"
-              },
-              {
-                "id": "selVxlxv8KjSY7tPZ",
-                "name": "IIJ",
-                "color": "redLight2"
-              },
-              {
-                "id": "selit3vAlWGvVOqwV",
-                "name": "Immigration",
-                "color": "pinkLight2"
-              },
-              {
-                "id": "selL9Fg0ltXtvnt1y",
-                "name": "Important Docs",
-                "color": "greenLight2"
-              },
-              {
-                "id": "sel6YSTo6n1iKa2BO",
-                "name": "important phone",
-                "color": "pinkDark1"
-              },
-              {
-                "id": "sel8m1gdtH0FmYFXS",
-                "name": "In Paprika",
-                "color": "pinkDark1"
-              },
-              {
-                "id": "selwIaP0CQ9rLYWgU",
-                "name": "inflammation",
-                "color": "redBright"
-              },
-              {
-                "id": "selkuJqBLPKid4nnJ",
-                "name": "Inspiration",
-                "color": "greenDark1"
-              },
-              {
-                "id": "selFYuRH2eBaPDC8E",
-                "name": "instant pot",
-                "color": "purpleDark1"
-              },
-              {
-                "id": "selzLVQaW7l3qqQq9",
-                "name": "Insurance",
-                "color": "redLight1"
-              },
-              {
-                "id": "selfSi7MFzSb5c02x",
-                "name": "Integration",
-                "color": "blueBright"
-              },
-              {
-                "id": "selEZaCtcND9yO0Cj",
-                "name": "Intellectuals",
-                "color": "cyanLight2"
-              },
-              {
-                "id": "selTjvBbtQL6zmh7J",
-                "name": "interesting",
-                "color": "tealDark1"
-              },
-              {
-                "id": "sel9EMeqlJh3PAn04",
-                "name": "internet",
-                "color": "greenBright"
-              },
-              {
-                "id": "selGTg1mSYPMdahgG",
-                "name": "interviews",
-                "color": "orangeDark1"
-              },
-              {
-                "id": "selQSysDVKLG5Rc4N",
-                "name": "Investing",
-                "color": "yellowDark1"
-              },
-              {
-                "id": "selwWG64nilxWnuoD",
-                "name": "IPhone",
-                "color": "tealBright"
-              },
-              {
-                "id": "selR0VC6xYNSDKAQt",
-                "name": "JavaScript",
-                "color": "orangeLight2"
-              },
-              {
-                "id": "sel7wqgTNkIWSnocq",
-                "name": "Job Applied",
-                "color": "pinkLight2"
-              },
-              {
-                "id": "selqwa0W4fwWtXIfG",
-                "name": "Job Interview",
-                "color": "pinkLight2"
-              },
-              {
-                "id": "selOvTcSk4lr5n5RU",
-                "name": "Job Search",
-                "color": "pinkLight1"
-              },
-              {
-                "id": "selI4s9IZN1InZ1WK",
-                "name": "Journalism",
-                "color": "purpleLight2"
-              },
-              {
-                "id": "selNzJcpemdgETC27",
-                "name": "Joyful Ops",
-                "color": "greenLight1"
-              },
-              {
-                "id": "selELFtuQKhaR3PWV",
-                "name": "kierkegaard",
-                "color": "tealDark1"
-              },
-              {
-                "id": "selimBo5KCQMlrhWn",
-                "name": "kimmel",
-                "color": "redLight2"
-              },
-              {
-                "id": "sel4n15ieJ1ssceGE",
-                "name": "Kindness",
-                "color": "yellowDark1"
-              },
-              {
-                "id": "selo4dlWIGE4kKAcT",
-                "name": "kitchen",
-                "color": "greenBright"
-              },
-              {
-                "id": "sel3K5lJrnf7pj9r5",
-                "name": "kubrick",
-                "color": "redLight2"
-              },
-              {
-                "id": "selmHypbP9iMihE4z",
-                "name": "last will and testiment",
-                "color": "tealLight2"
-              },
-              {
-                "id": "selOM2dTwyDIysTVU",
-                "name": "Law",
-                "color": "greenLight1"
-              },
-              {
-                "id": "selMOrVo3rAC8akaT",
-                "name": "lawn",
-                "color": "cyanBright"
-              },
-              {
-                "id": "selRu4xo8xindQ3r0",
-                "name": "Leadership",
-                "color": "purpleDark1"
-              },
-              {
-                "id": "seltMV9NsF6q4Ej1f",
-                "name": "Learning",
-                "color": "purpleBright"
-              },
-              {
-                "id": "selgx0jPNzb7YBsSY",
-                "name": "Leisure",
-                "color": "pinkLight1"
-              },
-              {
-                "id": "selXxcZWais6AmiE2",
-                "name": "Leverage Research",
-                "color": "blueBright"
-              },
-              {
-                "id": "sely3ZubAL91a2Pxe",
-                "name": "linguistics",
-                "color": "redDark1"
-              },
-              {
-                "id": "selD9pnuFwNFwSydg",
-                "name": "LinkedIn Post",
-                "color": "pinkDark1"
-              },
-              {
-                "id": "selhBVENY7PiIvIpw",
-                "name": "linkletter",
-                "color": "tealBright"
-              },
-              {
-                "id": "selTEkmtHzu7hug7h",
-                "name": "MAGA",
-                "color": "yellowLight2"
-              },
-              {
-                "id": "selTGprrQ31BoPSeP",
-                "name": "MANC",
-                "color": "purpleLight2"
-              },
-              {
-                "id": "seliLVuZpzMaSX4Fd",
-                "name": "manifesting",
-                "color": "redLight1"
-              },
-              {
-                "id": "selOjcTJCz3JJCFjT",
-                "name": "manuals",
-                "color": "purpleLight1"
-              },
-              {
-                "id": "selhQYNLfSL61faOc",
-                "name": "marina",
-                "color": "yellowBright"
-              },
-              {
-                "id": "selMExHEmVrdiHI1M",
-                "name": "Marriage",
-                "color": "orangeLight1"
-              },
-              {
-                "id": "selFFkBPbX6iE2f5D",
-                "name": "Math",
-                "color": "orangeBright"
-              },
-              {
-                "id": "seli80LdLUxWgP8Ui",
-                "name": "Media Server",
-                "color": "cyanBright"
-              },
-              {
-                "id": "selF9H8Tj5Nsb8imT",
-                "name": "Media Studies",
-                "color": "yellowBright"
-              },
-              {
-                "id": "selO7PiDBDdmmHV05",
-                "name": "meditation",
-                "color": "orangeLight1"
-              },
-              {
-                "id": "selNrGTfejdSdV0PF",
-                "name": "memories",
-                "color": "cyanDark1"
-              },
-              {
-                "id": "selFxYYunUJE2AO4t",
-                "name": "mental training",
-                "color": "cyanBright"
-              },
-              {
-                "id": "sel1ZxapybxfTGmLM",
-                "name": "messaging",
-                "color": "yellowLight1"
-              },
-              {
-                "id": "selUyMDokWegd6LeY",
-                "name": "Music",
-                "color": "grayBright"
-              },
-              {
-                "id": "selxZmtDXhUBbbO3u",
-                "name": "neocon",
-                "color": "cyanLight1"
-              },
-              {
-                "id": "selRVCkG6wTTfFnwy",
-                "name": "Networking",
-                "color": "tealLight1"
-              },
-              {
-                "id": "seloCMAQqOf2lJFZs",
-                "name": "Non-Violent Civil Disobedience",
-                "color": "cyanLight1"
-              },
-              {
-                "id": "sel5DCjghJQFldiiM",
-                "name": "north carolina",
-                "color": "pinkLight1"
-              },
-              {
-                "id": "sel7otbPgXE3wLrJo",
-                "name": "NYC",
-                "color": "blueLight1"
-              },
-              {
-                "id": "selaflfyKhkf1zaJR",
-                "name": "online interaction",
-                "color": "cyanLight1"
-              },
-              {
-                "id": "seldddBxmC7EFVCPa",
-                "name": "organizing",
-                "color": "purpleBright"
-              },
-              {
-                "id": "selGDvWaZyRhYfAV0",
-                "name": "Ozempic",
-                "color": "greenLight2"
-              },
-              {
-                "id": "selfRoz34Goe0iVVR",
-                "name": "paint",
-                "color": "cyanLight2"
-              },
-              {
-                "id": "selFzv1jKsQ1jiGwk",
-                "name": "penal",
-                "color": "pinkLight2"
-              },
-              {
-                "id": "sel2TQutD7NNj5gft",
-                "name": "Personal History",
-                "color": "greenBright"
-              },
-              {
-                "id": "selP92ni8r1p789SA",
-                "name": "pets",
-                "color": "cyanDark1"
-              },
-              {
-                "id": "sel9oV8fNqc60HbSj",
-                "name": "petzold",
-                "color": "blueLight1"
-              },
-              {
-                "id": "selkNZcWVaBk9rxvV",
-                "name": "Philosophy",
-                "color": "greenLight1"
-              },
-              {
-                "id": "selhcZgZ6J10vG278",
-                "name": "Physics",
-                "color": "orangeDark1"
-              },
-              {
-                "id": "selnQSLSBdFFwL6qo",
-                "name": "pivot tables",
-                "color": "yellowLight2"
-              },
-              {
-                "id": "selonMO6jmz3zPyTj",
-                "name": "Plex",
-                "color": "pinkBright"
-              },
-              {
-                "id": "selTnpgkseBKoI9gL",
-                "name": "plumbing",
-                "color": "blueLight1"
-              },
-              {
-                "id": "selR2xFtVoM6FKc9I",
-                "name": "plymouth tower",
-                "color": "tealDark1"
-              },
-              {
-                "id": "selDbrwtRodZT44Nb",
-                "name": "polanski",
-                "color": "grayBright"
-              },
-              {
-                "id": "seljhvZkbFAeGS2d4",
-                "name": "political violence",
-                "color": "purpleBright"
-              },
-              {
-                "id": "selSoueyfXup9lZVy",
-                "name": "Politics",
-                "color": "redBright"
-              },
-              {
-                "id": "sel6pRMfULUA1n9gV",
-                "name": "Population",
-                "color": "yellowLight1"
-              },
-              {
-                "id": "sel6TwrAbDrIk3Qo9",
-                "name": "potential cars",
-                "color": "purpleLight2"
-              },
-              {
-                "id": "selfOgnlIU0pVo1Vx",
-                "name": "Primary",
-                "color": "cyanBright"
-              },
-              {
-                "id": "selgJRRHmKj8x0kIe",
-                "name": "probability",
-                "color": "blueBright"
-              },
-              {
-                "id": "sel3SEMk4rSwxP5Ld",
-                "name": "Prompts",
-                "color": "yellowLight1"
-              },
-              {
-                "id": "seldPgmrECuesoMmg",
-                "name": "Psychology",
-                "color": "pinkDark1"
-              },
-              {
-                "id": "selLPP9sXopuUrrck",
-                "name": "Python Scripts",
-                "color": "blueLight2"
-              },
-              {
-                "id": "selmPn1c54SDc1PSv",
-                "name": "racism",
-                "color": "purpleDark1"
-              },
-              {
-                "id": "seloD0P5dEd8fXob7",
-                "name": "Radiology",
-                "color": "yellowBright"
-              },
-              {
-                "id": "selktE2z8GdLmlMa5",
-                "name": "rates",
-                "color": "blueLight1"
-              },
-              {
-                "id": "selUQpXEBfbOBcuhg",
-                "name": "rational thought",
-                "color": "grayLight2"
-              },
-              {
-                "id": "sely28qYwY6sDLh6I",
-                "name": "rationalist",
-                "color": "tealLight2"
-              },
-              {
-                "id": "sel4PpR4bHAaTiI5M",
-                "name": "Reading",
-                "color": "blueBright"
-              },
-              {
-                "id": "selVb5hWRB3IAnSkd",
-                "name": "receipts",
-                "color": "pinkLight2"
-              },
-              {
-                "id": "selV5kwEAiJv7cbxK",
-                "name": "Recipes",
-                "color": "blueLight2"
-              },
-              {
-                "id": "selJC4Q5hZ1uTpQO9",
-                "name": "Regular Bills",
-                "color": "pinkLight2"
-              },
-              {
-                "id": "selLUw8YWM2WUw19T",
-                "name": "RemindMe",
-                "color": "grayLight1"
-              },
-              {
-                "id": "selUKWjOZtqw4NJJq",
-                "name": "Repairs",
-                "color": "orangeDark1"
-              },
-              {
-                "id": "selxpo3oZgMcbPBuH",
-                "name": "Research",
-                "color": "grayLight1"
-              },
-              {
-                "id": "selJIoQyqwvdtumIr",
-                "name": "Restaurants",
-                "color": "purpleLight1"
-              },
-              {
-                "id": "selenoQJS4dxmIlEb",
-                "name": "resume updates",
-                "color": "redLight2"
-              },
-              {
-                "id": "sel6U8Q3ucBinYeZu",
-                "name": "Retirment",
-                "color": "tealLight2"
-              },
-              {
-                "id": "seltbav0R4wImMYoa",
-                "name": "RIP",
-                "color": "grayLight2"
-              },
-              {
-                "id": "selhrRgMM4O1RiUhl",
-                "name": "Sapians",
-                "color": "tealBright"
-              },
-              {
-                "id": "selxyQ6tNQYbisfZf",
-                "name": "scams",
-                "color": "orangeBright"
-              },
-              {
-                "id": "selsc7dZ2qycQ3krN",
-                "name": "School",
-                "color": "pinkBright"
-              },
-              {
-                "id": "selaVo8sxfzkh0LVD",
-                "name": "Science",
-                "color": "purpleLight1"
-              },
-              {
-                "id": "sel7gyEpQVspqW1wo",
-                "name": "scripting",
-                "color": "greenDark1"
-              },
-              {
-                "id": "selFJAUGcFyjw2m9v",
-                "name": "Security",
-                "color": "tealDark1"
-              },
-              {
-                "id": "selLE4lbDytlBwLq8",
-                "name": "self-help",
-                "color": "pinkBright"
-              },
-              {
-                "id": "seleXVMDA45xuIYZv",
-                "name": "services",
-                "color": "cyanDark1"
-              },
-              {
-                "id": "selA6M981JC1sc47i",
-                "name": "sms",
-                "color": "purpleBright"
-              },
-              {
-                "id": "selml5MI4Nij4c1vG",
-                "name": "sn imac",
-                "color": "grayLight1"
-              },
-              {
-                "id": "sel27cJ6Qgv7IFit2",
-                "name": "SN Job Search",
-                "color": "grayLight2"
-              },
-              {
-                "id": "selyfOAfwh4lQ2z4C",
-                "name": "Social Media",
-                "color": "grayDark1"
-              },
-              {
-                "id": "selppV4IkmhL2xuML",
-                "name": "Social Science",
-                "color": "blueDark1"
-              },
-              {
-                "id": "sel8KGl6tI0jewC2m",
-                "name": "Softr",
-                "color": "purpleLight1"
-              },
-              {
-                "id": "selK5u4CfhpWf9fbg",
-                "name": "Soppliments",
-                "color": "grayDark1"
-              },
-              {
-                "id": "selkEQjQ1mIj7wvTe",
-                "name": "Sports",
-                "color": "greenLight2"
-              },
-              {
-                "id": "seljtvZLpOU46Wf0O",
-                "name": "Statistics",
-                "color": "orangeBright"
-              },
-              {
-                "id": "selfHPA9bIs9AoH5N",
-                "name": "stephen king",
-                "color": "blueBright"
-              },
-              {
-                "id": "selPRVwjEqj7XAX97",
-                "name": "Student Activism",
-                "color": "tealDark1"
-              },
-              {
-                "id": "selgDxsveC5QEoPkO",
-                "name": "Subscriptions",
-                "color": "tealDark1"
-              },
-              {
-                "id": "sel71Oc9StIil3mMn",
-                "name": "Substack Post",
-                "color": "blueLight2"
-              },
-              {
-                "id": "sel2UuEl8z8NOaVBu",
-                "name": "Surgury",
-                "color": "redLight1"
-              },
-              {
-                "id": "selDS6ezs3HB2Pcxc",
-                "name": "symptoms",
-                "color": "yellowLight1"
-              },
-              {
-                "id": "sel9NoPAPJq8WmGcW",
-                "name": "syria",
-                "color": "orangeLight1"
-              },
-              {
-                "id": "selw446yc7QkacSdN",
-                "name": "System Prompt",
-                "color": "orangeDark1"
-              },
-              {
-                "id": "sel0vVFTWHXxHXW8U",
-                "name": "systemic failure",
-                "color": "greenDark1"
-              },
-              {
-                "id": "sel2h8K4kCcWygq5m",
-                "name": "Taxes",
-                "color": "redLight2"
-              },
-              {
-                "id": "selE09YIVkOLAMoLg",
-                "name": "Technology",
-                "color": "cyanLight2"
-              },
-              {
-                "id": "sel8GHXCJWGBVNA6n",
-                "name": "Technology Business Analysis",
-                "color": "grayLight1"
-              },
-              {
-                "id": "selQOku9B73hAzxC4",
-                "name": "Television",
-                "color": "orangeLight2"
-              },
-              {
-                "id": "selj8HBVMrs8JYWoO",
-                "name": "The Con",
-                "color": "redBright"
-              },
-              {
-                "id": "sel1Tu4TdcJRyoavV",
-                "name": "Ticks",
-                "color": "cyanLight2"
-              },
-              {
-                "id": "selHr75QZ5Ccj0Lwh",
-                "name": "time",
-                "color": "pinkDark1"
-              },
-              {
-                "id": "seladm3f7vnEB2iQa",
-                "name": "to visit",
-                "color": "grayBright"
-              },
-              {
-                "id": "selq0YyQX3rnMs7nO",
-                "name": "tom hardy",
-                "color": "yellowLight2"
-              },
-              {
-                "id": "seleWt5KCU1r7RQIw",
-                "name": "toyota",
-                "color": "redLight1"
-              },
-              {
-                "id": "sell2Nu0Qp74M4fFX",
-                "name": "Transcripts",
-                "color": "cyanLight1"
-              },
-              {
-                "id": "selXNy3ZWwJpE29L0",
-                "name": "Travel",
-                "color": "purpleDark1"
-              },
-              {
-                "id": "selPy3ikiBoSNNBfQ",
-                "name": "Trump Corruption",
-                "color": "pinkLight1"
-              },
-              {
-                "id": "selwxmAqfh8bdO41T",
-                "name": "TV Show",
-                "color": "blueLight1"
-              },
-              {
-                "id": "selE5Pf0ZbTzJiv6L",
-                "name": "ues",
-                "color": "yellowDark1"
-              },
-              {
-                "id": "seluJYANrt4DeLMfh",
-                "name": "Ukraine",
-                "color": "yellowDark1"
-              },
-              {
-                "id": "selwvsVGWrA2IyCgH",
-                "name": "UNC Basketball",
-                "color": "purpleBright"
-              },
-              {
-                "id": "selRRBt16dXO1lFuT",
-                "name": "Unconscious",
-                "color": "greenDark1"
-              },
-              {
-                "id": "selGAQ2xfyCNWRmhd",
-                "name": "Upstate",
-                "color": "purpleDark1"
-              },
-              {
-                "id": "selL0izpeGXmf2nkd",
-                "name": "vaccine",
-                "color": "greenLight1"
-              },
-              {
-                "id": "selKSYI0p7hRit8lq",
-                "name": "violence",
-                "color": "yellowLight2"
-              },
-              {
-                "id": "sel0lDQ6PKXckFRqt",
-                "name": "VIP",
-                "color": "greenLight2"
-              },
-              {
-                "id": "selpMNfzSODjfJv8U",
-                "name": "VIP Home",
-                "color": "yellowDark1"
-              },
-              {
-                "id": "selCgyVhzjRNfTFfK",
-                "name": "VIP Resources",
-                "color": "tealLight2"
-              },
-              {
-                "id": "selp379QaaIuJ3rZu",
-                "name": "War",
-                "color": "orangeDark1"
-              },
-              {
-                "id": "seldMD2RlQ4rQoIRt",
-                "name": "water",
-                "color": "blueLight2"
-              },
-              {
-                "id": "selleQ5g3l2r8pNC2",
-                "name": "winterize",
-                "color": "tealLight2"
-              },
-              {
-                "id": "selVA59AvQWjfJsTg",
-                "name": "writers",
-                "color": "redDark1"
-              },
-              {
-                "id": "selzuNohCrqkq1uVa",
-                "name": "Writing",
-                "color": "cyanLight1"
-              },
-              {
-                "id": "sel4k0scqmfFcaxMi",
-                "name": "yudkowsky",
-                "color": "redDark1"
-              },
-              {
-                "id": "selGbMIc4s6b8eHUz",
-                "name": "zerowater",
-                "color": "purpleLight1"
-              },
-              {
-                "id": "selQ9ZRwHdwZnOLC2",
-                "name": "Zizians",
-                "color": "greenLight1"
-              },
-              {
-                "id": "selXDLVdayFsdmGWO",
-                "name": "cleaning",
-                "color": "purpleBright"
-              },
-              {
-                "id": "seltrux5Fd0gukFOT",
-                "name": "evolution",
-                "color": "tealLight2"
-              },
-              {
-                "id": "selqJybUg6ySwG4RQ",
-                "name": "reference",
-                "color": "redBright"
-              },
-              {
-                "id": "selyfoMvpOzjYcPHC",
-                "name": "Dog Stuff",
-                "color": "grayLight2"
-              },
-              {
-                "id": "selBUz4gxZhXWxrIX",
-                "name": "SCORE",
-                "color": "pinkLight1"
-              },
-              {
-                "id": "selGNF3tSO1HR04gu",
-                "name": "LinkedIn Events",
-                "color": "purpleDark1"
-              },
-              {
-                "id": "selMsBM9VuvUp8Zvs",
-                "name": "deck",
-                "color": "pinkBright"
-              },
-              {
-                "id": "selGLOPKIHDHj57fy",
-                "name": "ai commentary",
-                "color": "orangeLight1"
-              },
-              {
-                "id": "selYRI4akdzk1I06j",
-                "name": "Tips and Tricks",
-                "color": "cyanLight2"
-              },
-              {
-                "id": "selHn9tMVwSaKCqvW",
-                "name": "scaffold",
-                "color": "tealBright"
-              },
-              {
-                "id": "selXeMNRHJv5j6TAQ",
-                "name": "Clothes",
-                "color": "greenBright"
-              },
-              {
-                "id": "selSWvPaI9iMEUEbC",
-                "name": "public speaking",
-                "color": "greenLight2"
-              },
-              {
-                "id": "selnt1iMK03mbb314",
-                "name": "tolls",
-                "color": "blueDark1"
-              },
-              {
-                "id": "seli1Vkozh8xuBstj",
-                "name": "trends",
-                "color": "redDark1"
-              },
-              {
-                "id": "selc0WM7Vy0PxtNft",
-                "name": "gifts",
-                "color": "grayBright"
-              },
-              {
-                "id": "selW4mhBP8hjaQi4F",
-                "name": "SN",
-                "color": "blueLight2"
-              },
-              {
-                "id": "seli4Iwk3YJpOtHPA",
-                "name": "aging",
-                "color": "cyanBright"
-              },
-              {
-                "id": "selaAvlz1IL3nYYn1",
-                "name": "software",
-                "color": "orangeLight2"
-              },
-              {
-                "id": "sel7b0QsKnhyFyNEQ",
-                "name": "Job Offer",
-                "color": "blueLight1"
-              },
-              {
-                "id": "selwBzwQhNANHR91i",
-                "name": "router",
-                "color": "cyanDark1"
-              },
-              {
-                "id": "selxCiukOnDJweQZD",
-                "name": "VIP Work",
-                "color": "tealDark1"
-              },
-              {
-                "id": "selLNAdRXpefcmnJM",
-                "name": "Work Technical",
-                "color": "yellowBright"
-              },
-              {
-                "id": "selvNgcRpnt8sxUsM",
-                "name": "DMV",
-                "color": "greenLight1"
-              },
-              {
-                "id": "selq9eyZsW5arOtx3",
-                "name": "epstein",
-                "color": "blueBright"
-              },
-              {
-                "id": "selNZ1u4R9Bq40Xgo",
-                "name": "thecarriemethod",
-                "color": "tealLight1"
-              },
-              {
-                "id": "sellit48XxZmXv9ni",
-                "name": "dcmacbookpro",
-                "color": "yellowLight1"
-              },
-              {
-                "id": "selW4CaqjCnqcWOAN",
-                "name": "CoreWorkstream",
-                "color": "orangeBright"
-              },
-              {
-                "id": "selFK1msxOAyyy9mW",
-                "name": "Townhouse",
-                "color": "redLight2"
-              }
-            ]
-          },
-          "id": "fldTOSyaubEtYdqwk",
-          "name": "Research Type"
         },
         {
           "type": "multipleSelects",

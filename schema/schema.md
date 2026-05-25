@@ -1,7 +1,7 @@
 # Airtable Base Schema
 
 > Auto-generated schema documentation
-> Generated: 2026-05-18 12:36:11
+> Generated: 2026-05-25 12:34:48
 
 ---
 
@@ -72,6 +72,7 @@
 | Field Name | Type | Description |
 |------------|------|-------------|
 | Name | Formula | Concatenates Title and formatted Start Time unless Appt Type is 'From Research'. |
+| Research Type | Multiple Select (312 options) |  |
 | Description | Richtext |  |
 | Truncated Description | Formula | Truncates the Title field to a maximum of 1000 characters |
 | Status | Single Select (5 options) |  |
@@ -85,7 +86,6 @@
 | Days Until | Formula |  |
 | Anniversary Next Year | Formula |  |
 | Appt Type | Single Select (42 options) |  |
-| Research Type | Multiple Select (311 options) |  |
 | Sub Type | Multiple Select (169 options) |  |
 | New Event in Days | Number |  |
 | Since Updated (seconds) | Formula |  |
