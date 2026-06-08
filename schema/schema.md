@@ -1,7 +1,7 @@
 # Airtable Base Schema
 
 > Auto-generated schema documentation
-> Generated: 2026-06-01 15:24:16
+> Generated: 2026-06-08 13:09:33
 
 ---
 
@@ -72,6 +72,7 @@
 | Field Name | Type | Description |
 |------------|------|-------------|
 | Name | Formula | Concatenates Title and formatted Start Time unless Appt Type is 'From Research'. |
+| Appt Type | Single Select (42 options) |  |
 | Research Type | Multiple Select (312 options) |  |
 | Description | Richtext |  |
 | Truncated Description | Formula | Truncates the Title field to a maximum of 1000 characters |
@@ -85,7 +86,6 @@
 | Set To Midnight | Formula | Sets the Start Time to midnight of the same day. |
 | Days Until | Formula |  |
 | Anniversary Next Year | Formula |  |
-| Appt Type | Single Select (42 options) |  |
 | Sub Type | Multiple Select (169 options) |  |
 | New Event in Days | Number |  |
 | Since Updated (seconds) | Formula |  |

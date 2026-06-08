@@ -1,6 +1,6 @@
 # Fields Reference (Auto-Generated)
 
-> Generated from Airtable schema on 2026-06-01 15:24:16
+> Generated from Airtable schema on 2026-06-08 13:09:33
 
 This document contains the actual schema from your Airtable base. Use this as the source of truth for updating your fields documentation.
 
@@ -790,6 +790,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Business Read (cyanLight2)
   - calendar (tealLight2)
   - Cancel (redLight2)
+  - Canine Confidant (tealLight1)
   - capitulation (cyanLight2)
   - Career & Professional (pinkBright)
   - charlie (greenLight2)
@@ -1021,7 +1022,6 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Technology Business Analysis (grayLight1)
   - Television (orangeLight2)
   - The Con (redBright)
-  - thecarriemethod (tealLight1)
   - Ticks (cyanLight2)
   - time (pinkDark1)
   - Tips and Tricks (cyanLight2)
@@ -1641,8 +1641,8 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Temp Field
   - Old Parent (snapshot)
 - **singleSelect**: 3 fields
-  - Status
   - Appt Type
+  - Status
   - Work Timer Type
 - **url**: 6 fields
   - Claude.AI URL
