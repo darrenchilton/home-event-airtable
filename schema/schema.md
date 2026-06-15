@@ -1,7 +1,7 @@
 # Airtable Base Schema
 
 > Auto-generated schema documentation
-> Generated: 2026-06-08 13:09:33
+> Generated: 2026-06-15 15:18:11
 
 ---
 
@@ -72,12 +72,11 @@
 | Field Name | Type | Description |
 |------------|------|-------------|
 | Name | Formula | Concatenates Title and formatted Start Time unless Appt Type is 'From Research'. |
-| Appt Type | Single Select (42 options) |  |
-| Research Type | Multiple Select (312 options) |  |
+| Title | Singlelinetext |  |
 | Description | Richtext |  |
+| Truncated Title | Formula | Truncates the Title field to a maximum of 1000 characters |
 | Truncated Description | Formula | Truncates the Title field to a maximum of 1000 characters |
 | Status | Single Select (5 options) |  |
-| Title | Singlelinetext |  |
 | Notes | Richtext |  |
 | Parent | Link to Unknown |  |
 | Created (At) | Createdtime |  |
@@ -86,6 +85,8 @@
 | Set To Midnight | Formula | Sets the Start Time to midnight of the same day. |
 | Days Until | Formula |  |
 | Anniversary Next Year | Formula |  |
+| Appt Type | Single Select (42 options) |  |
+| Research Type | Multiple Select (313 options) |  |
 | Sub Type | Multiple Select (169 options) |  |
 | New Event in Days | Number |  |
 | Since Updated (seconds) | Formula |  |
@@ -160,7 +161,6 @@
 | Force Def | Singlelinetext |  |
 | Month Delay | Checkbox |  |
 | Check Delay | Formula | Indicates whether the 'Month Delay' field is checked and it has been at least 30 days since the last update of the record. |
-| Truncated Title | Formula | Truncates the Title field to a maximum of 1000 characters |
 | Since Updated (days) | Formula |  |
 | Learning Experience | Link to Unknown |  |
 | Current Time | Formula | Formats the current date and time to 'YYYY-MM-DD HH:MM' |

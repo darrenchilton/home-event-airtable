@@ -1,6 +1,6 @@
 # Fields Reference (Auto-Generated)
 
-> Generated from Airtable schema on 2026-06-08 13:09:33
+> Generated from Airtable schema on 2026-06-15 15:18:11
 
 This document contains the actual schema from your Airtable base. Use this as the source of truth for updating your fields documentation.
 
@@ -741,7 +741,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 ### Research Type
 
 - **Field ID**: `fldTOSyaubEtYdqwk`
-- **Type**: Multiple Select (312 options)
+- **Type**: Multiple Select (313 options)
 - **Options**:
   - 8a (cyanLight1)
   - actors (cyanBright)
@@ -1055,6 +1055,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - yudkowsky (redDark1)
   - zerowater (purpleLight1)
   - Zizians (greenLight1)
+  - Directors (grayDark1)
 
 ### Reset Start URL
 
@@ -1536,6 +1537,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - End Time
 - **formula**: 44 fields
   - Name
+  - Truncated Title
   - Truncated Description
   - Set To Midnight
   - Days Until
@@ -1568,7 +1570,6 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Timer End Time
   - Effort (minutes)
   - Check Delay
-  - Truncated Title
   - Since Updated (days)
   - Current Time
   - Word Blackout
@@ -1641,8 +1642,8 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Temp Field
   - Old Parent (snapshot)
 - **singleSelect**: 3 fields
-  - Appt Type
   - Status
+  - Appt Type
   - Work Timer Type
 - **url**: 6 fields
   - Claude.AI URL
