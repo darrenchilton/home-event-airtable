@@ -1,6 +1,6 @@
 # Fields Reference (Auto-Generated)
 
-> Generated from Airtable schema on 2026-06-15 15:18:11
+> Generated from Airtable schema on 2026-06-22 14:44:11
 
 This document contains the actual schema from your Airtable base. Use this as the source of truth for updating your fields documentation.
 
@@ -741,7 +741,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 ### Research Type
 
 - **Field ID**: `fldTOSyaubEtYdqwk`
-- **Type**: Multiple Select (313 options)
+- **Type**: Multiple Select (314 options)
 - **Options**:
   - 8a (cyanLight1)
   - actors (cyanBright)
@@ -1056,6 +1056,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - zerowater (purpleLight1)
   - Zizians (greenLight1)
   - Directors (grayDark1)
+  - cognitive (cyanLight1)
 
 ### Reset Start URL
 
@@ -1194,7 +1195,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 ### Sub Type
 
 - **Field ID**: `fldVp0MgHf11YNjud`
-- **Type**: Multiple Select (169 options)
+- **Type**: Multiple Select (170 options)
 - **Options**:
   - 2024 Election (cyanLight2)
   - Academic debate (redLight1)
@@ -1365,6 +1366,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - susan glasser (greenBright)
   - carrie's vips (pinkDark1)
   - camry (yellowDark1)
+  - darren (purpleLight1)
 
 ### Sync lock
 

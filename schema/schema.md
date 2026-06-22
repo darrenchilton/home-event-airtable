@@ -1,7 +1,7 @@
 # Airtable Base Schema
 
 > Auto-generated schema documentation
-> Generated: 2026-06-15 15:18:11
+> Generated: 2026-06-22 14:44:11
 
 ---
 
@@ -86,8 +86,8 @@
 | Days Until | Formula |  |
 | Anniversary Next Year | Formula |  |
 | Appt Type | Single Select (42 options) |  |
-| Research Type | Multiple Select (313 options) |  |
-| Sub Type | Multiple Select (169 options) |  |
+| Research Type | Multiple Select (314 options) |  |
+| Sub Type | Multiple Select (170 options) |  |
 | New Event in Days | Number |  |
 | Since Updated (seconds) | Formula |  |
 | Hours Until | Formula |  |
