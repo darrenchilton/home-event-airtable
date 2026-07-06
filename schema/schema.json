@@ -147,48 +147,6 @@
           "description": "Concatenates Title and formatted Start Time unless Appt Type is 'From Research'."
         },
         {
-          "type": "singleLineText",
-          "id": "fldSBxahTfGgcUT4y",
-          "name": "Title"
-        },
-        {
-          "type": "richText",
-          "id": "fldfmgCh93wZoHRDa",
-          "name": "Description"
-        },
-        {
-          "type": "formula",
-          "options": {
-            "isValid": true,
-            "formula": "MID({fldSBxahTfGgcUT4y}, 1, 150)",
-            "referencedFieldIds": [
-              "fldSBxahTfGgcUT4y"
-            ],
-            "result": {
-              "type": "singleLineText"
-            }
-          },
-          "id": "fldi6GYSNiPVTJtQD",
-          "name": "Truncated Title",
-          "description": "Truncates the Title field to a maximum of 1000 characters"
-        },
-        {
-          "type": "formula",
-          "options": {
-            "isValid": true,
-            "formula": "MID({fldfmgCh93wZoHRDa}, 1, 2200)",
-            "referencedFieldIds": [
-              "fldfmgCh93wZoHRDa"
-            ],
-            "result": {
-              "type": "singleLineText"
-            }
-          },
-          "id": "fldcmN8NuF6B54Htq",
-          "name": "Truncated Description",
-          "description": "Truncates the Title field to a maximum of 1000 characters"
-        },
-        {
           "type": "singleSelect",
           "options": {
             "choices": [
@@ -223,20 +181,9 @@
           "name": "Status"
         },
         {
-          "type": "richText",
-          "id": "fldP9VO6dJu8EBCTp",
-          "name": "Notes"
-        },
-        {
-          "type": "multipleRecordLinks",
-          "options": {
-            "linkedTableId": "tblYQbyKJJErXkZro",
-            "isReversed": false,
-            "prefersSingleRecordLink": true,
-            "inverseLinkFieldId": "fldRtf2reDlEV8S9Z"
-          },
-          "id": "fldI8JWRgKY1348Up",
-          "name": "Parent"
+          "type": "singleLineText",
+          "id": "fldSBxahTfGgcUT4y",
+          "name": "Title"
         },
         {
           "type": "createdTime",
@@ -295,6 +242,84 @@
           "type": "formula",
           "options": {
             "isValid": true,
+            "formula": "IF(\n  {fld7bMiLrkWGdp6UF} < 0,\n  \"past\",\n  IF(\n    {fldSeEHRacXpiMxPX} < 1,\n    \"happening soon\",\n    IF(\n      {fldSeEHRacXpiMxPX} < 3,\n      \"less than 3 hours until\",\n      IF(\n        {fldSeEHRacXpiMxPX} <= 24,\n        \"less than a day away\",\n        SWITCH(\n          {fld7bMiLrkWGdp6UF},\n          120, \"4 months out\",\n          90, \"3 months out\",\n          60, \"2 months out\",\n          30, \"1 month out\",\n          14, \"14 days out\",\n          7, \"7 days out\",\n          3, \"3 days out\",\n          \"\"\n        )\n      )\n    )\n  )\n)",
+            "referencedFieldIds": [
+              "fld7bMiLrkWGdp6UF",
+              "fldSeEHRacXpiMxPX"
+            ],
+            "result": {
+              "type": "singleLineText"
+            }
+          },
+          "id": "fldx0uOscfUudZDSb",
+          "name": "Alerts",
+          "description": "Generates alerts based on the number of days, hours, or seconds until an event."
+        },
+        {
+          "type": "formula",
+          "options": {
+            "isValid": true,
+            "formula": "DATETIME_DIFF({fld43BW7fjYMrLjs9},NOW(),'hours')",
+            "referencedFieldIds": [
+              "fld43BW7fjYMrLjs9"
+            ],
+            "result": {
+              "type": "number",
+              "options": {
+                "precision": 1
+              }
+            }
+          },
+          "id": "fldSeEHRacXpiMxPX",
+          "name": "Hours Until"
+        },
+        {
+          "type": "formula",
+          "options": {
+            "isValid": true,
+            "formula": "DATETIME_DIFF({fld43BW7fjYMrLjs9},NOW(),'days')",
+            "referencedFieldIds": [
+              "fld43BW7fjYMrLjs9"
+            ],
+            "result": {
+              "type": "number",
+              "options": {
+                "precision": 0
+              }
+            }
+          },
+          "id": "fld7bMiLrkWGdp6UF",
+          "name": "Days Until"
+        },
+        {
+          "type": "checkbox",
+          "options": {
+            "icon": "check",
+            "color": "greenBright"
+          },
+          "id": "fld1y2ciHPTi7SZXP",
+          "name": "Alerts Trigger"
+        },
+        {
+          "type": "richText",
+          "id": "fldP9VO6dJu8EBCTp",
+          "name": "Notes"
+        },
+        {
+          "type": "multipleRecordLinks",
+          "options": {
+            "linkedTableId": "tblYQbyKJJErXkZro",
+            "isReversed": false,
+            "prefersSingleRecordLink": true,
+            "inverseLinkFieldId": "fldRtf2reDlEV8S9Z"
+          },
+          "id": "fldI8JWRgKY1348Up",
+          "name": "Parent"
+        },
+        {
+          "type": "formula",
+          "options": {
+            "isValid": true,
             "formula": "DATEADD(\n  DATETIME_PARSE(\n    DATETIME_FORMAT({fld43BW7fjYMrLjs9}, 'YYYY-MM-DD'),\n    'YYYY-MM-DD'\n  ),\n  5,\n  'hours'\n)\n",
             "referencedFieldIds": [
               "fld43BW7fjYMrLjs9"
@@ -317,24 +342,6 @@
           "id": "fldjnOKpvnunZ5QNT",
           "name": "Set To Midnight",
           "description": "Sets the Start Time to midnight of the same day."
-        },
-        {
-          "type": "formula",
-          "options": {
-            "isValid": true,
-            "formula": "DATETIME_DIFF({fld43BW7fjYMrLjs9},NOW(),'days')",
-            "referencedFieldIds": [
-              "fld43BW7fjYMrLjs9"
-            ],
-            "result": {
-              "type": "number",
-              "options": {
-                "precision": 0
-              }
-            }
-          },
-          "id": "fld7bMiLrkWGdp6UF",
-          "name": "Days Until"
         },
         {
           "type": "formula",
@@ -2143,6 +2150,11 @@
                 "id": "selTD9wcfH3mx8btp",
                 "name": "cognitive",
                 "color": "cyanLight1"
+              },
+              {
+                "id": "selzzFKTHeAM3KiHI",
+                "name": "DC",
+                "color": "pinkLight2"
               }
             ]
           },
@@ -3035,22 +3047,9 @@
           "name": "Since Updated (seconds)"
         },
         {
-          "type": "formula",
-          "options": {
-            "isValid": true,
-            "formula": "DATETIME_DIFF({fld43BW7fjYMrLjs9},NOW(),'hours')",
-            "referencedFieldIds": [
-              "fld43BW7fjYMrLjs9"
-            ],
-            "result": {
-              "type": "number",
-              "options": {
-                "precision": 1
-              }
-            }
-          },
-          "id": "fldSeEHRacXpiMxPX",
-          "name": "Hours Until"
+          "type": "richText",
+          "id": "fldfmgCh93wZoHRDa",
+          "name": "Description"
         },
         {
           "type": "formula",
@@ -3067,32 +3066,6 @@
           "id": "fldhASuxLYNsKjl2u",
           "name": "Date for Alerts",
           "description": "Formats the Start Time to 'YYYY-MM-DD HH:mm' for 24-hour time display."
-        },
-        {
-          "type": "formula",
-          "options": {
-            "isValid": true,
-            "formula": "IF({fldSeEHRacXpiMxPX} < 1, 'happening soon', IF({fldSeEHRacXpiMxPX} < 3, 'less than 3 hours until', IF({fld7bMiLrkWGdp6UF} = 120, '4 months out', IF({fld7bMiLrkWGdp6UF} = 90, '3 months out', IF({fld7bMiLrkWGdp6UF} = 60, '2 months out', IF({fld7bMiLrkWGdp6UF} = 30, '1 month out', IF({fld7bMiLrkWGdp6UF} = 14, '14 days out', IF({fld7bMiLrkWGdp6UF} = 7, '7 days out', IF({fld7bMiLrkWGdp6UF} = 3, '3 days out', IF({fld7bMiLrkWGdp6UF} = 0, 'less than a day away', IF({fld7bMiLrkWGdp6UF} < 0, 'past', '')))))))))))",
-            "referencedFieldIds": [
-              "fldSeEHRacXpiMxPX",
-              "fld7bMiLrkWGdp6UF"
-            ],
-            "result": {
-              "type": "singleLineText"
-            }
-          },
-          "id": "fldx0uOscfUudZDSb",
-          "name": "Alerts",
-          "description": "Generates alerts based on the number of days, hours, or seconds until an event."
-        },
-        {
-          "type": "checkbox",
-          "options": {
-            "icon": "check",
-            "color": "greenBright"
-          },
-          "id": "fld1y2ciHPTi7SZXP",
-          "name": "Alerts Trigger"
         },
         {
           "type": "checkbox",
@@ -4226,6 +4199,38 @@
           "type": "formula",
           "options": {
             "isValid": true,
+            "formula": "MID({fldSBxahTfGgcUT4y}, 1, 150)",
+            "referencedFieldIds": [
+              "fldSBxahTfGgcUT4y"
+            ],
+            "result": {
+              "type": "singleLineText"
+            }
+          },
+          "id": "fldi6GYSNiPVTJtQD",
+          "name": "Truncated Title",
+          "description": "Truncates the Title field to a maximum of 1000 characters"
+        },
+        {
+          "type": "formula",
+          "options": {
+            "isValid": true,
+            "formula": "MID({fldfmgCh93wZoHRDa}, 1, 2200)",
+            "referencedFieldIds": [
+              "fldfmgCh93wZoHRDa"
+            ],
+            "result": {
+              "type": "singleLineText"
+            }
+          },
+          "id": "fldcmN8NuF6B54Htq",
+          "name": "Truncated Description",
+          "description": "Truncates the Title field to a maximum of 1000 characters"
+        },
+        {
+          "type": "formula",
+          "options": {
+            "isValid": true,
             "formula": "DATETIME_DIFF(NOW(),{fldm3cM5bsYhCEnwa},'days')",
             "referencedFieldIds": [
               "fldm3cM5bsYhCEnwa"
@@ -4789,6 +4794,11 @@
           "type": "grid"
         },
         {
+          "id": "viwkYpb1ji4BShUh4",
+          "name": "3 Hour Alert",
+          "type": "grid"
+        },
+        {
           "id": "viwb29RrS4iPnOAch",
           "name": "Alerts (Appt Annual/Monthly)",
           "type": "grid"
@@ -4801,11 +4811,6 @@
         {
           "id": "viwC3h7s3YlEQDs7g",
           "name": "Alerts (RType=TV)",
-          "type": "grid"
-        },
-        {
-          "id": "viwkYpb1ji4BShUh4",
-          "name": "3 Hour Alert",
           "type": "grid"
         },
         {

@@ -1,6 +1,6 @@
 # Fields Reference (Auto-Generated)
 
-> Generated from Airtable schema on 2026-06-29 13:09:32
+> Generated from Airtable schema on 2026-07-06 12:51:55
 
 This document contains the actual schema from your Airtable base. Use this as the source of truth for updating your fields documentation.
 
@@ -118,7 +118,33 @@ This document contains the actual schema from your Airtable base. Use this as th
 - **Field ID**: `fldx0uOscfUudZDSb`
 - **Type**: Formula
 - **Description**: Generates alerts based on the number of days, hours, or seconds until an event.
-- **Formula**: `IF({fldSeEHRacXpiMxPX} < 1, 'happening soon', IF({fldSeEHRacXpiMxPX} < 3, 'less than 3 hours until', IF({fld7bMiLrkWGdp6UF} = 120, '4 months out', IF({fld7bMiLrkWGdp6UF} = 90, '3 months out', IF({fld7bMiLrkWGdp6UF} = 60, '2 months out', IF({fld7bMiLrkWGdp6UF} = 30, '1 month out', IF({fld7bMiLrkWGdp6UF} = 14, '14 days out', IF({fld7bMiLrkWGdp6UF} = 7, '7 days out', IF({fld7bMiLrkWGdp6UF} = 3, '3 days out', IF({fld7bMiLrkWGdp6UF} = 0, 'less than a day away', IF({fld7bMiLrkWGdp6UF} < 0, 'past', '')))))))))))`
+- **Formula**: `IF(
+  {fld7bMiLrkWGdp6UF} < 0,
+  "past",
+  IF(
+    {fldSeEHRacXpiMxPX} < 1,
+    "happening soon",
+    IF(
+      {fldSeEHRacXpiMxPX} < 3,
+      "less than 3 hours until",
+      IF(
+        {fldSeEHRacXpiMxPX} <= 24,
+        "less than a day away",
+        SWITCH(
+          {fld7bMiLrkWGdp6UF},
+          120, "4 months out",
+          90, "3 months out",
+          60, "2 months out",
+          30, "1 month out",
+          14, "14 days out",
+          7, "7 days out",
+          3, "3 days out",
+          ""
+        )
+      )
+    )
+  )
+)`
 - **Result Type**: singleLineText
 
 ### Alerts Trigger
@@ -741,7 +767,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 ### Research Type
 
 - **Field ID**: `fldTOSyaubEtYdqwk`
-- **Type**: Multiple Select (314 options)
+- **Type**: Multiple Select (315 options)
 - **Options**:
   - 8a (cyanLight1)
   - actors (cyanBright)
@@ -1057,6 +1083,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Zizians (greenLight1)
   - Directors (grayDark1)
   - cognitive (cyanLight1)
+  - DC (pinkLight2)
 
 ### Reset Start URL
 
@@ -1539,15 +1566,13 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - End Time
 - **formula**: 44 fields
   - Name
-  - Truncated Title
-  - Truncated Description
-  - Set To Midnight
+  - Alerts
+  - Hours Until
   - Days Until
+  - Set To Midnight
   - Anniversary Next Year
   - Since Updated (seconds)
-  - Hours Until
   - Date for Alerts
-  - Alerts
   - Since Created (seconds)
   - Date Check
   - New Date
@@ -1572,6 +1597,8 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Timer End Time
   - Effort (minutes)
   - Check Delay
+  - Truncated Title
+  - Truncated Description
   - Since Updated (days)
   - Current Time
   - Word Blackout
@@ -1625,8 +1652,8 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 - **phoneNumber**: 1 fields
   - Phone
 - **richText**: 3 fields
-  - Description
   - Notes
+  - Description
   - Long Text
 - **singleLineText**: 14 fields
   - Title

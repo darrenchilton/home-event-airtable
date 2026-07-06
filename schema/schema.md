@@ -1,7 +1,7 @@
 # Airtable Base Schema
 
 > Auto-generated schema documentation
-> Generated: 2026-06-29 13:09:32
+> Generated: 2026-07-06 12:51:55
 
 ---
 
@@ -72,28 +72,26 @@
 | Field Name | Type | Description |
 |------------|------|-------------|
 | Name | Formula | Concatenates Title and formatted Start Time unless Appt Type is 'From Research'. |
-| Title | Singlelinetext |  |
-| Description | Richtext |  |
-| Truncated Title | Formula | Truncates the Title field to a maximum of 1000 characters |
-| Truncated Description | Formula | Truncates the Title field to a maximum of 1000 characters |
 | Status | Single Select (5 options) |  |
-| Notes | Richtext |  |
-| Parent | Link to Unknown |  |
+| Title | Singlelinetext |  |
 | Created (At) | Createdtime |  |
 | Start Time | Datetime |  |
 | End Time | Datetime |  |
-| Set To Midnight | Formula | Sets the Start Time to midnight of the same day. |
+| Alerts | Formula | Generates alerts based on the number of days, hours, or seconds until an event. |
+| Hours Until | Formula |  |
 | Days Until | Formula |  |
+| Alerts Trigger | Checkbox |  |
+| Notes | Richtext |  |
+| Parent | Link to Unknown |  |
+| Set To Midnight | Formula | Sets the Start Time to midnight of the same day. |
 | Anniversary Next Year | Formula |  |
 | Appt Type | Single Select (42 options) |  |
-| Research Type | Multiple Select (314 options) |  |
+| Research Type | Multiple Select (315 options) |  |
 | Sub Type | Multiple Select (170 options) |  |
 | New Event in Days | Number |  |
 | Since Updated (seconds) | Formula |  |
-| Hours Until | Formula |  |
+| Description | Richtext |  |
 | Date for Alerts | Formula | Formats the Start Time to 'YYYY-MM-DD HH:mm' for 24-hour time display. |
-| Alerts | Formula | Generates alerts based on the number of days, hours, or seconds until an event. |
-| Alerts Trigger | Checkbox |  |
 | All Day Event? | Checkbox |  |
 | Location | Singlelinetext |  |
 | Phone | Phonenumber |  |
@@ -161,6 +159,8 @@
 | Force Def | Singlelinetext |  |
 | Month Delay | Checkbox |  |
 | Check Delay | Formula | Indicates whether the 'Month Delay' field is checked and it has been at least 30 days since the last update of the record. |
+| Truncated Title | Formula | Truncates the Title field to a maximum of 1000 characters |
+| Truncated Description | Formula | Truncates the Title field to a maximum of 1000 characters |
 | Since Updated (days) | Formula |  |
 | Learning Experience | Link to Unknown |  |
 | Current Time | Formula | Formats the current date and time to 'YYYY-MM-DD HH:MM' |
