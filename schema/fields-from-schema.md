@@ -1,6 +1,6 @@
 # Fields Reference (Auto-Generated)
 
-> Generated from Airtable schema on 2026-07-06 12:51:55
+> Generated from Airtable schema on 2026-07-13 12:08:51
 
 This document contains the actual schema from your Airtable base. Use this as the source of truth for updating your fields documentation.
 
@@ -767,7 +767,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 ### Research Type
 
 - **Field ID**: `fldTOSyaubEtYdqwk`
-- **Type**: Multiple Select (315 options)
+- **Type**: Multiple Select (316 options)
 - **Options**:
   - 8a (cyanLight1)
   - actors (cyanBright)
@@ -1084,6 +1084,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Directors (grayDark1)
   - cognitive (cyanLight1)
   - DC (pinkLight2)
+  - UBC (yellowDark1)
 
 ### Reset Start URL
 
