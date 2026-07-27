@@ -1,7 +1,7 @@
 # Airtable Base Schema
 
 > Auto-generated schema documentation
-> Generated: 2026-07-20 11:48:19
+> Generated: 2026-07-27 12:27:06
 
 ---
 
@@ -72,35 +72,35 @@
 | Field Name | Type | Description |
 |------------|------|-------------|
 | Name | Formula | Concatenates Title and formatted Start Time unless Appt Type is 'From Research'. |
+| Appt Type | Single Select (42 options) |  |
 | Status | Single Select (5 options) |  |
 | Title | Singlelinetext |  |
-| Created (At) | Createdtime |  |
 | Start Time | Datetime |  |
 | End Time | Datetime |  |
-| Alerts | Formula | Generates alerts based on the number of days, hours, or seconds until an event. |
-| Hours Until | Formula |  |
-| Days Until | Formula |  |
 | Alerts Trigger | Checkbox |  |
+| Participants | Multiple Select (54 options) |  |
+| Add to Google | Checkbox |  |
+| G Cal Event ID | Multilinetext |  |
 | Notes | Richtext |  |
 | Parent | Link to Unknown |  |
+| Created (At) | Createdtime |  |
 | Set To Midnight | Formula | Sets the Start Time to midnight of the same day. |
 | Anniversary Next Year | Formula |  |
-| Appt Type | Single Select (42 options) |  |
 | Research Type | Multiple Select (316 options) |  |
 | Sub Type | Multiple Select (171 options) |  |
 | New Event in Days | Number |  |
 | Since Updated (seconds) | Formula |  |
 | Description | Richtext |  |
 | Date for Alerts | Formula | Formats the Start Time to 'YYYY-MM-DD HH:mm' for 24-hour time display. |
+| Alerts | Formula | Generates alerts based on the number of days, hours, or seconds until an event. |
+| Hours Until | Formula |  |
+| Days Until | Formula |  |
 | All Day Event? | Checkbox |  |
 | Location | Singlelinetext |  |
 | Phone | Phonenumber |  |
-| Participants | Multiple Select (54 options) |  |
-| Add to Google | Checkbox |  |
 | Since Created (seconds) | Formula |  |
 | Updated | Lastmodifiedtime |  |
 | Date Check | Formula |  |
-| G Cal Event ID | Multilinetext |  |
 | Health Care Provider | Link to Unknown |  |
 | Provider Name (from Health Care Provider) | Multiplelookupvalues |  |
 | Specialty (from Health Care Provider) | Multiplelookupvalues |  |

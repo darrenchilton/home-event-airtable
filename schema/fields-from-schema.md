@@ -1,6 +1,6 @@
 # Fields Reference (Auto-Generated)
 
-> Generated from Airtable schema on 2026-07-20 11:48:19
+> Generated from Airtable schema on 2026-07-27 12:27:06
 
 This document contains the actual schema from your Airtable base. Use this as the source of truth for updating your fields documentation.
 
@@ -1545,8 +1545,8 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Interface Record Detail URL
 - **checkbox**: 15 fields
   - Alerts Trigger
-  - All Day Event?
   - Add to Google
+  - All Day Event?
   - Year Add
   - Month Add
   - Force Into Random Report
@@ -1568,13 +1568,13 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - End Time
 - **formula**: 44 fields
   - Name
-  - Alerts
-  - Hours Until
-  - Days Until
   - Set To Midnight
   - Anniversary Next Year
   - Since Updated (seconds)
   - Date for Alerts
+  - Alerts
+  - Hours Until
+  - Days Until
   - Since Created (seconds)
   - Date Check
   - New Date
@@ -1645,9 +1645,9 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - From field: Prev Parent (new)
   - Words Settings
 - **multipleSelects**: 3 fields
+  - Participants
   - Research Type
   - Sub Type
-  - Participants
 - **number**: 2 fields
   - New Event in Days
   - SelectionCount
@@ -1673,8 +1673,8 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Temp Field
   - Old Parent (snapshot)
 - **singleSelect**: 3 fields
-  - Status
   - Appt Type
+  - Status
   - Work Timer Type
 - **url**: 6 fields
   - Claude.AI URL
