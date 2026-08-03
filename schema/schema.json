@@ -147,296 +147,6 @@
           "description": "Concatenates Title and formatted Start Time unless Appt Type is 'From Research'."
         },
         {
-          "type": "singleSelect",
-          "options": {
-            "choices": [
-              {
-                "id": "selT4w73AIi6lYgLP",
-                "name": "Add to Plex",
-                "color": "redBright"
-              },
-              {
-                "id": "sel2k2AaaYPCGsFxh",
-                "name": "AI",
-                "color": "yellowDark1"
-              },
-              {
-                "id": "selE31vHyEj74NzjI",
-                "name": "Annual",
-                "color": "grayDark1"
-              },
-              {
-                "id": "selu3HUzT7B45q0xU",
-                "name": "Automotive",
-                "color": "yellowBright"
-              },
-              {
-                "id": "selyDylbQvkQZn3cK",
-                "name": "Consulting",
-                "color": "pinkDark1"
-              },
-              {
-                "id": "sel68zE9YM0657gUs",
-                "name": "Cut Grass",
-                "color": "cyanBright"
-              },
-              {
-                "id": "selNMTTEC5GbKFBhO",
-                "name": "DMV",
-                "color": "pinkBright"
-              },
-              {
-                "id": "selH18GxZb91roisA",
-                "name": "DRS Appt",
-                "color": "orangeDark1"
-              },
-              {
-                "id": "selMtUG2iOXuDM4a2",
-                "name": "Entertainment",
-                "color": "purpleDark1"
-              },
-              {
-                "id": "selmsE4G4x6ON8n99",
-                "name": "Equipment/Services",
-                "color": "greenLight1"
-              },
-              {
-                "id": "selp6SA4h7VSN8upe",
-                "name": "Family Reminder",
-                "color": "tealLight1"
-              },
-              {
-                "id": "selWvAACB7nnKVTte",
-                "name": "Financial",
-                "color": "tealDark1"
-              },
-              {
-                "id": "sel5g9WDUYOosugWT",
-                "name": "Friends",
-                "color": "yellowLight1"
-              },
-              {
-                "id": "selBSJRagJVvf6NNQ",
-                "name": "From Research",
-                "color": "greenLight2"
-              },
-              {
-                "id": "selsRlGHn0QcsgvWH",
-                "name": "Health",
-                "color": "redLight1"
-              },
-              {
-                "id": "selEfgQwbeTalqLZq",
-                "name": "History",
-                "color": "tealLight2"
-              },
-              {
-                "id": "selzKdJnJ1HBX66b0",
-                "name": "Home Maintenance",
-                "color": "yellowBright"
-              },
-              {
-                "id": "selKRd9MtrTWDFjOC",
-                "name": "Home Technical Work",
-                "color": "yellowLight2"
-              },
-              {
-                "id": "selATt5vdEzyEI9bE",
-                "name": "Home VIP Dates",
-                "color": "orangeLight1"
-              },
-              {
-                "id": "sell4XgUvwgubOqwp",
-                "name": "Important Thoughts",
-                "color": "cyanLight2"
-              },
-              {
-                "id": "selRJo7pNgCA80acD",
-                "name": "Insurance",
-                "color": "blueLight1"
-              },
-              {
-                "id": "selbrLpCyuvt2Epao",
-                "name": "Job Interview",
-                "color": "greenDark1"
-              },
-              {
-                "id": "selmbqDBQjC5LkfG7",
-                "name": "Job Search",
-                "color": "greenDark1"
-              },
-              {
-                "id": "sel3CIqqd5QxYEqX6",
-                "name": "Knowledge",
-                "color": "purpleLight2"
-              },
-              {
-                "id": "selP1eqygnOJ50KJe",
-                "name": "Misc",
-                "color": "grayLight2"
-              },
-              {
-                "id": "selrXmMgFztREnz8H",
-                "name": "Monthly",
-                "color": "orangeBright"
-              },
-              {
-                "id": "selA6aPB291TW3H9y",
-                "name": "Move car",
-                "color": "pinkLight1"
-              },
-              {
-                "id": "seljutxptHz5B6NJ4",
-                "name": "Payment Due",
-                "color": "yellowBright"
-              },
-              {
-                "id": "selnkHV8BEw5YkWJ2",
-                "name": "Pers Dev",
-                "color": "cyanLight1"
-              },
-              {
-                "id": "selrZyMUPEFghvsAg",
-                "name": "Potential Work",
-                "color": "purpleLight1"
-              },
-              {
-                "id": "selJFv5zY9KdsKgyG",
-                "name": "Receipts",
-                "color": "orangeLight2"
-              },
-              {
-                "id": "seledC8SzQAaHV9Pq",
-                "name": "School",
-                "color": "pinkLight2"
-              },
-              {
-                "id": "selXMrDL9huh0Z75G",
-                "name": "Social Movements & Democracy",
-                "color": "redDark1"
-              },
-              {
-                "id": "sel6OJ3SS4KUZtLr2",
-                "name": "Subscription Due",
-                "color": "yellowBright"
-              },
-              {
-                "id": "selemUpVIQimB0Yol",
-                "name": "SuperProd",
-                "color": "tealBright"
-              },
-              {
-                "id": "sel2xMz4IackTOy8w",
-                "name": "To ReType",
-                "color": "blueLight2"
-              },
-              {
-                "id": "selobujMgYpVqrjhr",
-                "name": "Travel",
-                "color": "purpleDark1"
-              },
-              {
-                "id": "sell6HU3kLzwURxh5",
-                "name": "UBC",
-                "color": "greenBright"
-              },
-              {
-                "id": "seltOi5CIgX2UCTcT",
-                "name": "VIP Resources",
-                "color": "grayBright"
-              },
-              {
-                "id": "selSFngnQzj9Tu0D5",
-                "name": "Words To Learn",
-                "color": "redLight2"
-              },
-              {
-                "id": "selQchQSSlW2H2YA5",
-                "name": "Work Timer",
-                "color": "blueBright"
-              },
-              {
-                "id": "selvLavIIneaUHjQa",
-                "name": "Writing",
-                "color": "grayLight1"
-              }
-            ]
-          },
-          "id": "fldhK5IfHRAso54iK",
-          "name": "Appt Type"
-        },
-        {
-          "type": "singleSelect",
-          "options": {
-            "choices": [
-              {
-                "id": "selqqlv5pdp7IP9O0",
-                "name": "Pending",
-                "color": "blueLight2"
-              },
-              {
-                "id": "selW36eArnjBmPaN3",
-                "name": "Scheduled",
-                "color": "greenLight2"
-              },
-              {
-                "id": "seloYxEvsKZeQH6tE",
-                "name": "Completed",
-                "color": "orangeLight2"
-              },
-              {
-                "id": "selD6QmE74Z8gh1sJ",
-                "name": "Archived",
-                "color": "cyanLight2"
-              },
-              {
-                "id": "selQ1mHq7WDCOVtIq",
-                "name": "Cancelled",
-                "color": "tealLight2"
-              }
-            ]
-          },
-          "id": "fldvXRj5JUVh7NG9S",
-          "name": "Status"
-        },
-        {
-          "type": "singleLineText",
-          "id": "fldSBxahTfGgcUT4y",
-          "name": "Title"
-        },
-        {
-          "type": "dateTime",
-          "options": {
-            "dateFormat": {
-              "name": "us",
-              "format": "M/D/YYYY"
-            },
-            "timeFormat": {
-              "name": "24hour",
-              "format": "HH:mm"
-            },
-            "timeZone": "America/New_York"
-          },
-          "id": "fld43BW7fjYMrLjs9",
-          "name": "Start Time"
-        },
-        {
-          "type": "dateTime",
-          "options": {
-            "dateFormat": {
-              "name": "us",
-              "format": "M/D/YYYY"
-            },
-            "timeFormat": {
-              "name": "24hour",
-              "format": "HH:mm"
-            },
-            "timeZone": "America/New_York"
-          },
-          "id": "flduWwxeEP5fKzSKZ",
-          "name": "End Time"
-        },
-        {
           "type": "checkbox",
           "options": {
             "icon": "check",
@@ -725,18 +435,267 @@
           "name": "Participants"
         },
         {
-          "type": "checkbox",
-          "options": {
-            "icon": "check",
-            "color": "greenBright"
-          },
-          "id": "fldP9b4dWif5GMHK0",
-          "name": "Add to Google"
-        },
-        {
           "type": "multilineText",
           "id": "fldsZk16g4pZdswD7",
           "name": "G Cal Event ID"
+        },
+        {
+          "type": "singleSelect",
+          "options": {
+            "choices": [
+              {
+                "id": "selT4w73AIi6lYgLP",
+                "name": "Add to Plex",
+                "color": "redBright"
+              },
+              {
+                "id": "sel2k2AaaYPCGsFxh",
+                "name": "AI",
+                "color": "yellowDark1"
+              },
+              {
+                "id": "selE31vHyEj74NzjI",
+                "name": "Annual",
+                "color": "grayDark1"
+              },
+              {
+                "id": "selu3HUzT7B45q0xU",
+                "name": "Automotive",
+                "color": "yellowBright"
+              },
+              {
+                "id": "selyDylbQvkQZn3cK",
+                "name": "Consulting",
+                "color": "pinkDark1"
+              },
+              {
+                "id": "sel68zE9YM0657gUs",
+                "name": "Cut Grass",
+                "color": "cyanBright"
+              },
+              {
+                "id": "selNMTTEC5GbKFBhO",
+                "name": "DMV",
+                "color": "pinkBright"
+              },
+              {
+                "id": "selH18GxZb91roisA",
+                "name": "DRS Appt",
+                "color": "orangeDark1"
+              },
+              {
+                "id": "selMtUG2iOXuDM4a2",
+                "name": "Entertainment",
+                "color": "purpleDark1"
+              },
+              {
+                "id": "selmsE4G4x6ON8n99",
+                "name": "Equipment/Services",
+                "color": "greenLight1"
+              },
+              {
+                "id": "selp6SA4h7VSN8upe",
+                "name": "Family Reminder",
+                "color": "tealLight1"
+              },
+              {
+                "id": "selWvAACB7nnKVTte",
+                "name": "Financial",
+                "color": "tealDark1"
+              },
+              {
+                "id": "sel5g9WDUYOosugWT",
+                "name": "Friends",
+                "color": "yellowLight1"
+              },
+              {
+                "id": "selBSJRagJVvf6NNQ",
+                "name": "From Research",
+                "color": "greenLight2"
+              },
+              {
+                "id": "selsRlGHn0QcsgvWH",
+                "name": "Health",
+                "color": "redLight1"
+              },
+              {
+                "id": "selEfgQwbeTalqLZq",
+                "name": "History",
+                "color": "tealLight2"
+              },
+              {
+                "id": "selzKdJnJ1HBX66b0",
+                "name": "Home Maintenance",
+                "color": "yellowBright"
+              },
+              {
+                "id": "selKRd9MtrTWDFjOC",
+                "name": "Home Technical Work",
+                "color": "yellowLight2"
+              },
+              {
+                "id": "selATt5vdEzyEI9bE",
+                "name": "Home VIP Dates",
+                "color": "orangeLight1"
+              },
+              {
+                "id": "sell4XgUvwgubOqwp",
+                "name": "Important Thoughts",
+                "color": "cyanLight2"
+              },
+              {
+                "id": "selRJo7pNgCA80acD",
+                "name": "Insurance",
+                "color": "blueLight1"
+              },
+              {
+                "id": "selbrLpCyuvt2Epao",
+                "name": "Job Interview",
+                "color": "greenDark1"
+              },
+              {
+                "id": "selmbqDBQjC5LkfG7",
+                "name": "Job Search",
+                "color": "greenDark1"
+              },
+              {
+                "id": "sel3CIqqd5QxYEqX6",
+                "name": "Knowledge",
+                "color": "purpleLight2"
+              },
+              {
+                "id": "selP1eqygnOJ50KJe",
+                "name": "Misc",
+                "color": "grayLight2"
+              },
+              {
+                "id": "selrXmMgFztREnz8H",
+                "name": "Monthly",
+                "color": "orangeBright"
+              },
+              {
+                "id": "selA6aPB291TW3H9y",
+                "name": "Move car",
+                "color": "pinkLight1"
+              },
+              {
+                "id": "seljutxptHz5B6NJ4",
+                "name": "Payment Due",
+                "color": "yellowBright"
+              },
+              {
+                "id": "selnkHV8BEw5YkWJ2",
+                "name": "Pers Dev",
+                "color": "cyanLight1"
+              },
+              {
+                "id": "selrZyMUPEFghvsAg",
+                "name": "Potential Work",
+                "color": "purpleLight1"
+              },
+              {
+                "id": "selJFv5zY9KdsKgyG",
+                "name": "Receipts",
+                "color": "orangeLight2"
+              },
+              {
+                "id": "seledC8SzQAaHV9Pq",
+                "name": "School",
+                "color": "pinkLight2"
+              },
+              {
+                "id": "selXMrDL9huh0Z75G",
+                "name": "Social Movements & Democracy",
+                "color": "redDark1"
+              },
+              {
+                "id": "sel6OJ3SS4KUZtLr2",
+                "name": "Subscription Due",
+                "color": "yellowBright"
+              },
+              {
+                "id": "selemUpVIQimB0Yol",
+                "name": "SuperProd",
+                "color": "tealBright"
+              },
+              {
+                "id": "sel2xMz4IackTOy8w",
+                "name": "To ReType",
+                "color": "blueLight2"
+              },
+              {
+                "id": "selobujMgYpVqrjhr",
+                "name": "Travel",
+                "color": "purpleDark1"
+              },
+              {
+                "id": "sell6HU3kLzwURxh5",
+                "name": "UBC",
+                "color": "greenBright"
+              },
+              {
+                "id": "seltOi5CIgX2UCTcT",
+                "name": "VIP Resources",
+                "color": "grayBright"
+              },
+              {
+                "id": "selSFngnQzj9Tu0D5",
+                "name": "Words To Learn",
+                "color": "redLight2"
+              },
+              {
+                "id": "selQchQSSlW2H2YA5",
+                "name": "Work Timer",
+                "color": "blueBright"
+              },
+              {
+                "id": "selvLavIIneaUHjQa",
+                "name": "Writing",
+                "color": "grayLight1"
+              }
+            ]
+          },
+          "id": "fldhK5IfHRAso54iK",
+          "name": "Appt Type"
+        },
+        {
+          "type": "singleSelect",
+          "options": {
+            "choices": [
+              {
+                "id": "selqqlv5pdp7IP9O0",
+                "name": "Pending",
+                "color": "blueLight2"
+              },
+              {
+                "id": "selW36eArnjBmPaN3",
+                "name": "Scheduled",
+                "color": "greenLight2"
+              },
+              {
+                "id": "seloYxEvsKZeQH6tE",
+                "name": "Completed",
+                "color": "orangeLight2"
+              },
+              {
+                "id": "selD6QmE74Z8gh1sJ",
+                "name": "Archived",
+                "color": "cyanLight2"
+              },
+              {
+                "id": "selQ1mHq7WDCOVtIq",
+                "name": "Cancelled",
+                "color": "tealLight2"
+              }
+            ]
+          },
+          "id": "fldvXRj5JUVh7NG9S",
+          "name": "Status"
+        },
+        {
+          "type": "singleLineText",
+          "id": "fldSBxahTfGgcUT4y",
+          "name": "Title"
         },
         {
           "type": "richText",
@@ -774,6 +733,38 @@
           },
           "id": "fldphRwWJsdA4Gj5N",
           "name": "Created (At)"
+        },
+        {
+          "type": "dateTime",
+          "options": {
+            "dateFormat": {
+              "name": "us",
+              "format": "M/D/YYYY"
+            },
+            "timeFormat": {
+              "name": "24hour",
+              "format": "HH:mm"
+            },
+            "timeZone": "America/New_York"
+          },
+          "id": "fld43BW7fjYMrLjs9",
+          "name": "Start Time"
+        },
+        {
+          "type": "dateTime",
+          "options": {
+            "dateFormat": {
+              "name": "us",
+              "format": "M/D/YYYY"
+            },
+            "timeFormat": {
+              "name": "24hour",
+              "format": "HH:mm"
+            },
+            "timeZone": "America/New_York"
+          },
+          "id": "flduWwxeEP5fKzSKZ",
+          "name": "End Time"
         },
         {
           "type": "formula",
@@ -3388,6 +3379,15 @@
           "type": "phoneNumber",
           "id": "fldcfhiKj6vnMQJVe",
           "name": "Phone"
+        },
+        {
+          "type": "checkbox",
+          "options": {
+            "icon": "check",
+            "color": "greenBright"
+          },
+          "id": "fldP9b4dWif5GMHK0",
+          "name": "Add to Google"
         },
         {
           "type": "formula",
@@ -7303,24 +7303,9 @@
           "options": {
             "choices": [
               {
-                "id": "sel0hcoCX1SsB3yvL",
-                "name": "Todo",
-                "color": "redLight2"
-              },
-              {
-                "id": "selKbTLz395PcxYwP",
-                "name": "In progress",
-                "color": "yellowLight2"
-              },
-              {
-                "id": "sel5AiiEvGjWr8eqG",
-                "name": "Done",
-                "color": "greenLight2"
-              },
-              {
-                "id": "sel93Zavky3TmoBw2",
-                "name": "Regular Source",
-                "color": "grayLight2"
+                "id": "selTaISisinyw85V2",
+                "name": "",
+                "color": "pinkLight2"
               },
               {
                 "id": "selqeJAjQYDqY6Mas",
@@ -7328,24 +7313,24 @@
                 "color": "redLight2"
               },
               {
-                "id": "seln3LnZYPvVtCvJs",
-                "name": "DVR",
-                "color": "tealLight2"
-              },
-              {
                 "id": "sel3EWWeXvDNmLxfD",
                 "name": "Current",
                 "color": "cyanLight2"
               },
               {
-                "id": "selQLOotKKYTe3yOv",
-                "name": "Old Time Machine",
-                "color": "orangeLight2"
+                "id": "sel5hzsqSVHdXOGgj",
+                "name": "Destroyed",
+                "color": "blueLight2"
               },
               {
-                "id": "sel5DK6wpXmP8fed4",
-                "name": "Non-Media",
-                "color": "grayLight2"
+                "id": "sel5AiiEvGjWr8eqG",
+                "name": "Done",
+                "color": "greenLight2"
+              },
+              {
+                "id": "seln3LnZYPvVtCvJs",
+                "name": "DVR",
+                "color": "tealLight2"
               },
               {
                 "id": "selDmt8yOOlNi97SV",
@@ -7353,9 +7338,34 @@
                 "color": "cyanLight2"
               },
               {
+                "id": "selKbTLz395PcxYwP",
+                "name": "In progress",
+                "color": "yellowLight2"
+              },
+              {
+                "id": "sel5DK6wpXmP8fed4",
+                "name": "Non-Media",
+                "color": "grayLight2"
+              },
+              {
+                "id": "selQLOotKKYTe3yOv",
+                "name": "Old Time Machine",
+                "color": "orangeLight2"
+              },
+              {
                 "id": "sel9oYEBQoLStcWjP",
                 "name": "Out of Service",
                 "color": "grayLight2"
+              },
+              {
+                "id": "sel93Zavky3TmoBw2",
+                "name": "Regular Source",
+                "color": "grayLight2"
+              },
+              {
+                "id": "sel0hcoCX1SsB3yvL",
+                "name": "Todo",
+                "color": "redLight2"
               }
             ]
           },

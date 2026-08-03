@@ -1,7 +1,7 @@
 # Airtable Base Schema
 
 > Auto-generated schema documentation
-> Generated: 2026-07-27 12:27:06
+> Generated: 2026-08-03 12:27:50
 
 ---
 
@@ -72,18 +72,17 @@
 | Field Name | Type | Description |
 |------------|------|-------------|
 | Name | Formula | Concatenates Title and formatted Start Time unless Appt Type is 'From Research'. |
+| Alerts Trigger | Checkbox |  |
+| Participants | Multiple Select (54 options) |  |
+| G Cal Event ID | Multilinetext |  |
 | Appt Type | Single Select (42 options) |  |
 | Status | Single Select (5 options) |  |
 | Title | Singlelinetext |  |
-| Start Time | Datetime |  |
-| End Time | Datetime |  |
-| Alerts Trigger | Checkbox |  |
-| Participants | Multiple Select (54 options) |  |
-| Add to Google | Checkbox |  |
-| G Cal Event ID | Multilinetext |  |
 | Notes | Richtext |  |
 | Parent | Link to Unknown |  |
 | Created (At) | Createdtime |  |
+| Start Time | Datetime |  |
+| End Time | Datetime |  |
 | Set To Midnight | Formula | Sets the Start Time to midnight of the same day. |
 | Anniversary Next Year | Formula |  |
 | Research Type | Multiple Select (316 options) |  |
@@ -98,6 +97,7 @@
 | All Day Event? | Checkbox |  |
 | Location | Singlelinetext |  |
 | Phone | Phonenumber |  |
+| Add to Google | Checkbox |  |
 | Since Created (seconds) | Formula |  |
 | Updated | Lastmodifiedtime |  |
 | Date Check | Formula |  |
@@ -380,7 +380,7 @@
 | Name | Formula |  |
 | Size | Number |  |
 | Short Description | Richtext |  |
-| Status | Multiple Select (11 options) |  |
+| Status | Multiple Select (13 options) |  |
 | Desc | Richtext |  |
 | Purchase Date | Date |  |
 | Procedurs | Multilinetext |  |

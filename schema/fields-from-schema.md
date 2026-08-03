@@ -1,6 +1,6 @@
 # Fields Reference (Auto-Generated)
 
-> Generated from Airtable schema on 2026-07-27 12:27:06
+> Generated from Airtable schema on 2026-08-03 12:27:50
 
 This document contains the actual schema from your Airtable base. Use this as the source of truth for updating your fields documentation.
 
@@ -1545,8 +1545,8 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Interface Record Detail URL
 - **checkbox**: 15 fields
   - Alerts Trigger
-  - Add to Google
   - All Day Event?
+  - Add to Google
   - Year Add
   - Month Add
   - Force Into Random Report
@@ -2930,19 +2930,21 @@ CONCATENATE({fldYky9JmPsXETPag},"-",{fldXwQfYYM3dTQGVT},"-",{fldPnKZ2IYt0mDEpq})
 ### Status
 
 - **Field ID**: `fldJ78vcJyd6cZEFQ`
-- **Type**: Multiple Select (11 options)
+- **Type**: Multiple Select (13 options)
 - **Options**:
-  - Todo (redLight2)
-  - In progress (yellowLight2)
-  - Done (greenLight2)
-  - Regular Source (grayLight2)
+  -  (pinkLight2)
   - Backup (redLight2)
-  - DVR (tealLight2)
   - Current (cyanLight2)
-  - Old Time Machine (orangeLight2)
-  - Non-Media (grayLight2)
+  - Destroyed (blueLight2)
+  - Done (greenLight2)
+  - DVR (tealLight2)
   - Errors (cyanLight2)
+  - In progress (yellowLight2)
+  - Non-Media (grayLight2)
+  - Old Time Machine (orangeLight2)
   - Out of Service (grayLight2)
+  - Regular Source (grayLight2)
+  - Todo (redLight2)
 
 ### Timer Countdown
 
