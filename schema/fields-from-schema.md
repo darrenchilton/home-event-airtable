@@ -1,6 +1,6 @@
 # Fields Reference (Auto-Generated)
 
-> Generated from Airtable schema on 2026-08-31 16:52:47
+> Generated from Airtable schema on 2026-09-07 14:54:37
 
 This document contains the actual schema from your Airtable base. Use this as the source of truth for updating your fields documentation.
 
@@ -1568,6 +1568,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - End Time
 - **formula**: 44 fields
   - Name
+  - Created Month/Year
   - Set To Midnight
   - Anniversary Next Year
   - Since Updated (seconds)
@@ -1580,7 +1581,6 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - New Date
   - Anniversary Next Month
   - Seconds Until
-  - Created Month/Year
   - NYS Jobs Daily Link
   - Start Updates Check
   - Pre-Filled Annual
@@ -1645,9 +1645,9 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - From field: Prev Parent (new)
   - Words Settings
 - **multipleSelects**: 3 fields
-  - Participants
   - Research Type
   - Sub Type
+  - Participants
 - **number**: 2 fields
   - New Event in Days
   - SelectionCount
@@ -4745,5 +4745,102 @@ CONCATENATE({fldYky9JmPsXETPag},"-",{fldXwQfYYM3dTQGVT},"-",{fldPnKZ2IYt0mDEpq})
   - Home Events
 - **rollup**: 1 fields
   - Name Rollup (from Home Events)
+
+---
+
+## ChatGPT Projects
+
+**Total Fields**: 10
+
+### Category
+
+- **Field ID**: `fldnhsHJqeWJ6sSSy`
+- **Type**: Single Select (8 options)
+- **Options**:
+  - HOME (grayLight2)
+  - HEAT (grayLight2)
+  - SAT (grayLight2)
+  - ENERGY (grayLight2)
+  - TECH (grayLight2)
+  - ADMIN (grayLight2)
+  - HOME-PROJ (grayLight2)
+  - OTHER (grayLight2)
+
+### ChatGPT Project Link
+
+- **Field ID**: `fldn4W5qOzvBUo5p7`
+- **Type**: Url
+- **Description**: Direct URL to the ChatGPT Project.
+
+### Last Reviewed
+
+- **Field ID**: `fldYex4XAs1r6BZln`
+- **Type**: Date
+- **Date Format**: iso
+
+### Notes
+
+- **Field ID**: `fldLfyZ8rUiQffIi7`
+- **Type**: Multilinetext
+
+### Program
+
+- **Field ID**: `fldrzFMp29fdHQuTH`
+- **Type**: Singlelinetext
+- **Description**: Parent program or umbrella initiative, when applicable.
+
+### Project Name
+
+- **Field ID**: `fldQhrTCAq6rqkuw2`
+- **Type**: Singlelinetext
+- **Description**: Canonical ChatGPT Project name.
+
+### Purpose
+
+- **Field ID**: `fldi011SASuRhzYYM`
+- **Type**: Multilinetext
+- **Description**: Short statement of what belongs in the project.
+
+### Sidebar Activity
+
+- **Field ID**: `fldBSJhKM1ZO97iMr`
+- **Type**: Singlelinetext
+- **Description**: Relative last-activity text shown in the ChatGPT Projects sidebar at the time of inventory (for example, '1 week ago').
+
+### Status
+
+- **Field ID**: `fldwDO4Gs7jmEyUEt`
+- **Type**: Single Select (5 options)
+- **Options**:
+  - Active (grayLight2)
+  - Waiting (grayLight2)
+  - Someday (grayLight2)
+  - Complete (grayLight2)
+  - Archived (grayLight2)
+
+### Verified Sidebar Project
+
+- **Field ID**: `fldPRtziS0wrgXXVm`
+- **Type**: Checkbox
+- **Description**: Checked when the project name has been directly verified from the ChatGPT Projects sidebar.
+
+### Field Type Summary
+
+- **checkbox**: 1 fields
+  - Verified Sidebar Project
+- **date**: 1 fields
+  - Last Reviewed
+- **multilineText**: 2 fields
+  - Purpose
+  - Notes
+- **singleLineText**: 3 fields
+  - Project Name
+  - Program
+  - Sidebar Activity
+- **singleSelect**: 2 fields
+  - Category
+  - Status
+- **url**: 1 fields
+  - ChatGPT Project Link
 
 ---

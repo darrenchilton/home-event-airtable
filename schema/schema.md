@@ -1,7 +1,7 @@
 # Airtable Base Schema
 
 > Auto-generated schema documentation
-> Generated: 2026-08-31 16:52:47
+> Generated: 2026-09-07 14:54:37
 
 ---
 
@@ -38,6 +38,7 @@
 - [Field Analysis Results](#field-analysis-results)
 - [Category Analysis](#category-analysis)
 - [Words Settings](#words-settings)
+- [ChatGPT Projects](#chatgpt-projects)
 
 ---
 
@@ -72,12 +73,12 @@
 | Field Name | Type | Description |
 |------------|------|-------------|
 | Name | Formula | Concatenates Title and formatted Start Time unless Appt Type is 'From Research'. |
-| Alerts Trigger | Checkbox |  |
-| Participants | Multiple Select (54 options) |  |
+| Title | Singlelinetext |  |
+| Location | Singlelinetext |  |
 | G Cal Event ID | Multilinetext |  |
+| Created Month/Year | Formula |  |
 | Appt Type | Single Select (42 options) |  |
 | Status | Single Select (5 options) |  |
-| Title | Singlelinetext |  |
 | Notes | Richtext |  |
 | Parent | Link to Unknown |  |
 | Created (At) | Createdtime |  |
@@ -94,9 +95,10 @@
 | Alerts | Formula | Generates alerts based on the number of days, hours, or seconds until an event. |
 | Hours Until | Formula |  |
 | Days Until | Formula |  |
+| Alerts Trigger | Checkbox |  |
 | All Day Event? | Checkbox |  |
-| Location | Singlelinetext |  |
 | Phone | Phonenumber |  |
+| Participants | Multiple Select (54 options) |  |
 | Add to Google | Checkbox |  |
 | Since Created (seconds) | Formula |  |
 | Updated | Lastmodifiedtime |  |
@@ -119,7 +121,6 @@
 | Parent Record (old) | Link to Unknown |  |
 | Parent Record ID | Singlelinetext |  |
 | Sub Record (old) | Link to Unknown |  |
-| Created Month/Year | Formula |  |
 | Long Text | Richtext |  |
 | Company | Singlelinetext |  |
 | Job Title | Singlelinetext |  |
@@ -897,5 +898,30 @@
 | Home Events | Link to Unknown |  |
 | Record ID | Formula |  |
 | Name Rollup (from Home Events) | Rollup |  |
+
+---
+
+## ChatGPT Projects
+
+**Table ID**: `tbl5dPshSvNE1X5JX`
+
+**Description**: Master directory for ChatGPT Projects. Airtable is the organizational index/control plane; ChatGPT remains the working space. Add each ChatGPT Project URL to launch directly from this table.
+
+**Primary Field**: Project Name
+
+### Fields
+
+| Field Name | Type | Description |
+|------------|------|-------------|
+| Project Name | Singlelinetext | Canonical ChatGPT Project name. |
+| Category | Single Select (8 options) |  |
+| Status | Single Select (5 options) |  |
+| ChatGPT Project Link | Url | Direct URL to the ChatGPT Project. |
+| Purpose | Multilinetext | Short statement of what belongs in the project. |
+| Program | Singlelinetext | Parent program or umbrella initiative, when applicable. |
+| Last Reviewed | Date |  |
+| Notes | Multilinetext |  |
+| Verified Sidebar Project | Checkbox | Checked when the project name has been directly verified from the ChatGPT Projects sidebar. |
+| Sidebar Activity | Singlelinetext | Relative last-activity text shown in the ChatGPT Projects sidebar at the time of inventory (for example, '1 week ago'). |
 
 ---
