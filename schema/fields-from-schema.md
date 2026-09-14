@@ -1,6 +1,6 @@
 # Fields Reference (Auto-Generated)
 
-> Generated from Airtable schema on 2026-09-07 14:54:37
+> Generated from Airtable schema on 2026-09-14 15:46:23
 
 This document contains the actual schema from your Airtable base. Use this as the source of truth for updating your fields documentation.
 
@@ -76,7 +76,7 @@ This document contains the actual schema from your Airtable base. Use this as th
 
 ## Home Events
 
-**Total Fields**: 124
+**Total Fields**: 126
 
 ### 14 Days Since Creation
 
@@ -519,6 +519,15 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 - **Field ID**: `fldZ5E5L2ruPJ3tq2`
 - **Type**: Singlelinetext
 
+### Last New Event Created
+
+- **Field ID**: `fldHbxMe4qrYab58w`
+- **Type**: Datetime
+- **Description**: Stores the exact New Date value for the most recent child occurrence successfully created by the New Event in x Days automation. Used to prevent unnecessary retriggers while preserving New Event in Days.
+- **Date Format**: us
+- **Time Format**: 12hour
+- **Time Zone**: America/New_York
+
 ### Last Updated by
 
 - **Field ID**: `fldsirGpyFSXKuWnj`
@@ -598,6 +607,14 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 - **Type**: Formula
 - **Formula**: `DATEADD({fld43BW7fjYMrLjs9},{fld6mlhWRE0pdltzC},'days')`
 - **Result Type**: date
+
+### New Event Pending
+
+- **Field ID**: `fldApLf40QGEM6959`
+- **Type**: Formula
+- **Description**: Returns 1 when New Event in Days has produced a New Date that has not yet been recorded in Last New Event Created; otherwise returns 0. Intended as a trigger-view gate for the New Event in x Days automation.
+- **Formula**: `IF(AND({fld6mlhWRE0pdltzC}>0,{fldxf6StXUNmtoFLA},OR(NOT({fldHbxMe4qrYab58w}),DATETIME_DIFF({fldxf6StXUNmtoFLA},{fldHbxMe4qrYab58w},'seconds')!=0)),1,0)`
+- **Result Type**: number
 
 ### New Event in Days
 
@@ -767,7 +784,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 ### Research Type
 
 - **Field ID**: `fldTOSyaubEtYdqwk`
-- **Type**: Multiple Select (316 options)
+- **Type**: Multiple Select (317 options)
 - **Options**:
   - 8a (cyanLight1)
   - actors (cyanBright)
@@ -829,6 +846,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Climate (yellowLight1)
   - Clothes (greenBright)
   - coding (blueDark1)
+  - cognitive (cyanLight1)
   - collective memory (grayBright)
   - commentators (pinkDark1)
   - communication (orangeLight2)
@@ -852,6 +870,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Current (cyanLight2)
   - customer support (tealDark1)
   - data (blueLight2)
+  - DC (pinkLight2)
   - dc lungs (cyanDark1)
   - DC Vaccine (greenBright)
   - dcmacbookpro (yellowLight1)
@@ -861,6 +880,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Democratic Resistance (cyanBright)
   - Dental (greenBright)
   - deviance (greenDark1)
+  - Directors (grayDark1)
   - disputes (orangeBright)
   - DMV (greenLight1)
   - Documentaries (yellowLight2)
@@ -879,6 +899,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - epidemiology\ (greenDark1)
   - epstein (blueBright)
   - Equipment (pinkBright)
+  - Every 2 Weeks (purpleLight2)
   - evolution (tealLight2)
   - Exercise (tealLight1)
   - eyes (yellowLight2)
@@ -1061,6 +1082,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - trends (redDark1)
   - Trump Corruption (pinkLight1)
   - TV Show (blueLight1)
+  - UBC (yellowDark1)
   - ues (yellowDark1)
   - Ukraine (yellowDark1)
   - UNC Basketball (purpleBright)
@@ -1081,10 +1103,6 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - yudkowsky (redDark1)
   - zerowater (purpleLight1)
   - Zizians (greenLight1)
-  - Directors (grayDark1)
-  - cognitive (cyanLight1)
-  - DC (pinkLight2)
-  - UBC (yellowDark1)
 
 ### Reset Start URL
 
@@ -1563,24 +1581,26 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Created (At)
 - **date**: 1 fields
   - Last day selected
-- **dateTime**: 2 fields
+- **dateTime**: 3 fields
   - Start Time
   - End Time
-- **formula**: 44 fields
+  - Last New Event Created
+- **formula**: 45 fields
   - Name
-  - Created Month/Year
+  - Since Updated (seconds)
+  - New Date
+  - New Event Pending
   - Set To Midnight
   - Anniversary Next Year
-  - Since Updated (seconds)
   - Date for Alerts
   - Alerts
   - Hours Until
   - Days Until
   - Since Created (seconds)
   - Date Check
-  - New Date
   - Anniversary Next Month
   - Seconds Until
+  - Created Month/Year
   - NYS Jobs Daily Link
   - Start Updates Check
   - Pre-Filled Annual
@@ -1632,14 +1652,14 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Words Window End (from Words Settings)
   - Words Window Start (from Words Settings)
 - **multipleRecordLinks**: 12 fields
+  - Sub Record (old)
+  - Children (do not edit)
   - Parent
   - Health Care Provider
   - Parent Record (old)
-  - Sub Record (old)
   - Link to Research
   - Learning Experience
   - From field: Parent (Canonical)
-  - Children (do not edit)
   - From field: Children (new)
   - Prev Parent (new)
   - From field: Prev Parent (new)

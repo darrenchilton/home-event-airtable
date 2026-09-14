@@ -1,7 +1,7 @@
 # Airtable Base Schema
 
 > Auto-generated schema documentation
-> Generated: 2026-09-07 14:54:37
+> Generated: 2026-09-14 15:46:23
 
 ---
 
@@ -73,23 +73,26 @@
 | Field Name | Type | Description |
 |------------|------|-------------|
 | Name | Formula | Concatenates Title and formatted Start Time unless Appt Type is 'From Research'. |
-| Title | Singlelinetext |  |
-| Location | Singlelinetext |  |
-| G Cal Event ID | Multilinetext |  |
-| Created Month/Year | Formula |  |
+| New Event in Days | Number |  |
 | Appt Type | Single Select (42 options) |  |
 | Status | Single Select (5 options) |  |
-| Notes | Richtext |  |
-| Parent | Link to Unknown |  |
 | Created (At) | Createdtime |  |
 | Start Time | Datetime |  |
 | End Time | Datetime |  |
+| Research Type | Multiple Select (317 options) |  |
+| Sub Type | Multiple Select (171 options) |  |
+| Since Updated (seconds) | Formula |  |
+| Updated | Lastmodifiedtime |  |
+| New Date | Formula |  |
+| Sub Record (old) | Link to Unknown |  |
+| Children (do not edit) | Link to Unknown |  |
+| Last New Event Created | Datetime | Stores the exact New Date value for the most recent child occurrence successfully created by the New Event in x Days automation. Used to prevent unnecessary retriggers while preserving New Event in Days. |
+| New Event Pending | Formula | Returns 1 when New Event in Days has produced a New Date that has not yet been recorded in Last New Event Created; otherwise returns 0. Intended as a trigger-view gate for the New Event in x Days automation. |
+| Title | Singlelinetext |  |
+| Notes | Richtext |  |
+| Parent | Link to Unknown |  |
 | Set To Midnight | Formula | Sets the Start Time to midnight of the same day. |
 | Anniversary Next Year | Formula |  |
-| Research Type | Multiple Select (316 options) |  |
-| Sub Type | Multiple Select (171 options) |  |
-| New Event in Days | Number |  |
-| Since Updated (seconds) | Formula |  |
 | Description | Richtext |  |
 | Date for Alerts | Formula | Formats the Start Time to 'YYYY-MM-DD HH:mm' for 24-hour time display. |
 | Alerts | Formula | Generates alerts based on the number of days, hours, or seconds until an event. |
@@ -97,12 +100,13 @@
 | Days Until | Formula |  |
 | Alerts Trigger | Checkbox |  |
 | All Day Event? | Checkbox |  |
+| Location | Singlelinetext |  |
 | Phone | Phonenumber |  |
 | Participants | Multiple Select (54 options) |  |
 | Add to Google | Checkbox |  |
 | Since Created (seconds) | Formula |  |
-| Updated | Lastmodifiedtime |  |
 | Date Check | Formula |  |
+| G Cal Event ID | Multilinetext |  |
 | Health Care Provider | Link to Unknown |  |
 | Provider Name (from Health Care Provider) | Multiplelookupvalues |  |
 | Specialty (from Health Care Provider) | Multiplelookupvalues |  |
@@ -113,14 +117,13 @@
 | Attachments | Multipleattachments |  |
 | Household Tasks | Singlelinetext |  |
 | Force Update | Singlelinetext |  |
-| New Date | Formula |  |
 | Anniversary Next Month | Formula |  |
 | Year Add | Checkbox |  |
 | Month Add | Checkbox |  |
 | Seconds Until | Formula |  |
 | Parent Record (old) | Link to Unknown |  |
 | Parent Record ID | Singlelinetext |  |
-| Sub Record (old) | Link to Unknown |  |
+| Created Month/Year | Formula |  |
 | Long Text | Richtext |  |
 | Company | Singlelinetext |  |
 | Job Title | Singlelinetext |  |
@@ -185,7 +188,6 @@
 | From GCal | Checkbox |  |
 | Interface Record Detail URL | Button | Outputs the URL from the Interface Record Detail field for use in a button. |
 | From field: Parent (Canonical) | Link to Unknown |  |
-| Children (do not edit) | Link to Unknown |  |
 | From field: Children (new) | Link to Unknown |  |
 | Sync lock | Checkbox |  |
 | Old Parent (snapshot) | Singlelinetext |  |

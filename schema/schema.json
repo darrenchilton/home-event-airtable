@@ -147,34 +147,12 @@
           "description": "Concatenates Title and formatted Start Time unless Appt Type is 'From Research'."
         },
         {
-          "type": "singleLineText",
-          "id": "fldSBxahTfGgcUT4y",
-          "name": "Title"
-        },
-        {
-          "type": "singleLineText",
-          "id": "fldErwByVKwwrUfHI",
-          "name": "Location"
-        },
-        {
-          "type": "multilineText",
-          "id": "fldsZk16g4pZdswD7",
-          "name": "G Cal Event ID"
-        },
-        {
-          "type": "formula",
+          "type": "number",
           "options": {
-            "isValid": true,
-            "formula": "CONCATENATE(DATETIME_FORMAT({fldphRwWJsdA4Gj5N},'MM'),\"-\",DATETIME_FORMAT({fldphRwWJsdA4Gj5N},\"YYYY\"))",
-            "referencedFieldIds": [
-              "fldphRwWJsdA4Gj5N"
-            ],
-            "result": {
-              "type": "singleLineText"
-            }
+            "precision": 0
           },
-          "id": "fldzJ4MxylfnXk4Xg",
-          "name": "Created Month/Year"
+          "id": "fld6mlhWRE0pdltzC",
+          "name": "New Event in Days"
         },
         {
           "type": "singleSelect",
@@ -430,22 +408,6 @@
           "name": "Status"
         },
         {
-          "type": "richText",
-          "id": "fldP9VO6dJu8EBCTp",
-          "name": "Notes"
-        },
-        {
-          "type": "multipleRecordLinks",
-          "options": {
-            "linkedTableId": "tblYQbyKJJErXkZro",
-            "isReversed": false,
-            "prefersSingleRecordLink": true,
-            "inverseLinkFieldId": "fldRtf2reDlEV8S9Z"
-          },
-          "id": "fldI8JWRgKY1348Up",
-          "name": "Parent"
-        },
-        {
           "type": "createdTime",
           "options": {
             "result": {
@@ -497,48 +459,6 @@
           },
           "id": "flduWwxeEP5fKzSKZ",
           "name": "End Time"
-        },
-        {
-          "type": "formula",
-          "options": {
-            "isValid": true,
-            "formula": "DATEADD(\n  DATETIME_PARSE(\n    DATETIME_FORMAT({fld43BW7fjYMrLjs9}, 'YYYY-MM-DD'),\n    'YYYY-MM-DD'\n  ),\n  5,\n  'hours'\n)\n",
-            "referencedFieldIds": [
-              "fld43BW7fjYMrLjs9"
-            ],
-            "result": {
-              "type": "dateTime",
-              "options": {
-                "dateFormat": {
-                  "name": "local",
-                  "format": "l"
-                },
-                "timeFormat": {
-                  "name": "12hour",
-                  "format": "h:mma"
-                },
-                "timeZone": "client"
-              }
-            }
-          },
-          "id": "fldjnOKpvnunZ5QNT",
-          "name": "Set To Midnight",
-          "description": "Sets the Start Time to midnight of the same day."
-        },
-        {
-          "type": "formula",
-          "options": {
-            "isValid": true,
-            "formula": "IF(\n  AND(\n    MONTH({fld43BW7fjYMrLjs9}) = 2,\n    DAY({fld43BW7fjYMrLjs9}) = 29\n  ),\n  DATEADD({fld43BW7fjYMrLjs9}, 1, 'year') - 1,\n  DATEADD({fld43BW7fjYMrLjs9}, 1, 'year')\n)\n",
-            "referencedFieldIds": [
-              "fld43BW7fjYMrLjs9"
-            ],
-            "result": {
-              "type": "singleLineText"
-            }
-          },
-          "id": "fldNXbcEesjOSbmi8",
-          "name": "Anniversary Next Year"
         },
         {
           "type": "multipleSelects",
@@ -845,6 +765,11 @@
                 "color": "blueDark1"
               },
               {
+                "id": "selTD9wcfH3mx8btp",
+                "name": "cognitive",
+                "color": "cyanLight1"
+              },
+              {
                 "id": "seloiBqT4oLp4qdkg",
                 "name": "collective memory",
                 "color": "grayBright"
@@ -960,6 +885,11 @@
                 "color": "blueLight2"
               },
               {
+                "id": "selzzFKTHeAM3KiHI",
+                "name": "DC",
+                "color": "pinkLight2"
+              },
+              {
                 "id": "selNOc1KgX2F3Wbxm",
                 "name": "dc lungs",
                 "color": "cyanDark1"
@@ -1003,6 +933,11 @@
                 "id": "sellz1KjumphJYUFS",
                 "name": "deviance",
                 "color": "greenDark1"
+              },
+              {
+                "id": "self3LUssD6Yttgca",
+                "name": "Directors",
+                "color": "grayDark1"
               },
               {
                 "id": "selrwoLuRyewZIZbA",
@@ -1093,6 +1028,11 @@
                 "id": "sel0v0PFv2uvLEUpO",
                 "name": "Equipment",
                 "color": "pinkBright"
+              },
+              {
+                "id": "selXv3BGd459mq1PS",
+                "name": "Every 2 Weeks",
+                "color": "purpleLight2"
               },
               {
                 "id": "seltrux5Fd0gukFOT",
@@ -2005,6 +1945,11 @@
                 "color": "blueLight1"
               },
               {
+                "id": "selBRYYmOuDlMDVvO",
+                "name": "UBC",
+                "color": "yellowDark1"
+              },
+              {
                 "id": "selE5Pf0ZbTzJiv6L",
                 "name": "ues",
                 "color": "yellowDark1"
@@ -2103,26 +2048,6 @@
                 "id": "selQ9ZRwHdwZnOLC2",
                 "name": "Zizians",
                 "color": "greenLight1"
-              },
-              {
-                "id": "self3LUssD6Yttgca",
-                "name": "Directors",
-                "color": "grayDark1"
-              },
-              {
-                "id": "selTD9wcfH3mx8btp",
-                "name": "cognitive",
-                "color": "cyanLight1"
-              },
-              {
-                "id": "selzzFKTHeAM3KiHI",
-                "name": "DC",
-                "color": "pinkLight2"
-              },
-              {
-                "id": "selBRYYmOuDlMDVvO",
-                "name": "UBC",
-                "color": "yellowDark1"
               }
             ]
           },
@@ -2994,14 +2919,6 @@
           "name": "Sub Type"
         },
         {
-          "type": "number",
-          "options": {
-            "precision": 0
-          },
-          "id": "fld6mlhWRE0pdltzC",
-          "name": "New Event in Days"
-        },
-        {
           "type": "formula",
           "options": {
             "isValid": true,
@@ -3018,6 +2935,173 @@
           },
           "id": "fldbNjcl4Ig6Betmy",
           "name": "Since Updated (seconds)"
+        },
+        {
+          "type": "lastModifiedTime",
+          "options": {
+            "isValid": true,
+            "referencedFieldIds": [],
+            "result": {
+              "type": "dateTime",
+              "options": {
+                "dateFormat": {
+                  "name": "local",
+                  "format": "l"
+                },
+                "timeFormat": {
+                  "name": "12hour",
+                  "format": "h:mma"
+                },
+                "timeZone": "client"
+              }
+            }
+          },
+          "id": "fldm3cM5bsYhCEnwa",
+          "name": "Updated"
+        },
+        {
+          "type": "formula",
+          "options": {
+            "isValid": true,
+            "formula": "DATEADD({fld43BW7fjYMrLjs9},{fld6mlhWRE0pdltzC},'days')",
+            "referencedFieldIds": [
+              "fld43BW7fjYMrLjs9",
+              "fld6mlhWRE0pdltzC"
+            ],
+            "result": {
+              "type": "date",
+              "options": {
+                "dateFormat": {
+                  "name": "us",
+                  "format": "M/D/YYYY"
+                }
+              }
+            }
+          },
+          "id": "fldxf6StXUNmtoFLA",
+          "name": "New Date"
+        },
+        {
+          "type": "multipleRecordLinks",
+          "options": {
+            "linkedTableId": "tblYQbyKJJErXkZro",
+            "isReversed": false,
+            "prefersSingleRecordLink": false
+          },
+          "id": "fldwmdBIc82Eh1dYQ",
+          "name": "Sub Record (old)"
+        },
+        {
+          "type": "multipleRecordLinks",
+          "options": {
+            "linkedTableId": "tblYQbyKJJErXkZro",
+            "isReversed": false,
+            "prefersSingleRecordLink": false,
+            "inverseLinkFieldId": "fldMUszPkgBCcA3tY"
+          },
+          "id": "fld3mWx9OZSwB7lpo",
+          "name": "Children (do not edit)"
+        },
+        {
+          "type": "dateTime",
+          "options": {
+            "dateFormat": {
+              "name": "us",
+              "format": "M/D/YYYY"
+            },
+            "timeFormat": {
+              "name": "12hour",
+              "format": "h:mma"
+            },
+            "timeZone": "America/New_York"
+          },
+          "id": "fldHbxMe4qrYab58w",
+          "name": "Last New Event Created",
+          "description": "Stores the exact New Date value for the most recent child occurrence successfully created by the New Event in x Days automation. Used to prevent unnecessary retriggers while preserving New Event in Days."
+        },
+        {
+          "type": "formula",
+          "options": {
+            "isValid": true,
+            "formula": "IF(AND({fld6mlhWRE0pdltzC}>0,{fldxf6StXUNmtoFLA},OR(NOT({fldHbxMe4qrYab58w}),DATETIME_DIFF({fldxf6StXUNmtoFLA},{fldHbxMe4qrYab58w},'seconds')!=0)),1,0)",
+            "referencedFieldIds": [
+              "fld6mlhWRE0pdltzC",
+              "fldxf6StXUNmtoFLA",
+              "fldHbxMe4qrYab58w"
+            ],
+            "result": {
+              "type": "number",
+              "options": {
+                "precision": 0
+              }
+            }
+          },
+          "id": "fldApLf40QGEM6959",
+          "name": "New Event Pending",
+          "description": "Returns 1 when New Event in Days has produced a New Date that has not yet been recorded in Last New Event Created; otherwise returns 0. Intended as a trigger-view gate for the New Event in x Days automation."
+        },
+        {
+          "type": "singleLineText",
+          "id": "fldSBxahTfGgcUT4y",
+          "name": "Title"
+        },
+        {
+          "type": "richText",
+          "id": "fldP9VO6dJu8EBCTp",
+          "name": "Notes"
+        },
+        {
+          "type": "multipleRecordLinks",
+          "options": {
+            "linkedTableId": "tblYQbyKJJErXkZro",
+            "isReversed": false,
+            "prefersSingleRecordLink": true,
+            "inverseLinkFieldId": "fldRtf2reDlEV8S9Z"
+          },
+          "id": "fldI8JWRgKY1348Up",
+          "name": "Parent"
+        },
+        {
+          "type": "formula",
+          "options": {
+            "isValid": true,
+            "formula": "DATEADD(\n  DATETIME_PARSE(\n    DATETIME_FORMAT({fld43BW7fjYMrLjs9}, 'YYYY-MM-DD'),\n    'YYYY-MM-DD'\n  ),\n  5,\n  'hours'\n)\n",
+            "referencedFieldIds": [
+              "fld43BW7fjYMrLjs9"
+            ],
+            "result": {
+              "type": "dateTime",
+              "options": {
+                "dateFormat": {
+                  "name": "local",
+                  "format": "l"
+                },
+                "timeFormat": {
+                  "name": "12hour",
+                  "format": "h:mma"
+                },
+                "timeZone": "client"
+              }
+            }
+          },
+          "id": "fldjnOKpvnunZ5QNT",
+          "name": "Set To Midnight",
+          "description": "Sets the Start Time to midnight of the same day."
+        },
+        {
+          "type": "formula",
+          "options": {
+            "isValid": true,
+            "formula": "IF(\n  AND(\n    MONTH({fld43BW7fjYMrLjs9}) = 2,\n    DAY({fld43BW7fjYMrLjs9}) = 29\n  ),\n  DATEADD({fld43BW7fjYMrLjs9}, 1, 'year') - 1,\n  DATEADD({fld43BW7fjYMrLjs9}, 1, 'year')\n)\n",
+            "referencedFieldIds": [
+              "fld43BW7fjYMrLjs9"
+            ],
+            "result": {
+              "type": "singleLineText"
+            }
+          },
+          "id": "fldNXbcEesjOSbmi8",
+          "name": "Anniversary Next Year"
         },
         {
           "type": "richText",
@@ -3110,6 +3194,11 @@
           },
           "id": "flduFHXlWBtXyeO1F",
           "name": "All Day Event?"
+        },
+        {
+          "type": "singleLineText",
+          "id": "fldErwByVKwwrUfHI",
+          "name": "Location"
         },
         {
           "type": "phoneNumber",
@@ -3423,29 +3512,6 @@
           "name": "Since Created (seconds)"
         },
         {
-          "type": "lastModifiedTime",
-          "options": {
-            "isValid": true,
-            "referencedFieldIds": [],
-            "result": {
-              "type": "dateTime",
-              "options": {
-                "dateFormat": {
-                  "name": "local",
-                  "format": "l"
-                },
-                "timeFormat": {
-                  "name": "12hour",
-                  "format": "h:mma"
-                },
-                "timeZone": "client"
-              }
-            }
-          },
-          "id": "fldm3cM5bsYhCEnwa",
-          "name": "Updated"
-        },
-        {
           "type": "formula",
           "options": {
             "isValid": true,
@@ -3463,6 +3529,11 @@
           },
           "id": "fldGNAHsM1RMVL9sb",
           "name": "Date Check"
+        },
+        {
+          "type": "multilineText",
+          "id": "fldsZk16g4pZdswD7",
+          "name": "G Cal Event ID"
         },
         {
           "type": "multipleRecordLinks",
@@ -3624,28 +3695,6 @@
           "type": "formula",
           "options": {
             "isValid": true,
-            "formula": "DATEADD({fld43BW7fjYMrLjs9},{fld6mlhWRE0pdltzC},'days')",
-            "referencedFieldIds": [
-              "fld43BW7fjYMrLjs9",
-              "fld6mlhWRE0pdltzC"
-            ],
-            "result": {
-              "type": "date",
-              "options": {
-                "dateFormat": {
-                  "name": "us",
-                  "format": "M/D/YYYY"
-                }
-              }
-            }
-          },
-          "id": "fldxf6StXUNmtoFLA",
-          "name": "New Date"
-        },
-        {
-          "type": "formula",
-          "options": {
-            "isValid": true,
             "formula": "DATEADD({fld43BW7fjYMrLjs9}, 1,'month')",
             "referencedFieldIds": [
               "fld43BW7fjYMrLjs9"
@@ -3715,14 +3764,19 @@
           "name": "Parent Record ID"
         },
         {
-          "type": "multipleRecordLinks",
+          "type": "formula",
           "options": {
-            "linkedTableId": "tblYQbyKJJErXkZro",
-            "isReversed": false,
-            "prefersSingleRecordLink": false
+            "isValid": true,
+            "formula": "CONCATENATE(DATETIME_FORMAT({fldphRwWJsdA4Gj5N},'MM'),\"-\",DATETIME_FORMAT({fldphRwWJsdA4Gj5N},\"YYYY\"))",
+            "referencedFieldIds": [
+              "fldphRwWJsdA4Gj5N"
+            ],
+            "result": {
+              "type": "singleLineText"
+            }
           },
-          "id": "fldwmdBIc82Eh1dYQ",
-          "name": "Sub Record (old)"
+          "id": "fldzJ4MxylfnXk4Xg",
+          "name": "Created Month/Year"
         },
         {
           "type": "richText",
@@ -4490,17 +4544,6 @@
             "linkedTableId": "tblYQbyKJJErXkZro",
             "isReversed": false,
             "prefersSingleRecordLink": false,
-            "inverseLinkFieldId": "fldMUszPkgBCcA3tY"
-          },
-          "id": "fld3mWx9OZSwB7lpo",
-          "name": "Children (do not edit)"
-        },
-        {
-          "type": "multipleRecordLinks",
-          "options": {
-            "linkedTableId": "tblYQbyKJJErXkZro",
-            "isReversed": false,
-            "prefersSingleRecordLink": false,
             "inverseLinkFieldId": "fld3mWx9OZSwB7lpo"
           },
           "id": "fldMUszPkgBCcA3tY",
@@ -4641,6 +4684,11 @@
         {
           "id": "viwPODVN4AbwLuQJf",
           "name": "In Process",
+          "type": "grid"
+        },
+        {
+          "id": "viwv2GmC0LS1wovBK",
+          "name": "Every 2 Weeks",
           "type": "grid"
         },
         {
