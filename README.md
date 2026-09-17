@@ -48,7 +48,7 @@ home-event-airtable/
 
 The Home Events base manages:
 - **Event scheduling** with Google Calendar bidirectional sync
-- **Recurring events** (annual/monthly) with automatic child event creation
+- **Recurring events** through same-record advance using Recurrence and Next Recurrence Date
 - **Smart alerts** (3-hour, day-before, custom timing)
 - **Vocabulary learning** with spaced repetition
 - **Media hard drive** tracking and aging alerts
@@ -66,7 +66,7 @@ The Home Events base manages:
 
 ### Key Automation Chains
 1. **Google Calendar Sync**: Field Update → Update GCal? → Update GCal Event → Google Calendar
-2. **Recurring Events**: Anniversary/Monthly → New Event in X Days → Child Event Creation
+2. **Recurring Events**: Recurrence → Next Recurrence Date → Advance Recurring Event (same record)
 3. **Event Lifecycle**: Event Created → Alerts Triggered → Event Completed → Recurring Check
 4. **Learning System**: Scheduled Selection → Notification → Progress Tracking
 
