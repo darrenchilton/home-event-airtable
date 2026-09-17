@@ -2,6 +2,10 @@
 
 > Personal event management system with Google Calendar sync, recurring event automation, learning tools, and intelligent alerting workflows
 
+## Current Home Events reference
+
+The root-level reference files below are retained as historical documentation. For the current Home Events operating model—especially the Recurrence / Appt Type taxonomy and same-record recurrence—use [docs/home-events/README.md](docs/home-events/README.md).
+
 ## Documentation Index
 
 - **[Automations](readme.automations.md)** - Complete automation documentation with dependencies and field impact analysis
