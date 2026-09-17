@@ -2,7 +2,34 @@
 
 > Version history, migrations, and major changes to the Home Events Airtable base
 
-## Current Version: v2.1 (December 2025)
+## Current Version: v2.2 (September 2026)
+
+---
+
+## [2.2.0] - September 17, 2026
+
+### Changed
+
+#### Recurrence migration: same-record advancement
+
+Replaced the legacy child-record recurrence pattern with a unified **Recurrence** + **Next Recurrence Date** model.
+
+**Completed**:
+- ✅ Migrated 243 Scheduled records from legacy Annual/Monthly recurrence handling.
+- ✅ Removed Annual and Monthly from **Appt Type**; recurrence now belongs only in **Recurrence**.
+- ✅ Added and deployed **Advance Recurring Event**.
+- ✅ Advanced recurring records in place: Start Time moves to Next Recurrence Date, End Time shifts by the same interval, and Status returns to Scheduled.
+- ✅ Preserved the existing Google Calendar event through its retained G Cal Event ID; calendar sync updates the moved event.
+- ✅ Disabled legacy recurrence automations that created new records.
+- ✅ Kept Parent/Children as a separate active workflow for intentionally related records, not recurrence.
+- ✅ Added current-state technical documentation under `docs/home-events/`.
+
+**Verified behavior**:
+- A recurring event remains one Airtable record across advances.
+- Monthly, Annual, and Custom Days are calculated by **Next Recurrence Date**.
+- Child records are created only by the separate Parent/Children workflow.
+
+**Follow-up constraint**: Existing Parent/Children migration-era fields and diagnostic dependencies remain preserved pending a separate read-only cleanup audit.
 
 ---
 
