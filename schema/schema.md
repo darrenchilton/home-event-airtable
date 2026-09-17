@@ -1,13 +1,12 @@
 # Airtable Base Schema
 
 > Auto-generated schema documentation
-> Generated: 2026-09-14 15:46:23
+> Generated: 2026-09-17 16:52:40
 
 ---
 
 ## Tables
 
-- [Schema Changes](#schema-changes)
 - [Home Events](#home-events)
 - [Navigation Directory](#navigation-directory)
 - [Research](#research)
@@ -42,26 +41,6 @@
 
 ---
 
-## Schema Changes
-
-**Table ID**: `tblktGkxolXgbeszW`
-
-**Primary Field**: Event ID
-
-### Fields
-
-| Field Name | Type | Description |
-|------------|------|-------------|
-| Event ID | Singlelinetext |  |
-| Event Type | Single Select (8 options) |  |
-| Entity | Single Select (2 options) |  |
-| Description | Richtext |  |
-| Table ID | Singlelinetext |  |
-| Collaborator | Multiplecollaborators |  |
-| Created | Createdtime |  |
-
----
-
 ## Home Events
 
 **Table ID**: `tblYQbyKJJErXkZro`
@@ -74,25 +53,22 @@
 |------------|------|-------------|
 | Name | Formula | Concatenates Title and formatted Start Time unless Appt Type is 'From Research'. |
 | New Event in Days | Number |  |
-| Appt Type | Single Select (42 options) |  |
-| Status | Single Select (5 options) |  |
+| Appt Type | Single Select (45 options) |  |
 | Created (At) | Createdtime |  |
+| Status | Single Select (5 options) |  |
 | Start Time | Datetime |  |
 | End Time | Datetime |  |
 | Research Type | Multiple Select (317 options) |  |
 | Sub Type | Multiple Select (171 options) |  |
 | Since Updated (seconds) | Formula |  |
 | Updated | Lastmodifiedtime |  |
-| New Date | Formula |  |
-| Sub Record (old) | Link to Unknown |  |
 | Children (do not edit) | Link to Unknown |  |
-| Last New Event Created | Datetime | Stores the exact New Date value for the most recent child occurrence successfully created by the New Event in x Days automation. Used to prevent unnecessary retriggers while preserving New Event in Days. |
-| New Event Pending | Formula | Returns 1 when New Event in Days has produced a New Date that has not yet been recorded in Last New Event Created; otherwise returns 0. Intended as a trigger-view gate for the New Event in x Days automation. |
+| Recurrence | Single Select (3 options) |  |
+| Next Recurrence Date | Formula |  |
 | Title | Singlelinetext |  |
 | Notes | Richtext |  |
 | Parent | Link to Unknown |  |
 | Set To Midnight | Formula | Sets the Start Time to midnight of the same day. |
-| Anniversary Next Year | Formula |  |
 | Description | Richtext |  |
 | Date for Alerts | Formula | Formats the Start Time to 'YYYY-MM-DD HH:mm' for 24-hour time display. |
 | Alerts | Formula | Generates alerts based on the number of days, hours, or seconds until an event. |
@@ -117,12 +93,7 @@
 | Attachments | Multipleattachments |  |
 | Household Tasks | Singlelinetext |  |
 | Force Update | Singlelinetext |  |
-| Anniversary Next Month | Formula |  |
-| Year Add | Checkbox |  |
-| Month Add | Checkbox |  |
 | Seconds Until | Formula |  |
-| Parent Record (old) | Link to Unknown |  |
-| Parent Record ID | Singlelinetext |  |
 | Created Month/Year | Formula |  |
 | Long Text | Richtext |  |
 | Company | Singlelinetext |  |
@@ -130,8 +101,6 @@
 | NYS Jobs Daily Link | Formula |  |
 | SelectionCount | Number |  |
 | Start Updates Check | Formula |  |
-| Pre-Filled Annual | Formula |  |
-| Sub Record ID | Singlelinetext |  |
 | Record ID | Formula |  |
 | Since Updated (hours) | Formula |  |
 | Alert w Day | Formula |  |
@@ -189,8 +158,6 @@
 | Interface Record Detail URL | Button | Outputs the URL from the Interface Record Detail field for use in a button. |
 | From field: Parent (Canonical) | Link to Unknown |  |
 | From field: Children (new) | Link to Unknown |  |
-| Sync lock | Checkbox |  |
-| Old Parent (snapshot) | Singlelinetext |  |
 | Prev Parent (new) | Link to Unknown |  |
 | From field: Prev Parent (new) | Link to Unknown |  |
 | Words Settings | Link to Unknown |  |

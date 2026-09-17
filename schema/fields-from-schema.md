@@ -1,82 +1,14 @@
 # Fields Reference (Auto-Generated)
 
-> Generated from Airtable schema on 2026-09-14 15:46:23
+> Generated from Airtable schema on 2026-09-17 16:52:40
 
 This document contains the actual schema from your Airtable base. Use this as the source of truth for updating your fields documentation.
 
 ---
 
-## Schema Changes
-
-**Total Fields**: 7
-
-### Collaborator
-
-- **Field ID**: `fldwEgY07KnmPQh0I`
-- **Type**: Multiplecollaborators
-
-### Created
-
-- **Field ID**: `fldrW0iCsnboyzlGx`
-- **Type**: Createdtime
-
-### Description
-
-- **Field ID**: `fldRmMNElkT6Q0O3A`
-- **Type**: Richtext
-
-### Entity
-
-- **Field ID**: `fldXRzLEL58dfqJj7`
-- **Type**: Single Select (2 options)
-- **Options**:
-  - field (blueLight1)
-  - table (greenLight1)
-
-### Event ID
-
-- **Field ID**: `flda9HJGiSxQII3uB`
-- **Type**: Singlelinetext
-
-### Event Type
-
-- **Field ID**: `fldmlDWLdPEsZRAsv`
-- **Type**: Single Select (8 options)
-- **Options**:
-  - field-updated (yellowLight1)
-  - field-deleted (grayDark1)
-  - field-created (greenLight1)
-  - field-renamed (blueLight1)
-  - table-renamed (blueLight1)
-  - table-created (greenLight1)
-  - table-deleted (grayDark1)
-  - table-updated (yellowLight1)
-
-### Table ID
-
-- **Field ID**: `fldMa7hL8yHrqmluN`
-- **Type**: Singlelinetext
-
-### Field Type Summary
-
-- **createdTime**: 1 fields
-  - Created
-- **multipleCollaborators**: 1 fields
-  - Collaborator
-- **richText**: 1 fields
-  - Description
-- **singleLineText**: 2 fields
-  - Event ID
-  - Table ID
-- **singleSelect**: 2 fields
-  - Event Type
-  - Entity
-
----
-
 ## Home Events
 
-**Total Fields**: 126
+**Total Fields**: 114
 
 ### 14 Days Since Creation
 
@@ -157,37 +89,17 @@ This document contains the actual schema from your Airtable base. Use this as th
 - **Field ID**: `flduFHXlWBtXyeO1F`
 - **Type**: Checkbox
 
-### Anniversary Next Month
-
-- **Field ID**: `fldswvVa4Zg9U3MH8`
-- **Type**: Formula
-- **Formula**: `DATEADD({fld43BW7fjYMrLjs9}, 1,'month')`
-- **Result Type**: date
-
-### Anniversary Next Year
-
-- **Field ID**: `fldNXbcEesjOSbmi8`
-- **Type**: Formula
-- **Formula**: `IF(
-  AND(
-    MONTH({fld43BW7fjYMrLjs9}) = 2,
-    DAY({fld43BW7fjYMrLjs9}) = 29
-  ),
-  DATEADD({fld43BW7fjYMrLjs9}, 1, 'year') - 1,
-  DATEADD({fld43BW7fjYMrLjs9}, 1, 'year')
-)
-`
-- **Result Type**: singleLineText
-
 ### Appt Type
 
 - **Field ID**: `fldhK5IfHRAso54iK`
-- **Type**: Single Select (42 options)
+- **Type**: Single Select (45 options)
 - **Options**:
   - Add to Plex (redBright)
   - AI (yellowDark1)
-  - Annual (grayDark1)
+  - Albert Court (blueLight2)
+  - Anniversary (blueDark1)
   - Automotive (yellowBright)
+  - Birthday (purpleBright)
   - Consulting (pinkDark1)
   - Cut Grass (cyanBright)
   - DMV (pinkBright)
@@ -204,12 +116,13 @@ This document contains the actual schema from your Airtable base. Use this as th
   - Home Technical Work (yellowLight2)
   - Home VIP Dates (orangeLight1)
   - Important Thoughts (cyanLight2)
+  - Inspirational (cyanLight2)
   - Insurance (blueLight1)
   - Job Interview (greenDark1)
   - Job Search (greenDark1)
   - Knowledge (purpleLight2)
+  - Memorial / Remembrance (cyanDark1)
   - Misc (grayLight2)
-  - Monthly (orangeBright)
   - Move car (pinkLight1)
   - Payment Due (yellowBright)
   - Pers Dev (cyanLight1)
@@ -519,15 +432,6 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 - **Field ID**: `fldZ5E5L2ruPJ3tq2`
 - **Type**: Singlelinetext
 
-### Last New Event Created
-
-- **Field ID**: `fldHbxMe4qrYab58w`
-- **Type**: Datetime
-- **Description**: Stores the exact New Date value for the most recent child occurrence successfully created by the New Event in x Days automation. Used to prevent unnecessary retriggers while preserving New Event in Days.
-- **Date Format**: us
-- **Time Format**: 12hour
-- **Time Zone**: America/New_York
-
 ### Last Updated by
 
 - **Field ID**: `fldsirGpyFSXKuWnj`
@@ -568,11 +472,6 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 - **Field ID**: `fldbtH7j5WzGzNJq3`
 - **Type**: Multiplelookupvalues
 
-### Month Add
-
-- **Field ID**: `fldI8V1IgUJtVXEbs`
-- **Type**: Checkbox
-
 ### Month Delay
 
 - **Field ID**: `fldJs9Pv2kjecwrE4`
@@ -601,35 +500,27 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 - **Formula**: `CONCATENATE({fldSBxahTfGgcUT4y},"-",{fldLHBbximT7aXALA},"-",{fldCRJe4MuLCPAQzE})`
 - **Result Type**: singleLineText
 
-### New Date
-
-- **Field ID**: `fldxf6StXUNmtoFLA`
-- **Type**: Formula
-- **Formula**: `DATEADD({fld43BW7fjYMrLjs9},{fld6mlhWRE0pdltzC},'days')`
-- **Result Type**: date
-
-### New Event Pending
-
-- **Field ID**: `fldApLf40QGEM6959`
-- **Type**: Formula
-- **Description**: Returns 1 when New Event in Days has produced a New Date that has not yet been recorded in Last New Event Created; otherwise returns 0. Intended as a trigger-view gate for the New Event in x Days automation.
-- **Formula**: `IF(AND({fld6mlhWRE0pdltzC}>0,{fldxf6StXUNmtoFLA},OR(NOT({fldHbxMe4qrYab58w}),DATETIME_DIFF({fldxf6StXUNmtoFLA},{fldHbxMe4qrYab58w},'seconds')!=0)),1,0)`
-- **Result Type**: number
-
 ### New Event in Days
 
 - **Field ID**: `fld6mlhWRE0pdltzC`
 - **Type**: Number
 
+### Next Recurrence Date
+
+- **Field ID**: `flda27AXYVAl3jS55`
+- **Type**: Formula
+- **Formula**: `SWITCH(
+    {fldNQ6jOY5U92opnp},
+    "Monthly", DATEADD({fld43BW7fjYMrLjs9}, 1, 'month'),
+    "Annual", DATEADD({fld43BW7fjYMrLjs9}, 1, 'year'),
+    "Custom Days", DATEADD({fld43BW7fjYMrLjs9}, {fld6mlhWRE0pdltzC}, 'days')
+)`
+- **Result Type**: date
+
 ### Notes
 
 - **Field ID**: `fldP9VO6dJu8EBCTp`
 - **Type**: Richtext
-
-### Old Parent (snapshot)
-
-- **Field ID**: `fldin8alI3iroD3vI`
-- **Type**: Singlelinetext
 
 ### Parent
 
@@ -637,17 +528,6 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 - **Type**: Link to Unknown
 - **Linked Table ID**: `tblYQbyKJJErXkZro`
 - **Inverse Link Field**: `fldRtf2reDlEV8S9Z`
-
-### Parent Record (old)
-
-- **Field ID**: `fld2jSfJXCnQ6om4s`
-- **Type**: Link to Unknown
-- **Linked Table ID**: `tblYQbyKJJErXkZro`
-
-### Parent Record ID
-
-- **Field ID**: `fldLyK91qdIxuLmEC`
-- **Type**: Singlelinetext
 
 ### Participants
 
@@ -724,36 +604,6 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 - **Field ID**: `fldVuWnIqMAes2a74`
 - **Type**: Multiplelookupvalues
 
-### Pre-Filled Annual
-
-- **Field ID**: `fld8j3keQoDLBSMg6`
-- **Type**: Formula
-- **Formula**: `CONCATENATE(
-    IF(
-        "Prefilling [Add Annual Event] view in [Home Events] table in base with id 'appSX4P3En4AWPyyG'",
-        "https://airtable.com/appSX4P3En4AWPyyG/shrpMIgh2hQkxWW1E"
-    ),
-    CONCATENATE(
-        "?prefill_" & ENCODE_URL_COMPONENT("Appt Type"),
-        "=" & ENCODE_URL_COMPONENT("Annual"),
-        "&hide_" & ENCODE_URL_COMPONENT("Appt Type") & "=true"
-    ),
-    CONCATENATE(
-        "&prefill_" & ENCODE_URL_COMPONENT("Status"),
-        "=" & ENCODE_URL_COMPONENT("Scheduled")
-    ),
-    CONCATENATE(
-        "&hide_" & ENCODE_URL_COMPONENT("All Day Event?") & "=true"
-    ),
-    CONCATENATE(
-        "&hide_" & ENCODE_URL_COMPONENT("Alerts Trigger") & "=true"
-    ),
-    CONCATENATE(
-        "&hide_" & ENCODE_URL_COMPONENT("Add to Google") & "=true"
-    )
-)`
-- **Result Type**: singleLineText
-
 ### Prev Parent (new)
 
 - **Field ID**: `fldh50e5tWI8mafsS`
@@ -780,6 +630,15 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 - **Description**: Generates a URL to the current record
 - **Formula**: `"https://airtable.com/appSX4P3En4AWPyyG/tblYQbyKJJErXkZro/viwuQwJir4WERNrqE/" & RECORD_ID()`
 - **Result Type**: singleLineText
+
+### Recurrence
+
+- **Field ID**: `fldNQ6jOY5U92opnp`
+- **Type**: Single Select (3 options)
+- **Options**:
+  - Monthly (blueLight2)
+  - Annual (cyanLight2)
+  - Custom Days (tealLight2)
 
 ### Research Type
 
@@ -1227,17 +1086,6 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 - **Field ID**: `fldGSQlo58pfrnUBD`
 - **Type**: Checkbox
 
-### Sub Record (old)
-
-- **Field ID**: `fldwmdBIc82Eh1dYQ`
-- **Type**: Link to Unknown
-- **Linked Table ID**: `tblYQbyKJJErXkZro`
-
-### Sub Record ID
-
-- **Field ID**: `fld5mS7DzLg9jvYmD`
-- **Type**: Singlelinetext
-
 ### Sub Type
 
 - **Field ID**: `fldVp0MgHf11YNjud`
@@ -1415,11 +1263,6 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - darren (purpleLight1)
   - orthodontics (tealDark1)
 
-### Sync lock
-
-- **Field ID**: `fld2FMXFfXZvWmusX`
-- **Type**: Checkbox
-
 ### Temp
 
 - **Field ID**: `fldBFL7xdJbeuudo9`
@@ -1518,11 +1361,6 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Maintenance (greenLight2)
   - Research (blueLight2)
 
-### Year Add
-
-- **Field ID**: `fld9RYGrASD8NGn0w`
-- **Type**: Checkbox
-
 ### Years Since
 
 - **Field ID**: `fldWV0hf9MPD5hDvx`
@@ -1561,12 +1399,10 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Autonumber
 - **button**: 1 fields
   - Interface Record Detail URL
-- **checkbox**: 15 fields
+- **checkbox**: 12 fields
   - Alerts Trigger
   - All Day Event?
   - Add to Google
-  - Year Add
-  - Month Add
   - Force Into Random Report
   - Email Update
   - Send Definition
@@ -1576,34 +1412,28 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Current Working
   - Temp
   - From GCal
-  - Sync lock
 - **createdTime**: 1 fields
   - Created (At)
 - **date**: 1 fields
   - Last day selected
-- **dateTime**: 3 fields
+- **dateTime**: 2 fields
   - Start Time
   - End Time
-  - Last New Event Created
-- **formula**: 45 fields
+- **formula**: 41 fields
   - Name
   - Since Updated (seconds)
-  - New Date
-  - New Event Pending
+  - Next Recurrence Date
   - Set To Midnight
-  - Anniversary Next Year
   - Date for Alerts
   - Alerts
   - Hours Until
   - Days Until
   - Since Created (seconds)
   - Date Check
-  - Anniversary Next Month
   - Seconds Until
   - Created Month/Year
   - NYS Jobs Daily Link
   - Start Updates Check
-  - Pre-Filled Annual
   - Record ID
   - Since Updated (hours)
   - Alert w Day
@@ -1651,12 +1481,10 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Website (from Health Care Provider)
   - Words Window End (from Words Settings)
   - Words Window Start (from Words Settings)
-- **multipleRecordLinks**: 12 fields
-  - Sub Record (old)
+- **multipleRecordLinks**: 10 fields
   - Children (do not edit)
   - Parent
   - Health Care Provider
-  - Parent Record (old)
   - Link to Research
   - Learning Experience
   - From field: Parent (Canonical)
@@ -1677,24 +1505,22 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Notes
   - Description
   - Long Text
-- **singleLineText**: 14 fields
+- **singleLineText**: 11 fields
   - Title
   - Location
   - Household Tasks
   - Force Update
-  - Parent Record ID
   - Company
   - Job Title
-  - Sub Record ID
   - pronunciation
   - Base64 Encoded ID
   - Update GCal?
   - Force Def
   - Temp Field
-  - Old Parent (snapshot)
-- **singleSelect**: 3 fields
+- **singleSelect**: 4 fields
   - Appt Type
   - Status
+  - Recurrence
   - Work Timer Type
 - **url**: 6 fields
   - Claude.AI URL

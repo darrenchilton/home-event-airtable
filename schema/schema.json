@@ -1,129 +1,6 @@
 {
   "tables": [
     {
-      "id": "tblktGkxolXgbeszW",
-      "name": "Schema Changes",
-      "primaryFieldId": "flda9HJGiSxQII3uB",
-      "fields": [
-        {
-          "type": "singleLineText",
-          "id": "flda9HJGiSxQII3uB",
-          "name": "Event ID"
-        },
-        {
-          "type": "singleSelect",
-          "options": {
-            "choices": [
-              {
-                "id": "selAPPSLmCZs5VPcN",
-                "name": "field-updated",
-                "color": "yellowLight1"
-              },
-              {
-                "id": "selGoon2bI0FN93WK",
-                "name": "field-deleted",
-                "color": "grayDark1"
-              },
-              {
-                "id": "selDJNyoYQkmkuUs9",
-                "name": "field-created",
-                "color": "greenLight1"
-              },
-              {
-                "id": "selJOlpFVFcvxaTsp",
-                "name": "field-renamed",
-                "color": "blueLight1"
-              },
-              {
-                "id": "selffKJ5PdI9Bad6L",
-                "name": "table-renamed",
-                "color": "blueLight1"
-              },
-              {
-                "id": "sel8DawDs4OkZx48S",
-                "name": "table-created",
-                "color": "greenLight1"
-              },
-              {
-                "id": "seldWVYaQPnsdOAtp",
-                "name": "table-deleted",
-                "color": "grayDark1"
-              },
-              {
-                "id": "sel3Aqp0YJZP9rhpW",
-                "name": "table-updated",
-                "color": "yellowLight1"
-              }
-            ]
-          },
-          "id": "fldmlDWLdPEsZRAsv",
-          "name": "Event Type"
-        },
-        {
-          "type": "singleSelect",
-          "options": {
-            "choices": [
-              {
-                "id": "selp7pFmo374na21F",
-                "name": "field",
-                "color": "blueLight1"
-              },
-              {
-                "id": "selU6zRqh4FbD8vWH",
-                "name": "table",
-                "color": "greenLight1"
-              }
-            ]
-          },
-          "id": "fldXRzLEL58dfqJj7",
-          "name": "Entity"
-        },
-        {
-          "type": "richText",
-          "id": "fldRmMNElkT6Q0O3A",
-          "name": "Description"
-        },
-        {
-          "type": "singleLineText",
-          "id": "fldMa7hL8yHrqmluN",
-          "name": "Table ID"
-        },
-        {
-          "type": "multipleCollaborators",
-          "id": "fldwEgY07KnmPQh0I",
-          "name": "Collaborator"
-        },
-        {
-          "type": "createdTime",
-          "options": {
-            "result": {
-              "type": "dateTime",
-              "options": {
-                "dateFormat": {
-                  "name": "local",
-                  "format": "l"
-                },
-                "timeFormat": {
-                  "name": "12hour",
-                  "format": "h:mma"
-                },
-                "timeZone": "client"
-              }
-            }
-          },
-          "id": "fldrW0iCsnboyzlGx",
-          "name": "Created"
-        }
-      ],
-      "views": [
-        {
-          "id": "viwJu9SFGZ6BZie4q",
-          "name": "Grid view",
-          "type": "grid"
-        }
-      ]
-    },
-    {
       "id": "tblYQbyKJJErXkZro",
       "name": "Home Events",
       "primaryFieldId": "fldEVqyty5wYXRkLT",
@@ -169,14 +46,24 @@
                 "color": "yellowDark1"
               },
               {
-                "id": "selE31vHyEj74NzjI",
-                "name": "Annual",
-                "color": "grayDark1"
+                "id": "selkTJ59F4prm4dOk",
+                "name": "Albert Court",
+                "color": "blueLight2"
+              },
+              {
+                "id": "selPywH5EuErAxoQl",
+                "name": "Anniversary",
+                "color": "blueDark1"
               },
               {
                 "id": "selu3HUzT7B45q0xU",
                 "name": "Automotive",
                 "color": "yellowBright"
+              },
+              {
+                "id": "sel3poGxfsUHCrYZA",
+                "name": "Birthday",
+                "color": "purpleBright"
               },
               {
                 "id": "selyDylbQvkQZn3cK",
@@ -259,6 +146,11 @@
                 "color": "cyanLight2"
               },
               {
+                "id": "selPXErqbDQDzD5iW",
+                "name": "Inspirational",
+                "color": "cyanLight2"
+              },
+              {
                 "id": "selRJo7pNgCA80acD",
                 "name": "Insurance",
                 "color": "blueLight1"
@@ -279,14 +171,14 @@
                 "color": "purpleLight2"
               },
               {
+                "id": "sel3NFPIOuxiz7aaR",
+                "name": "Memorial / Remembrance",
+                "color": "cyanDark1"
+              },
+              {
                 "id": "selP1eqygnOJ50KJe",
                 "name": "Misc",
                 "color": "grayLight2"
-              },
-              {
-                "id": "selrXmMgFztREnz8H",
-                "name": "Monthly",
-                "color": "orangeBright"
               },
               {
                 "id": "selA6aPB291TW3H9y",
@@ -374,6 +266,27 @@
           "name": "Appt Type"
         },
         {
+          "type": "createdTime",
+          "options": {
+            "result": {
+              "type": "dateTime",
+              "options": {
+                "dateFormat": {
+                  "name": "local",
+                  "format": "l"
+                },
+                "timeFormat": {
+                  "name": "12hour",
+                  "format": "h:mma"
+                },
+                "timeZone": "client"
+              }
+            }
+          },
+          "id": "fldphRwWJsdA4Gj5N",
+          "name": "Created (At)"
+        },
+        {
           "type": "singleSelect",
           "options": {
             "choices": [
@@ -406,27 +319,6 @@
           },
           "id": "fldvXRj5JUVh7NG9S",
           "name": "Status"
-        },
-        {
-          "type": "createdTime",
-          "options": {
-            "result": {
-              "type": "dateTime",
-              "options": {
-                "dateFormat": {
-                  "name": "local",
-                  "format": "l"
-                },
-                "timeFormat": {
-                  "name": "12hour",
-                  "format": "h:mma"
-                },
-                "timeZone": "client"
-              }
-            }
-          },
-          "id": "fldphRwWJsdA4Gj5N",
-          "name": "Created (At)"
         },
         {
           "type": "dateTime",
@@ -2960,11 +2852,47 @@
           "name": "Updated"
         },
         {
+          "type": "multipleRecordLinks",
+          "options": {
+            "linkedTableId": "tblYQbyKJJErXkZro",
+            "isReversed": false,
+            "prefersSingleRecordLink": false,
+            "inverseLinkFieldId": "fldMUszPkgBCcA3tY"
+          },
+          "id": "fld3mWx9OZSwB7lpo",
+          "name": "Children (do not edit)"
+        },
+        {
+          "type": "singleSelect",
+          "options": {
+            "choices": [
+              {
+                "id": "selSrhUSkutfAb4Mn",
+                "name": "Monthly",
+                "color": "blueLight2"
+              },
+              {
+                "id": "seleee9uKXgTd3xPP",
+                "name": "Annual",
+                "color": "cyanLight2"
+              },
+              {
+                "id": "selmu1eZQNCNWMvcL",
+                "name": "Custom Days",
+                "color": "tealLight2"
+              }
+            ]
+          },
+          "id": "fldNQ6jOY5U92opnp",
+          "name": "Recurrence"
+        },
+        {
           "type": "formula",
           "options": {
             "isValid": true,
-            "formula": "DATEADD({fld43BW7fjYMrLjs9},{fld6mlhWRE0pdltzC},'days')",
+            "formula": "SWITCH(\n    {fldNQ6jOY5U92opnp},\n    \"Monthly\", DATEADD({fld43BW7fjYMrLjs9}, 1, 'month'),\n    \"Annual\", DATEADD({fld43BW7fjYMrLjs9}, 1, 'year'),\n    \"Custom Days\", DATEADD({fld43BW7fjYMrLjs9}, {fld6mlhWRE0pdltzC}, 'days')\n)",
             "referencedFieldIds": [
+              "fldNQ6jOY5U92opnp",
               "fld43BW7fjYMrLjs9",
               "fld6mlhWRE0pdltzC"
             ],
@@ -2978,67 +2906,8 @@
               }
             }
           },
-          "id": "fldxf6StXUNmtoFLA",
-          "name": "New Date"
-        },
-        {
-          "type": "multipleRecordLinks",
-          "options": {
-            "linkedTableId": "tblYQbyKJJErXkZro",
-            "isReversed": false,
-            "prefersSingleRecordLink": false
-          },
-          "id": "fldwmdBIc82Eh1dYQ",
-          "name": "Sub Record (old)"
-        },
-        {
-          "type": "multipleRecordLinks",
-          "options": {
-            "linkedTableId": "tblYQbyKJJErXkZro",
-            "isReversed": false,
-            "prefersSingleRecordLink": false,
-            "inverseLinkFieldId": "fldMUszPkgBCcA3tY"
-          },
-          "id": "fld3mWx9OZSwB7lpo",
-          "name": "Children (do not edit)"
-        },
-        {
-          "type": "dateTime",
-          "options": {
-            "dateFormat": {
-              "name": "us",
-              "format": "M/D/YYYY"
-            },
-            "timeFormat": {
-              "name": "12hour",
-              "format": "h:mma"
-            },
-            "timeZone": "America/New_York"
-          },
-          "id": "fldHbxMe4qrYab58w",
-          "name": "Last New Event Created",
-          "description": "Stores the exact New Date value for the most recent child occurrence successfully created by the New Event in x Days automation. Used to prevent unnecessary retriggers while preserving New Event in Days."
-        },
-        {
-          "type": "formula",
-          "options": {
-            "isValid": true,
-            "formula": "IF(AND({fld6mlhWRE0pdltzC}>0,{fldxf6StXUNmtoFLA},OR(NOT({fldHbxMe4qrYab58w}),DATETIME_DIFF({fldxf6StXUNmtoFLA},{fldHbxMe4qrYab58w},'seconds')!=0)),1,0)",
-            "referencedFieldIds": [
-              "fld6mlhWRE0pdltzC",
-              "fldxf6StXUNmtoFLA",
-              "fldHbxMe4qrYab58w"
-            ],
-            "result": {
-              "type": "number",
-              "options": {
-                "precision": 0
-              }
-            }
-          },
-          "id": "fldApLf40QGEM6959",
-          "name": "New Event Pending",
-          "description": "Returns 1 when New Event in Days has produced a New Date that has not yet been recorded in Last New Event Created; otherwise returns 0. Intended as a trigger-view gate for the New Event in x Days automation."
+          "id": "flda27AXYVAl3jS55",
+          "name": "Next Recurrence Date"
         },
         {
           "type": "singleLineText",
@@ -3087,21 +2956,6 @@
           "id": "fldjnOKpvnunZ5QNT",
           "name": "Set To Midnight",
           "description": "Sets the Start Time to midnight of the same day."
-        },
-        {
-          "type": "formula",
-          "options": {
-            "isValid": true,
-            "formula": "IF(\n  AND(\n    MONTH({fld43BW7fjYMrLjs9}) = 2,\n    DAY({fld43BW7fjYMrLjs9}) = 29\n  ),\n  DATEADD({fld43BW7fjYMrLjs9}, 1, 'year') - 1,\n  DATEADD({fld43BW7fjYMrLjs9}, 1, 'year')\n)\n",
-            "referencedFieldIds": [
-              "fld43BW7fjYMrLjs9"
-            ],
-            "result": {
-              "type": "singleLineText"
-            }
-          },
-          "id": "fldNXbcEesjOSbmi8",
-          "name": "Anniversary Next Year"
         },
         {
           "type": "richText",
@@ -3695,45 +3549,6 @@
           "type": "formula",
           "options": {
             "isValid": true,
-            "formula": "DATEADD({fld43BW7fjYMrLjs9}, 1,'month')",
-            "referencedFieldIds": [
-              "fld43BW7fjYMrLjs9"
-            ],
-            "result": {
-              "type": "date",
-              "options": {
-                "dateFormat": {
-                  "name": "us",
-                  "format": "M/D/YYYY"
-                }
-              }
-            }
-          },
-          "id": "fldswvVa4Zg9U3MH8",
-          "name": "Anniversary Next Month"
-        },
-        {
-          "type": "checkbox",
-          "options": {
-            "icon": "check",
-            "color": "greenBright"
-          },
-          "id": "fld9RYGrASD8NGn0w",
-          "name": "Year Add"
-        },
-        {
-          "type": "checkbox",
-          "options": {
-            "icon": "check",
-            "color": "greenBright"
-          },
-          "id": "fldI8V1IgUJtVXEbs",
-          "name": "Month Add"
-        },
-        {
-          "type": "formula",
-          "options": {
-            "isValid": true,
             "formula": "DATETIME_DIFF({fld43BW7fjYMrLjs9},NOW(),'seconds')",
             "referencedFieldIds": [
               "fld43BW7fjYMrLjs9"
@@ -3747,21 +3562,6 @@
           },
           "id": "fld7QTNqXepMxm770",
           "name": "Seconds Until"
-        },
-        {
-          "type": "multipleRecordLinks",
-          "options": {
-            "linkedTableId": "tblYQbyKJJErXkZro",
-            "isReversed": false,
-            "prefersSingleRecordLink": true
-          },
-          "id": "fld2jSfJXCnQ6om4s",
-          "name": "Parent Record (old)"
-        },
-        {
-          "type": "singleLineText",
-          "id": "fldLyK91qdIxuLmEC",
-          "name": "Parent Record ID"
         },
         {
           "type": "formula",
@@ -3832,24 +3632,6 @@
           },
           "id": "fldjd5mGwQqj1Uyvj",
           "name": "Start Updates Check"
-        },
-        {
-          "type": "formula",
-          "options": {
-            "isValid": true,
-            "formula": "CONCATENATE(\n    IF(\n        \"Prefilling [Add Annual Event] view in [Home Events] table in base with id 'appSX4P3En4AWPyyG'\",\n        \"https://airtable.com/appSX4P3En4AWPyyG/shrpMIgh2hQkxWW1E\"\n    ),\n    CONCATENATE(\n        \"?prefill_\" & ENCODE_URL_COMPONENT(\"Appt Type\"),\n        \"=\" & ENCODE_URL_COMPONENT(\"Annual\"),\n        \"&hide_\" & ENCODE_URL_COMPONENT(\"Appt Type\") & \"=true\"\n    ),\n    CONCATENATE(\n        \"&prefill_\" & ENCODE_URL_COMPONENT(\"Status\"),\n        \"=\" & ENCODE_URL_COMPONENT(\"Scheduled\")\n    ),\n    CONCATENATE(\n        \"&hide_\" & ENCODE_URL_COMPONENT(\"All Day Event?\") & \"=true\"\n    ),\n    CONCATENATE(\n        \"&hide_\" & ENCODE_URL_COMPONENT(\"Alerts Trigger\") & \"=true\"\n    ),\n    CONCATENATE(\n        \"&hide_\" & ENCODE_URL_COMPONENT(\"Add to Google\") & \"=true\"\n    )\n)",
-            "referencedFieldIds": [],
-            "result": {
-              "type": "singleLineText"
-            }
-          },
-          "id": "fld8j3keQoDLBSMg6",
-          "name": "Pre-Filled Annual"
-        },
-        {
-          "type": "singleLineText",
-          "id": "fld5mS7DzLg9jvYmD",
-          "name": "Sub Record ID"
         },
         {
           "type": "formula",
@@ -4550,20 +4332,6 @@
           "name": "From field: Children (new)"
         },
         {
-          "type": "checkbox",
-          "options": {
-            "icon": "check",
-            "color": "greenBright"
-          },
-          "id": "fld2FMXFfXZvWmusX",
-          "name": "Sync lock"
-        },
-        {
-          "type": "singleLineText",
-          "id": "fldin8alI3iroD3vI",
-          "name": "Old Parent (snapshot)"
-        },
-        {
           "type": "multipleRecordLinks",
           "options": {
             "linkedTableId": "tblYQbyKJJErXkZro",
@@ -4687,11 +4455,6 @@
           "type": "grid"
         },
         {
-          "id": "viwv2GmC0LS1wovBK",
-          "name": "Every 2 Weeks",
-          "type": "grid"
-        },
-        {
           "id": "viwntxaHrcUcYeDdX",
           "name": "R Type=Job Applie",
           "type": "grid"
@@ -4762,11 +4525,6 @@
           "type": "grid"
         },
         {
-          "id": "viwywertfFEX6pWyh",
-          "name": "Annual/Monthly (automation)",
-          "type": "grid"
-        },
-        {
           "id": "viwqJcoErtQCk171l",
           "name": "Next 48 Hours (automation)",
           "type": "grid"
@@ -4827,11 +4585,6 @@
           "type": "grid"
         },
         {
-          "id": "viwhbOMMw43P0gR6O",
-          "name": "Anniversay/Month Field Update",
-          "type": "grid"
-        },
-        {
           "id": "viwvzdMWHwVOQ5My8",
           "name": "Add to Plex",
           "type": "grid"
@@ -4854,16 +4607,6 @@
         {
           "id": "viwkYpb1ji4BShUh4",
           "name": "3 Hour Alert",
-          "type": "grid"
-        },
-        {
-          "id": "viwb29RrS4iPnOAch",
-          "name": "Alerts (Appt Annual/Monthly)",
-          "type": "grid"
-        },
-        {
-          "id": "viwtRXkaqo3HyP05H",
-          "name": "Annual Past No Alert",
           "type": "grid"
         },
         {
