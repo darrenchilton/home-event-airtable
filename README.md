@@ -12,6 +12,7 @@ The root-level reference files below are retained as historical documentation. F
 - **[Tables](readme.tables.md)** - Table schemas, purposes, and relationships
 - **[Views](readme.views.md)** - View configurations and automation dependencies
 - **[Fields](readme.fields.md)** - Field definitions, types, and usage patterns
+- **[Gmail → Airtable Filer](docs/gmail-airtable-filer/README.md)** - Gmail filing workflow, Airtable schema, retry/idempotency behavior, attachments, and scheduled trigger
 - **[Changelog](changelog.md)** - Version history and migration tracking
 - **[Schema Tools](tools/README.md)** - Automated schema extraction and documentation
 
