@@ -15,7 +15,7 @@ The root-level reference files below are retained as historical documentation. F
 - **[Gmail → Airtable Filer](docs/gmail-airtable-filer/README.md)** - Gmail filing workflow, Airtable schema, retry/idempotency behavior, attachments, and scheduled trigger
 - **[Changelog](changelog.md)** - Version history and migration tracking
 - **[Schema Tools](tools/README.md)** - Automated schema extraction and documentation
-- - **[Gmail → Airtable Filer](docs/gmail-airtable-filer/README.md)** - Gmail filing workflow, Airtable schema, retry/idempotency behavior, attachments, and scheduled trigger
+- **[Gmail → Airtable Filer](docs/gmail-airtable-filer/README.md)** - Gmail filing workflow, Airtable schema, retry/idempotency behavior, attachments, and scheduled trigger
 
 ## Repository Structure
 
