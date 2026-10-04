@@ -2,7 +2,32 @@
 
 > Version history, migrations, and major changes to the Home Events Airtable base
 
-## Current Version: v2.2 (September 2026)
+## Current Version: v2.3 (October 2026)
+
+---
+
+## [2.3.0] - October 4, 2026
+
+### Added
+
+#### Gmail → Airtable filing workflow
+
+Added a Google Apps Script workflow that files Gmail threads into the Home Airtable base using the new **Email Threads** and **Emails** tables.
+
+**Completed**:
+- Added Gmail queue labels `Airtable / Save` and `Airtable / Filed`.
+- Added one Email Threads record per Gmail thread and one Emails record per Gmail message.
+- Added Gmail Thread ID and Message ID idempotency checks to prevent duplicate Airtable records.
+- Added plain-text body capture using native `GmailApp`.
+- Added normal attachment and inline-image copying into Airtable.
+- Added retry-safe behavior: Gmail remains in the Save queue until Airtable processing succeeds.
+- Added subject normalization for empty subjects and bare reply/forward prefixes.
+- Added a time-driven Apps Script trigger running `importOneSavedThread` every 5 minutes from `Head`.
+- Verified a long 11-message thread, attachment retry recovery, and a no-subject two-message thread.
+- Documented the workflow under `docs/gmail-airtable-filer/`.
+
+**Known limitation**:
+- Attachment retry deduplication currently uses filename matching; two distinct attachments with the same filename on one message may require a stronger future key.
 
 ---
 
