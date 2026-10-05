@@ -4426,6 +4426,28 @@
           "type": "url",
           "id": "fldv5ilTEX23VQg6s",
           "name": "Airtable URL"
+        },
+        {
+          "type": "multipleRecordLinks",
+          "options": {
+            "linkedTableId": "tbl5wgw1XB8mUOIqL",
+            "isReversed": false,
+            "prefersSingleRecordLink": false,
+            "inverseLinkFieldId": "fldTty8LP0yEHhG8j"
+          },
+          "id": "fldgLpFPsId1Tkhb4",
+          "name": "Emails"
+        },
+        {
+          "type": "multipleRecordLinks",
+          "options": {
+            "linkedTableId": "tblg0thLNN8AipsdL",
+            "isReversed": false,
+            "prefersSingleRecordLink": false,
+            "inverseLinkFieldId": "fldgkmBwce7i0D9Up"
+          },
+          "id": "fldYAv3ydYoV5sbMn",
+          "name": "Email Threads"
         }
       ],
       "views": [
@@ -4880,6 +4902,517 @@
         {
           "id": "viwb3y15Q2EwhNoXA",
           "name": "Airtable Menu",
+          "type": "grid"
+        }
+      ]
+    },
+    {
+      "id": "tblg0thLNN8AipsdL",
+      "name": "Email Threads",
+      "description": "Parent record for an email conversation. Individual messages will be stored separately and linked to a thread.",
+      "primaryFieldId": "fld7fCgudnqy8ItlP",
+      "fields": [
+        {
+          "type": "singleLineText",
+          "id": "fld7fCgudnqy8ItlP",
+          "name": "Subject",
+          "description": "Conversation subject. Primary display field for the email thread."
+        },
+        {
+          "type": "singleLineText",
+          "id": "fldm41c4wOv5il1AQ",
+          "name": "Thread ID",
+          "description": "Provider-native conversation identifier (for example Gmail threadId). Used to group messages reliably and prevent subject-based misgrouping."
+        },
+        {
+          "type": "multipleRecordLinks",
+          "options": {
+            "linkedTableId": "tbl5wgw1XB8mUOIqL",
+            "isReversed": false,
+            "prefersSingleRecordLink": false,
+            "inverseLinkFieldId": "fldEHajxPL8tevypg"
+          },
+          "id": "fldrChdVTJFCfA5NW",
+          "name": "Emails"
+        },
+        {
+          "type": "singleSelect",
+          "options": {
+            "choices": [
+              {
+                "id": "selm6IhujT091ngz1",
+                "name": "Gmail",
+                "color": "grayLight2"
+              },
+              {
+                "id": "selt8vdb2y2RehVIL",
+                "name": "Outlook",
+                "color": "grayLight2"
+              },
+              {
+                "id": "selo2hNs7ShzJV9lz",
+                "name": "Other",
+                "color": "grayLight2"
+              }
+            ]
+          },
+          "id": "fldXTuMAPdNiRWkT9",
+          "name": "Source",
+          "description": "Mail provider that owns the thread identifier."
+        },
+        {
+          "type": "rollup",
+          "options": {
+            "isValid": true,
+            "recordLinkFieldId": "fldrChdVTJFCfA5NW",
+            "fieldIdInLinkedTable": "fldLGXwoPVSBvJNck",
+            "referencedFieldIds": [],
+            "result": {
+              "type": "date",
+              "options": {
+                "dateFormat": {
+                  "name": "us",
+                  "format": "M/D/YYYY"
+                }
+              }
+            }
+          },
+          "id": "fldN1N64G05PCHuhP",
+          "name": "First Message",
+          "description": "Timestamp of the earliest linked email message."
+        },
+        {
+          "type": "rollup",
+          "options": {
+            "isValid": true,
+            "recordLinkFieldId": "fldrChdVTJFCfA5NW",
+            "fieldIdInLinkedTable": "fldLGXwoPVSBvJNck",
+            "referencedFieldIds": [],
+            "result": {
+              "type": "date",
+              "options": {
+                "dateFormat": {
+                  "name": "us",
+                  "format": "M/D/YYYY"
+                }
+              }
+            }
+          },
+          "id": "fldlDGfb9DNAfX3Gl",
+          "name": "Latest Message",
+          "description": "Timestamp of the most recent linked email message."
+        },
+        {
+          "type": "count",
+          "options": {
+            "isValid": true,
+            "recordLinkFieldId": "fldrChdVTJFCfA5NW"
+          },
+          "id": "fldaTWtG4UKMakZZm",
+          "name": "Message Count",
+          "description": "Number of individual email messages linked to this thread."
+        },
+        {
+          "type": "multipleRecordLinks",
+          "options": {
+            "linkedTableId": "tblYQbyKJJErXkZro",
+            "isReversed": false,
+            "prefersSingleRecordLink": false,
+            "inverseLinkFieldId": "fldYAv3ydYoV5sbMn"
+          },
+          "id": "fldgkmBwce7i0D9Up",
+          "name": "Home Events",
+          "description": "Operational Home Event(s) related to the conversation as a whole."
+        },
+        {
+          "type": "multipleRecordLinks",
+          "options": {
+            "linkedTableId": "tblJyrUqobEmzIAkQ",
+            "isReversed": false,
+            "prefersSingleRecordLink": false,
+            "inverseLinkFieldId": "fldxAGyJ3F4mfbfc6"
+          },
+          "id": "fldIaiYVKw8GGAYqD",
+          "name": "Resources",
+          "description": "Resource/equipment/service record(s) related to the conversation as a whole."
+        },
+        {
+          "type": "multipleRecordLinks",
+          "options": {
+            "linkedTableId": "tblo5E0sRYdBH1zh2",
+            "isReversed": false,
+            "prefersSingleRecordLink": false,
+            "inverseLinkFieldId": "fldSu9iqjuJzXREHc"
+          },
+          "id": "fld0jhDAKN997pq8N",
+          "name": "Health Care Providers",
+          "description": "Health care provider record(s) related to the conversation as a whole."
+        },
+        {
+          "type": "multipleRecordLinks",
+          "options": {
+            "linkedTableId": "tblpdti2tAy2eINb2",
+            "isReversed": false,
+            "prefersSingleRecordLink": false,
+            "inverseLinkFieldId": "fldSY9tXbiyO2T6Jd"
+          },
+          "id": "fld1TVrbiDVYzObyf",
+          "name": "Research",
+          "description": "Research record(s) related to the conversation as a whole."
+        },
+        {
+          "type": "singleSelect",
+          "options": {
+            "choices": [
+              {
+                "id": "selQOPNKi3bL3VVEG",
+                "name": "Filed",
+                "color": "grayLight2"
+              },
+              {
+                "id": "seliAYKqjvOlgWLzv",
+                "name": "Needs Review",
+                "color": "grayLight2"
+              },
+              {
+                "id": "sel5AaujgJrgRxi3R",
+                "name": "Closed",
+                "color": "grayLight2"
+              }
+            ]
+          },
+          "id": "fldhDlYgEkLgc7JO3",
+          "name": "Status",
+          "description": "Review/lifecycle status for the email conversation."
+        },
+        {
+          "type": "richText",
+          "id": "fldBtrluqdmDxiqEF",
+          "name": "Notes",
+          "description": "Optional manual notes about the conversation."
+        },
+        {
+          "type": "rollup",
+          "options": {
+            "isValid": true,
+            "recordLinkFieldId": "fldrChdVTJFCfA5NW",
+            "fieldIdInLinkedTable": "fldTty8LP0yEHhG8j",
+            "referencedFieldIds": [],
+            "result": {
+              "type": "singleLineText"
+            }
+          },
+          "id": "fldZrPzyaiQuO11C4",
+          "name": "Matter"
+        }
+      ],
+      "views": [
+        {
+          "id": "viwiJXBDeC0rReNay",
+          "name": "Grid view",
+          "type": "grid"
+        },
+        {
+          "id": "viwgQaiDpGtc0RWW9",
+          "name": "By Matter",
+          "type": "grid"
+        }
+      ]
+    },
+    {
+      "id": "tbl5wgw1XB8mUOIqL",
+      "name": "Emails",
+      "description": "Individual email messages filed from Gmail or other providers. Each message links to one Email Thread and may link to related operational records.",
+      "primaryFieldId": "fldi20RM4VWS0PVyQ",
+      "fields": [
+        {
+          "type": "singleLineText",
+          "id": "fldi20RM4VWS0PVyQ",
+          "name": "Subject",
+          "description": "Email subject. Primary display field for the individual message."
+        },
+        {
+          "type": "singleLineText",
+          "id": "fldlrg3Q3BbnosrpO",
+          "name": "Message ID",
+          "description": "Provider-native unique message identifier used for idempotent ingestion and duplicate prevention."
+        },
+        {
+          "type": "multipleRecordLinks",
+          "options": {
+            "linkedTableId": "tblg0thLNN8AipsdL",
+            "isReversed": false,
+            "prefersSingleRecordLink": false,
+            "inverseLinkFieldId": "fldrChdVTJFCfA5NW"
+          },
+          "id": "fldEHajxPL8tevypg",
+          "name": "Thread",
+          "description": "Parent Email Thread for this message."
+        },
+        {
+          "type": "dateTime",
+          "options": {
+            "dateFormat": {
+              "name": "local",
+              "format": "l"
+            },
+            "timeFormat": {
+              "name": "12hour",
+              "format": "h:mma"
+            },
+            "timeZone": "America/New_York"
+          },
+          "id": "fldLGXwoPVSBvJNck",
+          "name": "Received",
+          "description": "Timestamp when the message was received or sent."
+        },
+        {
+          "type": "singleLineText",
+          "id": "fldAXfwXZcgRryfAv",
+          "name": "From Name"
+        },
+        {
+          "type": "email",
+          "id": "fldpIpCiR5ETMhO6L",
+          "name": "From Email"
+        },
+        {
+          "type": "multilineText",
+          "id": "fldBYm81uN0Amm88o",
+          "name": "To"
+        },
+        {
+          "type": "multilineText",
+          "id": "fld4ES1rKVQSJwuFP",
+          "name": "CC"
+        },
+        {
+          "type": "richText",
+          "id": "fldUAOYy9eGjtssPo",
+          "name": "Body",
+          "description": "Clean body of this individual message without repeatedly storing the full quoted thread where possible."
+        },
+        {
+          "type": "url",
+          "id": "fld5MYGBBBhvo8ZI0",
+          "name": "Email URL",
+          "description": "Direct link to open the original message in the source mail system."
+        },
+        {
+          "type": "singleSelect",
+          "options": {
+            "choices": [
+              {
+                "id": "seluExT8pYUNl4c19",
+                "name": "Gmail",
+                "color": "grayLight2"
+              },
+              {
+                "id": "selJB1JBgpgLlq0u7",
+                "name": "Outlook",
+                "color": "grayLight2"
+              },
+              {
+                "id": "selSsmpIYgFOVCv3t",
+                "name": "Other",
+                "color": "grayLight2"
+              }
+            ]
+          },
+          "id": "fldt1RrHINQfeb7V8",
+          "name": "Source"
+        },
+        {
+          "type": "singleSelect",
+          "options": {
+            "choices": [
+              {
+                "id": "selV3naY3ieKgSdO7",
+                "name": "Received",
+                "color": "grayLight2"
+              },
+              {
+                "id": "selGd4tI63TlmnM0A",
+                "name": "Sent",
+                "color": "grayLight2"
+              }
+            ]
+          },
+          "id": "fldXD2Q3Y930Ai9fl",
+          "name": "Direction"
+        },
+        {
+          "type": "checkbox",
+          "options": {
+            "icon": "check",
+            "color": "greenBright"
+          },
+          "id": "fldjQXuPsgK1qmL6P",
+          "name": "Has Attachments"
+        },
+        {
+          "type": "multipleAttachments",
+          "options": {
+            "isReversed": false
+          },
+          "id": "fldJXmEjAUCWIQmFz",
+          "name": "Attachments"
+        },
+        {
+          "type": "multipleRecordLinks",
+          "options": {
+            "linkedTableId": "tblYQbyKJJErXkZro",
+            "isReversed": false,
+            "prefersSingleRecordLink": false,
+            "inverseLinkFieldId": "fldgLpFPsId1Tkhb4"
+          },
+          "id": "fldTty8LP0yEHhG8j",
+          "name": "Home Events",
+          "description": "Optional related Home Event(s)."
+        },
+        {
+          "type": "multipleRecordLinks",
+          "options": {
+            "linkedTableId": "tblJyrUqobEmzIAkQ",
+            "isReversed": false,
+            "prefersSingleRecordLink": false,
+            "inverseLinkFieldId": "fld2THNsoglOdtcw1"
+          },
+          "id": "fldaqfsUFQyaulGEG",
+          "name": "Resources",
+          "description": "Optional related resource/equipment/service record(s)."
+        },
+        {
+          "type": "multipleRecordLinks",
+          "options": {
+            "linkedTableId": "tblo5E0sRYdBH1zh2",
+            "isReversed": false,
+            "prefersSingleRecordLink": false,
+            "inverseLinkFieldId": "fldFKZTHWJbmxtU9J"
+          },
+          "id": "fldCZ17JD77tpxf3u",
+          "name": "Health Care Providers",
+          "description": "Optional related provider record(s)."
+        },
+        {
+          "type": "multipleRecordLinks",
+          "options": {
+            "linkedTableId": "tblpdti2tAy2eINb2",
+            "isReversed": false,
+            "prefersSingleRecordLink": false,
+            "inverseLinkFieldId": "fldxVVCbNdBjvNddO"
+          },
+          "id": "fld7KxHweAeT9wHnB",
+          "name": "Research",
+          "description": "Optional related research record(s)."
+        },
+        {
+          "type": "singleSelect",
+          "options": {
+            "choices": [
+              {
+                "id": "seluzbdfgLWh9hD2Y",
+                "name": "Filed",
+                "color": "grayLight2"
+              },
+              {
+                "id": "selKtxtFxrwcDwuTa",
+                "name": "Needs Review",
+                "color": "grayLight2"
+              },
+              {
+                "id": "selxfzrtCt1r3RXQK",
+                "name": "Ignored",
+                "color": "grayLight2"
+              }
+            ]
+          },
+          "id": "fldWEKVw3xanJIa4w",
+          "name": "Status"
+        },
+        {
+          "type": "createdTime",
+          "options": {
+            "result": {
+              "type": "dateTime",
+              "options": {
+                "dateFormat": {
+                  "name": "local",
+                  "format": "l"
+                },
+                "timeFormat": {
+                  "name": "12hour",
+                  "format": "h:mma"
+                },
+                "timeZone": "client"
+              }
+            }
+          },
+          "id": "fldn0NAvlmvshQK6D",
+          "name": "Filed At",
+          "description": "Timestamp when the Airtable email record was created."
+        },
+        {
+          "type": "createdTime",
+          "options": {
+            "result": {
+              "type": "dateTime",
+              "options": {
+                "dateFormat": {
+                  "name": "local",
+                  "format": "l"
+                },
+                "timeFormat": {
+                  "name": "12hour",
+                  "format": "h:mma"
+                },
+                "timeZone": "client"
+              }
+            }
+          },
+          "id": "fldojWFC4TSFVoNk4",
+          "name": "Created"
+        }
+      ],
+      "views": [
+        {
+          "id": "viwYvNbdJZCVOUFhW",
+          "name": "Grid view",
+          "type": "grid"
+        },
+        {
+          "id": "viws5fP0DE1k1mI6H",
+          "name": "By Event-Matter",
+          "type": "grid"
+        },
+        {
+          "id": "viwyuK18KGW21Obyr",
+          "name": "Slavica",
+          "type": "grid"
+        },
+        {
+          "id": "viwYZrbf7PbVmqbPh",
+          "name": "2025 Job Search",
+          "type": "grid"
+        },
+        {
+          "id": "viwmRYps8qdUC2APY",
+          "name": "Marina",
+          "type": "grid"
+        },
+        {
+          "id": "viwEnYpsUNZjjgj8X",
+          "name": "Darren",
+          "type": "grid"
+        },
+        {
+          "id": "viwOVHOfxIYiNCl6e",
+          "name": "Canine Confidant",
+          "type": "grid"
+        },
+        {
+          "id": "viwQT01KIMNUUajd9",
+          "name": "By Thread",
           "type": "grid"
         }
       ]
@@ -5340,6 +5873,28 @@
           "type": "singleLineText",
           "id": "fldvBSJXcnVTcTIJa",
           "name": "Home Events copy"
+        },
+        {
+          "type": "multipleRecordLinks",
+          "options": {
+            "linkedTableId": "tbl5wgw1XB8mUOIqL",
+            "isReversed": false,
+            "prefersSingleRecordLink": false,
+            "inverseLinkFieldId": "fld7KxHweAeT9wHnB"
+          },
+          "id": "fldxVVCbNdBjvNddO",
+          "name": "Emails"
+        },
+        {
+          "type": "multipleRecordLinks",
+          "options": {
+            "linkedTableId": "tblg0thLNN8AipsdL",
+            "isReversed": false,
+            "prefersSingleRecordLink": false,
+            "inverseLinkFieldId": "fld1TVrbiDVYzObyf"
+          },
+          "id": "fldSY9tXbiyO2T6Jd",
+          "name": "Email Threads"
         }
       ],
       "views": [
@@ -7922,6 +8477,28 @@
           },
           "id": "fldy5ajee4qw3R2ZS",
           "name": "Copy Temp"
+        },
+        {
+          "type": "multipleRecordLinks",
+          "options": {
+            "linkedTableId": "tbl5wgw1XB8mUOIqL",
+            "isReversed": false,
+            "prefersSingleRecordLink": false,
+            "inverseLinkFieldId": "fldaqfsUFQyaulGEG"
+          },
+          "id": "fld2THNsoglOdtcw1",
+          "name": "Emails"
+        },
+        {
+          "type": "multipleRecordLinks",
+          "options": {
+            "linkedTableId": "tblg0thLNN8AipsdL",
+            "isReversed": false,
+            "prefersSingleRecordLink": false,
+            "inverseLinkFieldId": "fldIaiYVKw8GGAYqD"
+          },
+          "id": "fldxAGyJ3F4mfbfc6",
+          "name": "Email Threads"
         }
       ],
       "views": [
@@ -9470,6 +10047,28 @@
           "type": "singleLineText",
           "id": "fldcEs15z1lBNnD6z",
           "name": "Home Events copy"
+        },
+        {
+          "type": "multipleRecordLinks",
+          "options": {
+            "linkedTableId": "tbl5wgw1XB8mUOIqL",
+            "isReversed": false,
+            "prefersSingleRecordLink": false,
+            "inverseLinkFieldId": "fldCZ17JD77tpxf3u"
+          },
+          "id": "fldFKZTHWJbmxtU9J",
+          "name": "Emails"
+        },
+        {
+          "type": "multipleRecordLinks",
+          "options": {
+            "linkedTableId": "tblg0thLNN8AipsdL",
+            "isReversed": false,
+            "prefersSingleRecordLink": false,
+            "inverseLinkFieldId": "fld0jhDAKN997pq8N"
+          },
+          "id": "fldSu9iqjuJzXREHc",
+          "name": "Email Threads"
         }
       ],
       "views": [

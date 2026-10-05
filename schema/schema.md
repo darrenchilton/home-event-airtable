@@ -1,7 +1,7 @@
 # Airtable Base Schema
 
 > Auto-generated schema documentation
-> Generated: 2026-09-28 17:28:39
+> Generated: 2026-10-05 18:08:30
 
 ---
 
@@ -9,6 +9,8 @@
 
 - [Home Events](#home-events)
 - [Navigation Directory](#navigation-directory)
+- [Email Threads](#email-threads)
+- [Emails](#emails)
 - [Research](#research)
 - [GCal](#gcal)
 - [Article Classifications](#article-classifications)
@@ -165,6 +167,8 @@
 | Words Window Start (from Words Settings) | Multiplelookupvalues |  |
 | In Active Window | Formula |  |
 | Airtable URL | Url |  |
+| Emails | Link to Unknown |  |
+| Email Threads | Link to Unknown |  |
 
 ---
 
@@ -193,6 +197,71 @@
 
 ---
 
+## Email Threads
+
+**Table ID**: `tblg0thLNN8AipsdL`
+
+**Description**: Parent record for an email conversation. Individual messages will be stored separately and linked to a thread.
+
+**Primary Field**: Subject
+
+### Fields
+
+| Field Name | Type | Description |
+|------------|------|-------------|
+| Subject | Singlelinetext | Conversation subject. Primary display field for the email thread. |
+| Thread ID | Singlelinetext | Provider-native conversation identifier (for example Gmail threadId). Used to group messages reliably and prevent subject-based misgrouping. |
+| Emails | Link to Unknown |  |
+| Source | Single Select (3 options) | Mail provider that owns the thread identifier. |
+| First Message | Rollup | Timestamp of the earliest linked email message. |
+| Latest Message | Rollup | Timestamp of the most recent linked email message. |
+| Message Count | Count | Number of individual email messages linked to this thread. |
+| Home Events | Link to Unknown | Operational Home Event(s) related to the conversation as a whole. |
+| Resources | Link to Unknown | Resource/equipment/service record(s) related to the conversation as a whole. |
+| Health Care Providers | Link to Unknown | Health care provider record(s) related to the conversation as a whole. |
+| Research | Link to Unknown | Research record(s) related to the conversation as a whole. |
+| Status | Single Select (3 options) | Review/lifecycle status for the email conversation. |
+| Notes | Richtext | Optional manual notes about the conversation. |
+| Matter | Rollup |  |
+
+---
+
+## Emails
+
+**Table ID**: `tbl5wgw1XB8mUOIqL`
+
+**Description**: Individual email messages filed from Gmail or other providers. Each message links to one Email Thread and may link to related operational records.
+
+**Primary Field**: Subject
+
+### Fields
+
+| Field Name | Type | Description |
+|------------|------|-------------|
+| Subject | Singlelinetext | Email subject. Primary display field for the individual message. |
+| Message ID | Singlelinetext | Provider-native unique message identifier used for idempotent ingestion and duplicate prevention. |
+| Thread | Link to Unknown | Parent Email Thread for this message. |
+| Received | Datetime | Timestamp when the message was received or sent. |
+| From Name | Singlelinetext |  |
+| From Email | Email |  |
+| To | Multilinetext |  |
+| CC | Multilinetext |  |
+| Body | Richtext | Clean body of this individual message without repeatedly storing the full quoted thread where possible. |
+| Email URL | Url | Direct link to open the original message in the source mail system. |
+| Source | Single Select (3 options) |  |
+| Direction | Single Select (2 options) |  |
+| Has Attachments | Checkbox |  |
+| Attachments | Multipleattachments |  |
+| Home Events | Link to Unknown | Optional related Home Event(s). |
+| Resources | Link to Unknown | Optional related resource/equipment/service record(s). |
+| Health Care Providers | Link to Unknown | Optional related provider record(s). |
+| Research | Link to Unknown | Optional related research record(s). |
+| Status | Single Select (3 options) |  |
+| Filed At | Createdtime | Timestamp when the Airtable email record was created. |
+| Created | Createdtime |  |
+
+---
+
 ## Research
 
 **Table ID**: `tblpdti2tAy2eINb2`
@@ -216,6 +285,8 @@
 | Status | Single Select (3 options) |  |
 | URLs | Multilinetext |  |
 | Home Events copy | Singlelinetext |  |
+| Emails | Link to Unknown |  |
+| Email Threads | Link to Unknown |  |
 
 ---
 
@@ -398,6 +469,8 @@
 | Timer Countdown | Formula |  |
 | Learning Experience | Singlelinetext |  |
 | Copy Temp | Formula |  |
+| Emails | Link to Unknown |  |
+| Email Threads | Link to Unknown |  |
 
 ---
 
@@ -629,6 +702,8 @@
 | Home Events | Link to Unknown |  |
 | DRS Only | Checkbox |  |
 | Home Events copy | Singlelinetext |  |
+| Emails | Link to Unknown |  |
+| Email Threads | Link to Unknown |  |
 
 ---
 

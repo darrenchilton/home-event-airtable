@@ -1,6 +1,6 @@
 # Fields Reference (Auto-Generated)
 
-> Generated from Airtable schema on 2026-09-28 17:28:39
+> Generated from Airtable schema on 2026-10-05 18:08:30
 
 This document contains the actual schema from your Airtable base. Use this as the source of truth for updating your fields documentation.
 
@@ -8,7 +8,7 @@ This document contains the actual schema from your Airtable base. Use this as th
 
 ## Home Events
 
-**Total Fields**: 114
+**Total Fields**: 116
 
 ### 14 Days Since Creation
 
@@ -289,10 +289,24 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 - **Formula**: `DATETIME_DIFF({flduWwxeEP5fKzSKZ},{fld43BW7fjYMrLjs9},'minutes')`
 - **Result Type**: number
 
+### Email Threads
+
+- **Field ID**: `fldYAv3ydYoV5sbMn`
+- **Type**: Link to Unknown
+- **Linked Table ID**: `tblg0thLNN8AipsdL`
+- **Inverse Link Field**: `fldgkmBwce7i0D9Up`
+
 ### Email Update
 
 - **Field ID**: `fldgKKNPrGjbubzW0`
 - **Type**: Checkbox
+
+### Emails
+
+- **Field ID**: `fldgLpFPsId1Tkhb4`
+- **Type**: Link to Unknown
+- **Linked Table ID**: `tbl5wgw1XB8mUOIqL`
+- **Inverse Link Field**: `fldTty8LP0yEHhG8j`
 
 ### End Date w/o Time
 
@@ -1481,7 +1495,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Website (from Health Care Provider)
   - Words Window End (from Words Settings)
   - Words Window Start (from Words Settings)
-- **multipleRecordLinks**: 10 fields
+- **multipleRecordLinks**: 12 fields
   - Children (do not edit)
   - Parent
   - Health Care Provider
@@ -1492,6 +1506,8 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Prev Parent (new)
   - From field: Prev Parent (new)
   - Words Settings
+  - Emails
+  - Email Threads
 - **multipleSelects**: 3 fields
   - Research Type
   - Sub Type
@@ -1650,9 +1666,325 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 
 ---
 
+## Email Threads
+
+**Total Fields**: 14
+
+### Emails
+
+- **Field ID**: `fldrChdVTJFCfA5NW`
+- **Type**: Link to Unknown
+- **Linked Table ID**: `tbl5wgw1XB8mUOIqL`
+- **Inverse Link Field**: `fldEHajxPL8tevypg`
+
+### First Message
+
+- **Field ID**: `fldN1N64G05PCHuhP`
+- **Type**: Rollup
+- **Description**: Timestamp of the earliest linked email message.
+- **Rollup Field**: `fldLGXwoPVSBvJNck`
+- **Function**: []
+
+### Health Care Providers
+
+- **Field ID**: `fld0jhDAKN997pq8N`
+- **Type**: Link to Unknown
+- **Description**: Health care provider record(s) related to the conversation as a whole.
+- **Linked Table ID**: `tblo5E0sRYdBH1zh2`
+- **Inverse Link Field**: `fldSu9iqjuJzXREHc`
+
+### Home Events
+
+- **Field ID**: `fldgkmBwce7i0D9Up`
+- **Type**: Link to Unknown
+- **Description**: Operational Home Event(s) related to the conversation as a whole.
+- **Linked Table ID**: `tblYQbyKJJErXkZro`
+- **Inverse Link Field**: `fldYAv3ydYoV5sbMn`
+
+### Latest Message
+
+- **Field ID**: `fldlDGfb9DNAfX3Gl`
+- **Type**: Rollup
+- **Description**: Timestamp of the most recent linked email message.
+- **Rollup Field**: `fldLGXwoPVSBvJNck`
+- **Function**: []
+
+### Matter
+
+- **Field ID**: `fldZrPzyaiQuO11C4`
+- **Type**: Rollup
+- **Rollup Field**: `fldTty8LP0yEHhG8j`
+- **Function**: []
+
+### Message Count
+
+- **Field ID**: `fldaTWtG4UKMakZZm`
+- **Type**: Count
+- **Description**: Number of individual email messages linked to this thread.
+
+### Notes
+
+- **Field ID**: `fldBtrluqdmDxiqEF`
+- **Type**: Richtext
+- **Description**: Optional manual notes about the conversation.
+
+### Research
+
+- **Field ID**: `fld1TVrbiDVYzObyf`
+- **Type**: Link to Unknown
+- **Description**: Research record(s) related to the conversation as a whole.
+- **Linked Table ID**: `tblpdti2tAy2eINb2`
+- **Inverse Link Field**: `fldSY9tXbiyO2T6Jd`
+
+### Resources
+
+- **Field ID**: `fldIaiYVKw8GGAYqD`
+- **Type**: Link to Unknown
+- **Description**: Resource/equipment/service record(s) related to the conversation as a whole.
+- **Linked Table ID**: `tblJyrUqobEmzIAkQ`
+- **Inverse Link Field**: `fldxAGyJ3F4mfbfc6`
+
+### Source
+
+- **Field ID**: `fldXTuMAPdNiRWkT9`
+- **Type**: Single Select (3 options)
+- **Description**: Mail provider that owns the thread identifier.
+- **Options**:
+  - Gmail (grayLight2)
+  - Outlook (grayLight2)
+  - Other (grayLight2)
+
+### Status
+
+- **Field ID**: `fldhDlYgEkLgc7JO3`
+- **Type**: Single Select (3 options)
+- **Description**: Review/lifecycle status for the email conversation.
+- **Options**:
+  - Filed (grayLight2)
+  - Needs Review (grayLight2)
+  - Closed (grayLight2)
+
+### Subject
+
+- **Field ID**: `fld7fCgudnqy8ItlP`
+- **Type**: Singlelinetext
+- **Description**: Conversation subject. Primary display field for the email thread.
+
+### Thread ID
+
+- **Field ID**: `fldm41c4wOv5il1AQ`
+- **Type**: Singlelinetext
+- **Description**: Provider-native conversation identifier (for example Gmail threadId). Used to group messages reliably and prevent subject-based misgrouping.
+
+### Field Type Summary
+
+- **count**: 1 fields
+  - Message Count
+- **multipleRecordLinks**: 5 fields
+  - Emails
+  - Home Events
+  - Resources
+  - Health Care Providers
+  - Research
+- **richText**: 1 fields
+  - Notes
+- **rollup**: 3 fields
+  - First Message
+  - Latest Message
+  - Matter
+- **singleLineText**: 2 fields
+  - Subject
+  - Thread ID
+- **singleSelect**: 2 fields
+  - Source
+  - Status
+
+---
+
+## Emails
+
+**Total Fields**: 21
+
+### Attachments
+
+- **Field ID**: `fldJXmEjAUCWIQmFz`
+- **Type**: Multipleattachments
+
+### Body
+
+- **Field ID**: `fldUAOYy9eGjtssPo`
+- **Type**: Richtext
+- **Description**: Clean body of this individual message without repeatedly storing the full quoted thread where possible.
+
+### CC
+
+- **Field ID**: `fld4ES1rKVQSJwuFP`
+- **Type**: Multilinetext
+
+### Created
+
+- **Field ID**: `fldojWFC4TSFVoNk4`
+- **Type**: Createdtime
+
+### Direction
+
+- **Field ID**: `fldXD2Q3Y930Ai9fl`
+- **Type**: Single Select (2 options)
+- **Options**:
+  - Received (grayLight2)
+  - Sent (grayLight2)
+
+### Email URL
+
+- **Field ID**: `fld5MYGBBBhvo8ZI0`
+- **Type**: Url
+- **Description**: Direct link to open the original message in the source mail system.
+
+### Filed At
+
+- **Field ID**: `fldn0NAvlmvshQK6D`
+- **Type**: Createdtime
+- **Description**: Timestamp when the Airtable email record was created.
+
+### From Email
+
+- **Field ID**: `fldpIpCiR5ETMhO6L`
+- **Type**: Email
+
+### From Name
+
+- **Field ID**: `fldAXfwXZcgRryfAv`
+- **Type**: Singlelinetext
+
+### Has Attachments
+
+- **Field ID**: `fldjQXuPsgK1qmL6P`
+- **Type**: Checkbox
+
+### Health Care Providers
+
+- **Field ID**: `fldCZ17JD77tpxf3u`
+- **Type**: Link to Unknown
+- **Description**: Optional related provider record(s).
+- **Linked Table ID**: `tblo5E0sRYdBH1zh2`
+- **Inverse Link Field**: `fldFKZTHWJbmxtU9J`
+
+### Home Events
+
+- **Field ID**: `fldTty8LP0yEHhG8j`
+- **Type**: Link to Unknown
+- **Description**: Optional related Home Event(s).
+- **Linked Table ID**: `tblYQbyKJJErXkZro`
+- **Inverse Link Field**: `fldgLpFPsId1Tkhb4`
+
+### Message ID
+
+- **Field ID**: `fldlrg3Q3BbnosrpO`
+- **Type**: Singlelinetext
+- **Description**: Provider-native unique message identifier used for idempotent ingestion and duplicate prevention.
+
+### Received
+
+- **Field ID**: `fldLGXwoPVSBvJNck`
+- **Type**: Datetime
+- **Description**: Timestamp when the message was received or sent.
+- **Date Format**: local
+- **Time Format**: 12hour
+- **Time Zone**: America/New_York
+
+### Research
+
+- **Field ID**: `fld7KxHweAeT9wHnB`
+- **Type**: Link to Unknown
+- **Description**: Optional related research record(s).
+- **Linked Table ID**: `tblpdti2tAy2eINb2`
+- **Inverse Link Field**: `fldxVVCbNdBjvNddO`
+
+### Resources
+
+- **Field ID**: `fldaqfsUFQyaulGEG`
+- **Type**: Link to Unknown
+- **Description**: Optional related resource/equipment/service record(s).
+- **Linked Table ID**: `tblJyrUqobEmzIAkQ`
+- **Inverse Link Field**: `fld2THNsoglOdtcw1`
+
+### Source
+
+- **Field ID**: `fldt1RrHINQfeb7V8`
+- **Type**: Single Select (3 options)
+- **Options**:
+  - Gmail (grayLight2)
+  - Outlook (grayLight2)
+  - Other (grayLight2)
+
+### Status
+
+- **Field ID**: `fldWEKVw3xanJIa4w`
+- **Type**: Single Select (3 options)
+- **Options**:
+  - Filed (grayLight2)
+  - Needs Review (grayLight2)
+  - Ignored (grayLight2)
+
+### Subject
+
+- **Field ID**: `fldi20RM4VWS0PVyQ`
+- **Type**: Singlelinetext
+- **Description**: Email subject. Primary display field for the individual message.
+
+### Thread
+
+- **Field ID**: `fldEHajxPL8tevypg`
+- **Type**: Link to Unknown
+- **Description**: Parent Email Thread for this message.
+- **Linked Table ID**: `tblg0thLNN8AipsdL`
+- **Inverse Link Field**: `fldrChdVTJFCfA5NW`
+
+### To
+
+- **Field ID**: `fldBYm81uN0Amm88o`
+- **Type**: Multilinetext
+
+### Field Type Summary
+
+- **checkbox**: 1 fields
+  - Has Attachments
+- **createdTime**: 2 fields
+  - Filed At
+  - Created
+- **dateTime**: 1 fields
+  - Received
+- **email**: 1 fields
+  - From Email
+- **multilineText**: 2 fields
+  - To
+  - CC
+- **multipleAttachments**: 1 fields
+  - Attachments
+- **multipleRecordLinks**: 5 fields
+  - Thread
+  - Home Events
+  - Resources
+  - Health Care Providers
+  - Research
+- **richText**: 1 fields
+  - Body
+- **singleLineText**: 3 fields
+  - Subject
+  - Message ID
+  - From Name
+- **singleSelect**: 3 fields
+  - Source
+  - Direction
+  - Status
+- **url**: 1 fields
+  - Email URL
+
+---
+
 ## Research
 
-**Total Fields**: 13
+**Total Fields**: 15
 
 ### Area
 
@@ -1715,6 +2047,20 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 
 - **Field ID**: `fldHUPVe5XZvEoW8e`
 - **Type**: Richtext
+
+### Email Threads
+
+- **Field ID**: `fldSY9tXbiyO2T6Jd`
+- **Type**: Link to Unknown
+- **Linked Table ID**: `tblg0thLNN8AipsdL`
+- **Inverse Link Field**: `fld1TVrbiDVYzObyf`
+
+### Emails
+
+- **Field ID**: `fldxVVCbNdBjvNddO`
+- **Type**: Link to Unknown
+- **Linked Table ID**: `tbl5wgw1XB8mUOIqL`
+- **Inverse Link Field**: `fld7KxHweAeT9wHnB`
 
 ### Home Events copy
 
@@ -1803,9 +2149,11 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - URLs
 - **multipleAttachments**: 1 fields
   - Attachments
-- **multipleRecordLinks**: 2 fields
+- **multipleRecordLinks**: 4 fields
   - Link to Articles
   - People
+  - Emails
+  - Email Threads
 - **multipleSelects**: 1 fields
   - Area
 - **richText**: 2 fields
@@ -2445,7 +2793,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 
 ## Resources
 
-**Total Fields**: 51
+**Total Fields**: 53
 
 ### Additional Information
 
@@ -2569,6 +2917,20 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 
 - **Field ID**: `fld8VxvVAkB3M2oPu`
 - **Type**: Richtext
+
+### Email Threads
+
+- **Field ID**: `fldxAGyJ3F4mfbfc6`
+- **Type**: Link to Unknown
+- **Linked Table ID**: `tblg0thLNN8AipsdL`
+- **Inverse Link Field**: `fldIaiYVKw8GGAYqD`
+
+### Emails
+
+- **Field ID**: `fld2THNsoglOdtcw1`
+- **Type**: Link to Unknown
+- **Linked Table ID**: `tbl5wgw1XB8mUOIqL`
+- **Inverse Link Field**: `fldaqfsUFQyaulGEG`
 
 ### End Date
 
@@ -2850,8 +3212,10 @@ CONCATENATE({fldYky9JmPsXETPag},"-",{fldXwQfYYM3dTQGVT},"-",{fldPnKZ2IYt0mDEpq})
 - **multipleAttachments**: 2 fields
   - Attachments
   - Manual (attachment)
-- **multipleRecordLinks**: 1 fields
+- **multipleRecordLinks**: 3 fields
   - Connect To Water Reading
+  - Emails
+  - Email Threads
 - **multipleSelects**: 2 fields
   - Status
   - Category
@@ -3671,7 +4035,7 @@ CONCATENATE({fldYky9JmPsXETPag},"-",{fldXwQfYYM3dTQGVT},"-",{fldPnKZ2IYt0mDEpq})
 
 ## Health Care Providers
 
-**Total Fields**: 17
+**Total Fields**: 19
 
 ### Address
 
@@ -3692,6 +4056,20 @@ CONCATENATE({fldYky9JmPsXETPag},"-",{fldXwQfYYM3dTQGVT},"-",{fldPnKZ2IYt0mDEpq})
 
 - **Field ID**: `fld6kWEizkqDqYTxW`
 - **Type**: Url
+
+### Email Threads
+
+- **Field ID**: `fldSu9iqjuJzXREHc`
+- **Type**: Link to Unknown
+- **Linked Table ID**: `tblg0thLNN8AipsdL`
+- **Inverse Link Field**: `fld0jhDAKN997pq8N`
+
+### Emails
+
+- **Field ID**: `fldFKZTHWJbmxtU9J`
+- **Type**: Link to Unknown
+- **Linked Table ID**: `tbl5wgw1XB8mUOIqL`
+- **Inverse Link Field**: `fldCZ17JD77tpxf3u`
 
 ### Fax
 
@@ -3781,8 +4159,10 @@ CONCATENATE({fldYky9JmPsXETPag},"-",{fldXwQfYYM3dTQGVT},"-",{fldPnKZ2IYt0mDEpq})
   - Notes
 - **multipleAttachments**: 1 fields
   - VIP Docs
-- **multipleRecordLinks**: 1 fields
+- **multipleRecordLinks**: 3 fields
   - Home Events
+  - Emails
+  - Email Threads
 - **multipleSelects**: 1 fields
   - Specialty
 - **phoneNumber**: 2 fields
