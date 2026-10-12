@@ -1,6 +1,6 @@
 # Fields Reference (Auto-Generated)
 
-> Generated from Airtable schema on 2026-10-05 18:08:30
+> Generated from Airtable schema on 2026-10-12 18:46:02
 
 This document contains the actual schema from your Airtable base. Use this as the source of truth for updating your fields documentation.
 
@@ -1668,7 +1668,12 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 
 ## Email Threads
 
-**Total Fields**: 14
+**Total Fields**: 15
+
+### Created
+
+- **Field ID**: `fld6qsxtNDFy2Crev`
+- **Type**: Createdtime
 
 ### Emails
 
@@ -1780,6 +1785,8 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 
 - **count**: 1 fields
   - Message Count
+- **createdTime**: 1 fields
+  - Created
 - **multipleRecordLinks**: 5 fields
   - Emails
   - Home Events

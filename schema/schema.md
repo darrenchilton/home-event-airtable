@@ -1,7 +1,7 @@
 # Airtable Base Schema
 
 > Auto-generated schema documentation
-> Generated: 2026-10-05 18:08:30
+> Generated: 2026-10-12 18:46:02
 
 ---
 
@@ -223,6 +223,7 @@
 | Status | Single Select (3 options) | Review/lifecycle status for the email conversation. |
 | Notes | Richtext | Optional manual notes about the conversation. |
 | Matter | Rollup |  |
+| Created | Createdtime |  |
 
 ---
 

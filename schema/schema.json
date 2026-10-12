@@ -5104,6 +5104,27 @@
           },
           "id": "fldZrPzyaiQuO11C4",
           "name": "Matter"
+        },
+        {
+          "type": "createdTime",
+          "options": {
+            "result": {
+              "type": "dateTime",
+              "options": {
+                "dateFormat": {
+                  "name": "local",
+                  "format": "l"
+                },
+                "timeFormat": {
+                  "name": "12hour",
+                  "format": "h:mma"
+                },
+                "timeZone": "client"
+              }
+            }
+          },
+          "id": "fld6qsxtNDFy2Crev",
+          "name": "Created"
         }
       ],
       "views": [
