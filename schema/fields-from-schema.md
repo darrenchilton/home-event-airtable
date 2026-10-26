@@ -1,6 +1,6 @@
 # Fields Reference (Auto-Generated)
 
-> Generated from Airtable schema on 2026-10-19 16:18:34
+> Generated from Airtable schema on 2026-10-26 15:57:53
 
 This document contains the actual schema from your Airtable base. Use this as the source of truth for updating your fields documentation.
 
@@ -1103,7 +1103,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 ### Sub Type
 
 - **Field ID**: `fldVp0MgHf11YNjud`
-- **Type**: Multiple Select (171 options)
+- **Type**: Multiple Select (172 options)
 - **Options**:
   - 2024 Election (cyanLight2)
   - Academic debate (redLight1)
@@ -1276,6 +1276,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - camry (yellowDark1)
   - darren (purpleLight1)
   - orthodontics (tealDark1)
+  - Integrations (pinkLight2)
 
 ### Temp
 
