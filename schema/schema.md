@@ -1,7 +1,7 @@
 # Airtable Base Schema
 
 > Auto-generated schema documentation
-> Generated: 2026-10-26 15:57:53
+> Generated: 2026-11-02 19:17:57
 
 ---
 
@@ -60,7 +60,7 @@
 | Status | Single Select (5 options) |  |
 | Start Time | Datetime |  |
 | End Time | Datetime |  |
-| Research Type | Multiple Select (317 options) |  |
+| Research Type | Multiple Select (322 options) |  |
 | Sub Type | Multiple Select (172 options) |  |
 | Since Updated (seconds) | Formula |  |
 | Updated | Lastmodifiedtime |  |

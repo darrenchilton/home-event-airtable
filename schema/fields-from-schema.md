@@ -1,6 +1,6 @@
 # Fields Reference (Auto-Generated)
 
-> Generated from Airtable schema on 2026-10-26 15:57:53
+> Generated from Airtable schema on 2026-11-02 19:17:57
 
 This document contains the actual schema from your Airtable base. Use this as the source of truth for updating your fields documentation.
 
@@ -657,7 +657,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 ### Research Type
 
 - **Field ID**: `fldTOSyaubEtYdqwk`
-- **Type**: Multiple Select (317 options)
+- **Type**: Multiple Select (322 options)
 - **Options**:
   - 8a (cyanLight1)
   - actors (cyanBright)
@@ -815,7 +815,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Inspiration (greenDark1)
   - instant pot (purpleDark1)
   - Insurance (redLight1)
-  - Integration (blueBright)
+  - DRIVES INT (blueBright)
   - Intellectuals (cyanLight2)
   - interesting (tealDark1)
   - internet (greenBright)
@@ -976,6 +976,11 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - yudkowsky (redDark1)
   - zerowater (purpleLight1)
   - Zizians (greenLight1)
+  - General DRIVES (greenDark1)
+  - DRIVES TEC (redLight1)
+  - DRIVES IRP (pinkDark1)
+  - DRIVES ITS REQ (pinkDark1)
+  - DRIVES GEN (redLight2)
 
 ### Reset Start URL
 
