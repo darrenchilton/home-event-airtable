@@ -1,7 +1,7 @@
 # Airtable Base Schema
 
 > Auto-generated schema documentation
-> Generated: 2026-11-09 19:37:41
+> Generated: 2026-11-16 19:24:19
 
 ---
 
@@ -54,23 +54,20 @@
 | Field Name | Type | Description |
 |------------|------|-------------|
 | Name | Formula | Concatenates Title and formatted Start Time unless Appt Type is 'From Research'. |
+| SelectionCount | Number |  |
 | New Event in Days | Number |  |
 | Appt Type | Single Select (45 options) |  |
+| Title | Singlelinetext |  |
+| Notes | Richtext |  |
+| Parent | Link to Unknown |  |
 | Created (At) | Createdtime |  |
 | Status | Single Select (5 options) |  |
 | Start Time | Datetime |  |
 | End Time | Datetime |  |
+| Set To Midnight | Formula | Sets the Start Time to midnight of the same day. |
 | Research Type | Multiple Select (322 options) |  |
 | Sub Type | Multiple Select (172 options) |  |
 | Since Updated (seconds) | Formula |  |
-| Updated | Lastmodifiedtime |  |
-| Children (do not edit) | Link to Unknown |  |
-| Recurrence | Single Select (3 options) |  |
-| Next Recurrence Date | Formula |  |
-| Title | Singlelinetext |  |
-| Notes | Richtext |  |
-| Parent | Link to Unknown |  |
-| Set To Midnight | Formula | Sets the Start Time to midnight of the same day. |
 | Description | Richtext |  |
 | Date for Alerts | Formula | Formats the Start Time to 'YYYY-MM-DD HH:mm' for 24-hour time display. |
 | Alerts | Formula | Generates alerts based on the number of days, hours, or seconds until an event. |
@@ -83,6 +80,7 @@
 | Participants | Multiple Select (54 options) |  |
 | Add to Google | Checkbox |  |
 | Since Created (seconds) | Formula |  |
+| Updated | Lastmodifiedtime |  |
 | Date Check | Formula |  |
 | G Cal Event ID | Multilinetext |  |
 | Health Care Provider | Link to Unknown |  |
@@ -101,7 +99,6 @@
 | Company | Singlelinetext |  |
 | Job Title | Singlelinetext |  |
 | NYS Jobs Daily Link | Formula |  |
-| SelectionCount | Number |  |
 | Start Updates Check | Formula |  |
 | Record ID | Formula |  |
 | Since Updated (hours) | Formula |  |
@@ -159,6 +156,7 @@
 | From GCal | Checkbox |  |
 | Interface Record Detail URL | Button | Outputs the URL from the Interface Record Detail field for use in a button. |
 | From field: Parent (Canonical) | Link to Unknown |  |
+| Children (do not edit) | Link to Unknown |  |
 | From field: Children (new) | Link to Unknown |  |
 | Prev Parent (new) | Link to Unknown |  |
 | From field: Prev Parent (new) | Link to Unknown |  |
@@ -167,6 +165,8 @@
 | Words Window Start (from Words Settings) | Multiplelookupvalues |  |
 | In Active Window | Formula |  |
 | Airtable URL | Url |  |
+| Recurrence | Single Select (3 options) |  |
+| Next Recurrence Date | Formula |  |
 | Emails | Link to Unknown |  |
 | Email Threads | Link to Unknown |  |
 

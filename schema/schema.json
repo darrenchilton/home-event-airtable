@@ -28,6 +28,14 @@
           "options": {
             "precision": 0
           },
+          "id": "fldO8BDphJS2aQwXK",
+          "name": "SelectionCount"
+        },
+        {
+          "type": "number",
+          "options": {
+            "precision": 0
+          },
           "id": "fld6mlhWRE0pdltzC",
           "name": "New Event in Days"
         },
@@ -266,6 +274,27 @@
           "name": "Appt Type"
         },
         {
+          "type": "singleLineText",
+          "id": "fldSBxahTfGgcUT4y",
+          "name": "Title"
+        },
+        {
+          "type": "richText",
+          "id": "fldP9VO6dJu8EBCTp",
+          "name": "Notes"
+        },
+        {
+          "type": "multipleRecordLinks",
+          "options": {
+            "linkedTableId": "tblYQbyKJJErXkZro",
+            "isReversed": false,
+            "prefersSingleRecordLink": true,
+            "inverseLinkFieldId": "fldRtf2reDlEV8S9Z"
+          },
+          "id": "fldI8JWRgKY1348Up",
+          "name": "Parent"
+        },
+        {
           "type": "createdTime",
           "options": {
             "result": {
@@ -351,6 +380,33 @@
           },
           "id": "flduWwxeEP5fKzSKZ",
           "name": "End Time"
+        },
+        {
+          "type": "formula",
+          "options": {
+            "isValid": true,
+            "formula": "DATEADD(\n  DATETIME_PARSE(\n    DATETIME_FORMAT({fld43BW7fjYMrLjs9}, 'YYYY-MM-DD'),\n    'YYYY-MM-DD'\n  ),\n  5,\n  'hours'\n)\n",
+            "referencedFieldIds": [
+              "fld43BW7fjYMrLjs9"
+            ],
+            "result": {
+              "type": "dateTime",
+              "options": {
+                "dateFormat": {
+                  "name": "local",
+                  "format": "l"
+                },
+                "timeFormat": {
+                  "name": "12hour",
+                  "format": "h:mma"
+                },
+                "timeZone": "client"
+              }
+            }
+          },
+          "id": "fldjnOKpvnunZ5QNT",
+          "name": "Set To Midnight",
+          "description": "Sets the Start Time to midnight of the same day."
         },
         {
           "type": "multipleSelects",
@@ -2859,135 +2915,6 @@
           "name": "Since Updated (seconds)"
         },
         {
-          "type": "lastModifiedTime",
-          "options": {
-            "isValid": true,
-            "referencedFieldIds": [],
-            "result": {
-              "type": "dateTime",
-              "options": {
-                "dateFormat": {
-                  "name": "local",
-                  "format": "l"
-                },
-                "timeFormat": {
-                  "name": "12hour",
-                  "format": "h:mma"
-                },
-                "timeZone": "client"
-              }
-            }
-          },
-          "id": "fldm3cM5bsYhCEnwa",
-          "name": "Updated"
-        },
-        {
-          "type": "multipleRecordLinks",
-          "options": {
-            "linkedTableId": "tblYQbyKJJErXkZro",
-            "isReversed": false,
-            "prefersSingleRecordLink": false,
-            "inverseLinkFieldId": "fldMUszPkgBCcA3tY"
-          },
-          "id": "fld3mWx9OZSwB7lpo",
-          "name": "Children (do not edit)"
-        },
-        {
-          "type": "singleSelect",
-          "options": {
-            "choices": [
-              {
-                "id": "selSrhUSkutfAb4Mn",
-                "name": "Monthly",
-                "color": "blueLight2"
-              },
-              {
-                "id": "seleee9uKXgTd3xPP",
-                "name": "Annual",
-                "color": "cyanLight2"
-              },
-              {
-                "id": "selmu1eZQNCNWMvcL",
-                "name": "Custom Days",
-                "color": "tealLight2"
-              }
-            ]
-          },
-          "id": "fldNQ6jOY5U92opnp",
-          "name": "Recurrence"
-        },
-        {
-          "type": "formula",
-          "options": {
-            "isValid": true,
-            "formula": "SWITCH(\n    {fldNQ6jOY5U92opnp},\n    \"Monthly\", DATEADD({fld43BW7fjYMrLjs9}, 1, 'month'),\n    \"Annual\", DATEADD({fld43BW7fjYMrLjs9}, 1, 'year'),\n    \"Custom Days\", DATEADD({fld43BW7fjYMrLjs9}, {fld6mlhWRE0pdltzC}, 'days')\n)",
-            "referencedFieldIds": [
-              "fldNQ6jOY5U92opnp",
-              "fld43BW7fjYMrLjs9",
-              "fld6mlhWRE0pdltzC"
-            ],
-            "result": {
-              "type": "date",
-              "options": {
-                "dateFormat": {
-                  "name": "us",
-                  "format": "M/D/YYYY"
-                }
-              }
-            }
-          },
-          "id": "flda27AXYVAl3jS55",
-          "name": "Next Recurrence Date"
-        },
-        {
-          "type": "singleLineText",
-          "id": "fldSBxahTfGgcUT4y",
-          "name": "Title"
-        },
-        {
-          "type": "richText",
-          "id": "fldP9VO6dJu8EBCTp",
-          "name": "Notes"
-        },
-        {
-          "type": "multipleRecordLinks",
-          "options": {
-            "linkedTableId": "tblYQbyKJJErXkZro",
-            "isReversed": false,
-            "prefersSingleRecordLink": true,
-            "inverseLinkFieldId": "fldRtf2reDlEV8S9Z"
-          },
-          "id": "fldI8JWRgKY1348Up",
-          "name": "Parent"
-        },
-        {
-          "type": "formula",
-          "options": {
-            "isValid": true,
-            "formula": "DATEADD(\n  DATETIME_PARSE(\n    DATETIME_FORMAT({fld43BW7fjYMrLjs9}, 'YYYY-MM-DD'),\n    'YYYY-MM-DD'\n  ),\n  5,\n  'hours'\n)\n",
-            "referencedFieldIds": [
-              "fld43BW7fjYMrLjs9"
-            ],
-            "result": {
-              "type": "dateTime",
-              "options": {
-                "dateFormat": {
-                  "name": "local",
-                  "format": "l"
-                },
-                "timeFormat": {
-                  "name": "12hour",
-                  "format": "h:mma"
-                },
-                "timeZone": "client"
-              }
-            }
-          },
-          "id": "fldjnOKpvnunZ5QNT",
-          "name": "Set To Midnight",
-          "description": "Sets the Start Time to midnight of the same day."
-        },
-        {
           "type": "richText",
           "id": "fldfmgCh93wZoHRDa",
           "name": "Description"
@@ -3396,6 +3323,29 @@
           "name": "Since Created (seconds)"
         },
         {
+          "type": "lastModifiedTime",
+          "options": {
+            "isValid": true,
+            "referencedFieldIds": [],
+            "result": {
+              "type": "dateTime",
+              "options": {
+                "dateFormat": {
+                  "name": "local",
+                  "format": "l"
+                },
+                "timeFormat": {
+                  "name": "12hour",
+                  "format": "h:mma"
+                },
+                "timeZone": "client"
+              }
+            }
+          },
+          "id": "fldm3cM5bsYhCEnwa",
+          "name": "Updated"
+        },
+        {
           "type": "formula",
           "options": {
             "isValid": true,
@@ -3635,14 +3585,6 @@
           },
           "id": "fldiG9aIRg3rPq6fD",
           "name": "NYS Jobs Daily Link"
-        },
-        {
-          "type": "number",
-          "options": {
-            "precision": 0
-          },
-          "id": "fldO8BDphJS2aQwXK",
-          "name": "SelectionCount"
         },
         {
           "type": "formula",
@@ -4356,6 +4298,17 @@
             "linkedTableId": "tblYQbyKJJErXkZro",
             "isReversed": false,
             "prefersSingleRecordLink": false,
+            "inverseLinkFieldId": "fldMUszPkgBCcA3tY"
+          },
+          "id": "fld3mWx9OZSwB7lpo",
+          "name": "Children (do not edit)"
+        },
+        {
+          "type": "multipleRecordLinks",
+          "options": {
+            "linkedTableId": "tblYQbyKJJErXkZro",
+            "isReversed": false,
+            "prefersSingleRecordLink": false,
             "inverseLinkFieldId": "fld3mWx9OZSwB7lpo"
           },
           "id": "fldMUszPkgBCcA3tY",
@@ -4456,6 +4409,53 @@
           "type": "url",
           "id": "fldv5ilTEX23VQg6s",
           "name": "Airtable URL"
+        },
+        {
+          "type": "singleSelect",
+          "options": {
+            "choices": [
+              {
+                "id": "selSrhUSkutfAb4Mn",
+                "name": "Monthly",
+                "color": "blueLight2"
+              },
+              {
+                "id": "seleee9uKXgTd3xPP",
+                "name": "Annual",
+                "color": "cyanLight2"
+              },
+              {
+                "id": "selmu1eZQNCNWMvcL",
+                "name": "Custom Days",
+                "color": "tealLight2"
+              }
+            ]
+          },
+          "id": "fldNQ6jOY5U92opnp",
+          "name": "Recurrence"
+        },
+        {
+          "type": "formula",
+          "options": {
+            "isValid": true,
+            "formula": "SWITCH(\n    {fldNQ6jOY5U92opnp},\n    \"Monthly\", DATEADD({fld43BW7fjYMrLjs9}, 1, 'month'),\n    \"Annual\", DATEADD({fld43BW7fjYMrLjs9}, 1, 'year'),\n    \"Custom Days\", DATEADD({fld43BW7fjYMrLjs9}, {fld6mlhWRE0pdltzC}, 'days')\n)",
+            "referencedFieldIds": [
+              "fldNQ6jOY5U92opnp",
+              "fld43BW7fjYMrLjs9",
+              "fld6mlhWRE0pdltzC"
+            ],
+            "result": {
+              "type": "date",
+              "options": {
+                "dateFormat": {
+                  "name": "us",
+                  "format": "M/D/YYYY"
+                }
+              }
+            }
+          },
+          "id": "flda27AXYVAl3jS55",
+          "name": "Next Recurrence Date"
         },
         {
           "type": "multipleRecordLinks",
@@ -6491,8 +6491,8 @@
           "type": "grid"
         },
         {
-          "id": "viw16kZYZCMGk72Jz",
-          "name": "Mar-June 2026",
+          "id": "viwpcOE6pCatzxYpL",
+          "name": "BEO Sept to Nov 2026",
           "type": "grid"
         },
         {

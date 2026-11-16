@@ -1,6 +1,6 @@
 # Fields Reference (Auto-Generated)
 
-> Generated from Airtable schema on 2026-11-09 19:37:41
+> Generated from Airtable schema on 2026-11-16 19:24:19
 
 This document contains the actual schema from your Airtable base. Use this as the source of truth for updating your fields documentation.
 
@@ -1441,9 +1441,8 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - End Time
 - **formula**: 41 fields
   - Name
-  - Since Updated (seconds)
-  - Next Recurrence Date
   - Set To Midnight
+  - Since Updated (seconds)
   - Date for Alerts
   - Alerts
   - Hours Until
@@ -1481,6 +1480,7 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Reset Start URL
   - mnemonic prompt
   - In Active Window
+  - Next Recurrence Date
 - **lastModifiedBy**: 1 fields
   - Last Updated by
 - **lastModifiedTime**: 1 fields
@@ -1502,12 +1502,12 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Words Window End (from Words Settings)
   - Words Window Start (from Words Settings)
 - **multipleRecordLinks**: 12 fields
-  - Children (do not edit)
   - Parent
   - Health Care Provider
   - Link to Research
   - Learning Experience
   - From field: Parent (Canonical)
+  - Children (do not edit)
   - From field: Children (new)
   - Prev Parent (new)
   - From field: Prev Parent (new)
@@ -1519,8 +1519,8 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
   - Sub Type
   - Participants
 - **number**: 2 fields
-  - New Event in Days
   - SelectionCount
+  - New Event in Days
 - **phoneNumber**: 1 fields
   - Phone
 - **richText**: 3 fields
@@ -1542,8 +1542,8 @@ SEARCH("https://", {fldZ202ma0JWEFr4h}) + 1)`
 - **singleSelect**: 4 fields
   - Appt Type
   - Status
-  - Recurrence
   - Work Timer Type
+  - Recurrence
 - **url**: 6 fields
   - Claude.AI URL
   - Google Gemini URL
